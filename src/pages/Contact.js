@@ -42,7 +42,7 @@ function Contact(){
                 <div className="right-side">    
                     <div className="section-header2">
                         <h2>Tìm chúng tôi tại</h2>
-                        <div className="map-container"> <img src="../images/coffeeadr.jpg" alt="Ảnh nền" className="map-background-img"/>
+                        <div className="map-container"> <img src="../coffeeadr.jpg" alt="Ảnh nền" className="map-background-img"/>
                             <div className="map-placeholder">
                                 <div className="map-info">
                                     <i className="fas fa-map-marker-alt"></i>

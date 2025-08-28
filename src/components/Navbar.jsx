@@ -129,117 +129,119 @@ export default function Navbar() {
 
   return (
       <div>
-        <nav className="navbar" aria-label="Thanh điều hướng">
-          <div className="logo">
-          <a href="/" aria-label="Trang chủ">
-              <i className="fa-solid fa-mug-saucer"></i>
-              <span>Coffee Premium</span>
-          </a>
-          </div>
-
-          <ul className="nav-links" role="menubar" aria-label="Liên kết chính">
-              <li>
-                <Link to={"/"} role="menuitem" ariaCurrent="page">Trang chủ</Link>
-              </li>
-              <li>
-                <Link to="/about" role="menuitem">Giới thiệu</Link>
-              </li>
-              <li>
-                <Link to="/product" role="menuitem">Sản phẩm</Link>
-              </li>
-              <li>
-                <Link to="/blog" role="menuitem">Tin tức</Link>
-              </li>
-              <li>
-                <Link to="/contact" role="menuitem">Liên hệ</Link>
-              </li>
-          </ul>
-
-          <div className="actions">
-              <div className="search-wrap">
-                  <button id="searchToggle" className="search-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="searchPopover" title="Tìm kiếm ( / )">
-                  <i className="fa-solid fa-magnifying-glass"></i>
-                  </button>
-              </div>
-              
-              <button id="accountBtn" className="btn" type="button">
-                  <i className="fa-regular fa-user"></i>
-                  <span>Tài khoản</span>
-              </button>
-
-              <div id="accountPopup" className="popup">
-                  <div className="popup-content">
-                    <span id="closePopup" className="close">&times;</span>
-
-                    <form className="form login-form active">
-                        <h2>Đăng nhập</h2>
-                        <input type="text" placeholder="Tên đăng nhập"/>
-                        <input type="password" placeholder="Mật khẩu"/>
-                        <button type="submit">Đăng nhập</button>
-                        <p>Chưa có tài khoản? <a href="#" id="showRegister">Đăng ký</a></p>
-                    </form>
-
-                    <form className="form register-form">
-                        <h2>Đăng ký</h2>
-                        <input type="text" placeholder="Tên đầy đủ"/>
-                        <input type="email" placeholder="Email"/>
-                        <input type="password" placeholder="Mật khẩu"/>
-                        <button type="submit">Đăng ký</button>
-                        <p>Đã có tài khoản? <a href="#" id="showLogin">Đăng nhập</a></p>
-                    </form>
-                  </div>
-              </div>
-
-              <Link to="/cart">
-                <button className="btn cart" type="button" aria-label="Giỏ hàng">
-                  <i className="fa-solid fa-cart-shopping"></i>
-                  <span className="cart-count">0</span>
-                </button>
-              </Link>
-
-              <button id="menuToggle" className="menu-toggle" aria-label="Mở menu" aria-expanded="false" aria-controls="mobilePanel">
-                  <i className="fa-solid fa-bars"></i>
-              </button>
-          </div>
-        </nav>
-
-        <div id="searchPopover" className="search-popover" role="dialog" aria-modal="true" aria-label="Tìm kiếm sản phẩm">
-          <div className="search-row">
-            <i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            <input id="searchInput" className="search-input" type="text" placeholder="Tìm kiếm sản phẩm, bài viết..." />
-            <span className="kbd">/</span>
-            <div className="search-actions">
-              <button id="searchSubmit" className="btn" type="button">Tìm</button>
-              <button id="searchClose" className="search-close" type="button" aria-label="Đóng tìm kiếm">
-              <i className="fa-solid fa-xmark"></i>
-              </button>
+        <header className ="header">
+          <nav className="navbar" aria-label="Thanh điều hướng">
+            <div className="logo">
+            <a href="/" aria-label="Trang chủ">
+                <i className="fa-solid fa-mug-saucer"></i>
+                <span>Coffee Premium</span>
+            </a>
             </div>
-          </div>
-        </div>
 
-        <div id="mobilePanel" className="mobile-panel" aria-label="Menu di động">
-            <ul className="mobile-links">
-              <li>
-                <Link to={"/"} role="menuitem" ariaCurrent="page">Trang chủ</Link>
-              </li>
-              <li>
-                <Link to="/about" role="menuitem">Giới thiệu</Link>
-              </li>
-              <li>
-                <Link to="/product" role="menuitem">Sản phẩm</Link>
-              </li>
-              <li>
-                <Link to="/blog" role="menuitem">Tin tức</Link>
-              </li>
-              <li>
-                <Link to="/contact" role="menuitem">Liên hệ</Link>
-              </li>
+            <ul className="nav-links" role="menubar" aria-label="Liên kết chính">
+                <li>
+                  <Link to={"/"} role="menuitem" ariaCurrent="page">Trang chủ</Link>
+                </li>
+                <li>
+                  <Link to="/about" role="menuitem">Giới thiệu</Link>
+                </li>
+                <li>
+                  <Link to="/product" role="menuitem">Sản phẩm</Link>
+                </li>
+                <li>
+                  <Link to="/blog" role="menuitem">Tin tức</Link>
+                </li>
+                <li>
+                  <Link to="/contact" role="menuitem">Liên hệ</Link>
+                </li>
             </ul>
-            <div className="mobile-cta">
-                <button className="btn" type="button">Đăng nhập</button>
-                <button className="btn" type="button" style={{ background: "#fff8f0" }}>Đăng ký</button>
+
+            <div className="actions">
+                <div className="search-wrap">
+                    <button id="searchToggle" className="search-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="searchPopover" title="Tìm kiếm ( / )">
+                    <i className="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                
+                <button id="accountBtn" className="btn" type="button">
+                    <i className="fa-regular fa-user"></i>
+                    <span>Tài khoản</span>
+                </button>
+
+                <div id="accountPopup" className="popup">
+                    <div className="popup-content">
+                      <span id="closePopup" className="close">&times;</span>
+
+                      <form className="form login-form active">
+                          <h2>Đăng nhập</h2>
+                          <input type="text" placeholder="Tên đăng nhập"/>
+                          <input type="password" placeholder="Mật khẩu"/>
+                          <button type="submit">Đăng nhập</button>
+                          <p>Chưa có tài khoản? <a href="#" id="showRegister">Đăng ký</a></p>
+                      </form>
+
+                      <form className="form register-form">
+                          <h2>Đăng ký</h2>
+                          <input type="text" placeholder="Tên đầy đủ"/>
+                          <input type="email" placeholder="Email"/>
+                          <input type="password" placeholder="Mật khẩu"/>
+                          <button type="submit">Đăng ký</button>
+                          <p>Đã có tài khoản? <a href="#" id="showLogin">Đăng nhập</a></p>
+                      </form>
+                    </div>
+                </div>
+
+                <Link to="/cart">
+                  <button className="btn cart" type="button" aria-label="Giỏ hàng">
+                    <i className="fa-solid fa-cart-shopping"></i>
+                    <span className="cart-count">0</span>
+                  </button>
+                </Link>
+
+                <button id="menuToggle" className="menu-toggle" aria-label="Mở menu" aria-expanded="false" aria-controls="mobilePanel">
+                    <i className="fa-solid fa-bars"></i>
+                </button>
             </div>
-        </div>
+          </nav>
+
+          <div id="searchPopover" className="search-popover" role="dialog" aria-modal="true" aria-label="Tìm kiếm sản phẩm">
+            <div className="search-row">
+              <i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <input id="searchInput" className="search-input" type="text" placeholder="Tìm kiếm sản phẩm, bài viết..." />
+              <span className="kbd">/</span>
+              <div className="search-actions">
+                <button id="searchSubmit" className="btn" type="button">Tìm</button>
+                <button id="searchClose" className="search-close" type="button" aria-label="Đóng tìm kiếm">
+                <i className="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="mobilePanel" className="mobile-panel" aria-label="Menu di động">
+              <ul className="mobile-links">
+                <li>
+                  <Link to={"/"} role="menuitem" ariaCurrent="page">Trang chủ</Link>
+                </li>
+                <li>
+                  <Link to="/about" role="menuitem">Giới thiệu</Link>
+                </li>
+                <li>
+                  <Link to="/product" role="menuitem">Sản phẩm</Link>
+                </li>
+                <li>
+                  <Link to="/blog" role="menuitem">Tin tức</Link>
+                </li>
+                <li>
+                  <Link to="/contact" role="menuitem">Liên hệ</Link>
+                </li>
+              </ul>
+              <div className="mobile-cta">
+                  <button className="btn" type="button">Đăng nhập</button>
+                  <button className="btn" type="button" style={{ background: "#fff8f0" }}>Đăng ký</button>
+              </div>
+          </div>
+        </header>
       </div>
   );
 }
