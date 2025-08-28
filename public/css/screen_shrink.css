@@ -1,0 +1,109 @@
+/* Adjust the page content for mobile view */
+
+@media (max-width: 1040px) {
+    /* Product gallery container */
+    .product-gallery-container {
+        flex-direction: column;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .images-container-animation {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .product-images-container {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .main-image-container {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    /* Main image */
+    .main-image {
+        max-width: 800px;
+        max-height: 450px;
+        width: 100%;
+        height: auto;
+    }
+
+    .sub-images-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .sub-images-container img {
+        width: 140px;
+    }
+
+    /* Product description */
+    .product-description {
+        width: 650px;
+    }
+
+    .product-cta-buttons-container {
+        width: 650px;
+    }
+
+    .add-to-cart-button, .add-to-cart-button:hover {
+        width: 500px;
+    }
+
+    .buy-button, .buy-button:hover, .buy-button:active {
+        width: 610px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sub-images-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+    }
+
+    .sub-images-container img {
+        width: 100px;
+        height: 55px;
+    }
+
+    .product-gallery-container {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .main-image {
+        width: auto;
+        height: 400px;
+    }
+
+    .product-description {
+        width: 450px;
+    }
+
+    .product-cta-buttons-container {
+        width: 500px;
+    }
+
+    .add-to-cart-button, .add-to-cart-button:hover {
+        width: 360px;
+    }
+
+    .buy-button, .buy-button:hover, .buy-button:active {
+        width: 460px;
+    }
+
+    .specifications-tab-details {
+        flex-direction: column;
+    }
+
+    .related-products-container {
+        grid-template-columns: 1fr;
+    }
+}
