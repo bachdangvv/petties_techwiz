@@ -1,12 +1,13 @@
-import Homepage from "./pages/Homepage";
-import Contact from "./pages/Contact";
-import Product from "./pages/Product";
-import Productdetail from "./pages/Productdetail";
-import Blog from "./pages/Blog";
-import About from "./pages/About";
-import Cart from "./pages/Cart";
+import Homepage from "./pages/HomePage/Homepage";
+import Contact from "./pages/Contact/Contact";
+import Product from "./pages/Product/Product";
+import Productdetail from "./pages/ProductDetails/Productdetail";
+import Blog from "./pages/Blog/Blog";
+import About from "./pages/About/About";
+import Cart from "./pages/Cart/Cart";
 import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
+// import Apphomepage from "./components/Apphomepage";
 
 function App() {
   return (

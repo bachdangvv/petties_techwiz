@@ -1,0 +1,51 @@
+.images-container-animation {
+    animation-name: imageContainerFade;
+    animation-duration: 800ms;
+    animation-timing-function: ease-out
+}
+
+.informations-container-animation {
+    animation-name: informationsContainerFade;
+    animation-duration: 800ms;
+    animation-timing-function: ease-out;
+}
+
+.cart-icon-animation {
+    animation-name: stickLeft;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in;
+}
+
+/* Product images container fade in animation */
+@keyframes imageContainerFade {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Product informations container fade in animation */
+@keyframes informationsContainerFade {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes productCardHover {
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+/* Add to cart button animation in hovering */
