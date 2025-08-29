@@ -7,7 +7,7 @@ import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
 import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
-// import Apphomepage from "./components/Apphomepage";
+import Apphomepage from "./components/Apphomepage";
 
 function App() {
   return (
