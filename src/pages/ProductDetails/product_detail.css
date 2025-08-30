@@ -58,6 +58,8 @@ hr {
     row-gap: 10px;
     float: none;
     width: auto;
+    /* Padding top to avoid the header */
+    padding-top: 70px;
     margin: 0 auto;
 }
 

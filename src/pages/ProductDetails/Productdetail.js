@@ -13,7 +13,7 @@ import './product_detail.css';
 import './screen_shrink.css';
 import './animation.css';
 
-function Productdetail() {
+function ProductDetail() {
     return (
         <>
             {/* Main content */}
@@ -337,4 +337,4 @@ function Productdetail() {
     )
 };
 
-export default Productdetail;
+export default ProductDetail;
