@@ -5,7 +5,7 @@ import ProductDetail from "./pages/ProductDetails/Productdetail";
 import Blog from "./pages/Blog/Blog";
 import About from "./pages/About/About";
 import Cart from "./pages/Cart/Cart";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Apphomepage from "./components/Apphomepage";
 
@@ -38,7 +38,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/productdetail" element={<ProductDetail />} />
+        <Route path="/product-detail" element={<ProductDetail />} />
       </Routes>
     </div>
   );
