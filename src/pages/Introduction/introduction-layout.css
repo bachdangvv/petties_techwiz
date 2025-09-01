@@ -1,0 +1,46 @@
+/* Layout setting */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    height: auto;
+    grid-template-areas: 
+    "header         header          header"
+    "aside-left     main-content    aside-right"
+    "aside-left     main-content    aside-right"
+    "footer         footer          footer";
+    column-gap: 0px;
+    row-gap: 10px;
+    place-content: center;
+    float: none;
+    width: auto;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Content set up */
+.aside-left {
+    float: left;
+    width: auto;
+    background-color: blue;
+}
+
+.aside-right {
+    float: right;
+    width: auto;
+    background-color: blue;
+}
+
+.main-content {
+    float: left;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: red;
+}
+
+.three-columns .main-content {
+    width: 100%;
+}

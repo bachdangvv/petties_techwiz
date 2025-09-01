@@ -21,7 +21,7 @@ import './product_detail.css';
 import './screen_shrink.css';
 import './animation.css';
 
-function ProductDetail() {
+function ProductDetail(props) {
     // Cart icon animation
     const [isHovered, setIsHovered] = useState(false);
 

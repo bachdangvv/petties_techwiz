@@ -1,0 +1,13 @@
+/* Mobile view */
+@media (max-width: 500px) {
+    .container {
+        grid-template-rows: 20px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "aside-left"
+        "main-content"
+        "aside-right"
+        "footer";
+    }
+}

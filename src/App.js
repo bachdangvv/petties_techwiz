@@ -8,6 +8,7 @@ import Cart from "./pages/Cart/Cart";
 import { Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Apphomepage from "./components/Apphomepage";
+import Introduction from "./pages/Introduction/Introduction";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/introduction" element={<Introduction />} />
         <Route path="/product-detail" element={<ProductDetail />} />
       </Routes>
     </div>
