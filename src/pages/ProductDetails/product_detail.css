@@ -125,7 +125,7 @@ Aside left, right and content */
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    column-gap: 100px;
+    column-gap: 40px;
     flex: 1 1;
     width: 100%;
 }

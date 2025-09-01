@@ -8,12 +8,17 @@ import firstProduct from '../../assets/related-product-images/first-product.avif
 import secondProduct from '../../assets/related-product-images/second-product.avif';
 import thirdProduct from '../../assets/related-product-images/third-product.avif';
 
+// Importing React Hooks
+import { useState } from 'react';
+
 // Importing CSS
 import './product_detail.css';
 import './screen_shrink.css';
 import './animation.css';
 
 function ProductDetail() {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <>
             {/* Main content */}
@@ -125,8 +130,12 @@ function ProductDetail() {
 
                                     {/* Add to cart button */}
                                     <div className="add-to-cart-button-container">
-                                        <button className="cta-button add-to-cart-button js-add-to-cart-button">
-                                            <i className="bi bi-cart cart-icon"></i>
+                                        <button
+                                            className="cta-button add-to-cart-button js-add-to-cart-button"
+                                            onMouseEnter={() => setIsHovered(true)}
+                                            onMouseLeave={() => setIsHovered(false)}
+                                        >
+                                            <i className={`bi bi-cart cart-icon ${isHovered ? 'cart-icon-animation' : ''}`}></i>
                                             <span className="add-to-cart-text">Thêm vào giỏ</span>
                                         </button>
                                     </div>
