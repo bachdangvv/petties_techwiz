@@ -7,10 +7,6 @@ import fourthShot from '../../assets/current-product-images/fourth-shot.avif';
 import firstProduct from '../../assets/related-product-images/first-product.avif';
 import secondProduct from '../../assets/related-product-images/second-product.avif';
 import thirdProduct from '../../assets/related-product-images/third-product.avif';
-// Importing reviewers profile picture
-// import DonaldTrump from '../../assets/reviewers/donald-trump.jpg';
-// import Rosie from '../../assets/reviewers/rosie.jpg';
-// import ElonMusk from '../../assets/reviewers/elon-musk.jpg';
 
 // Importing React Hooks
 import { useState } from 'react';
