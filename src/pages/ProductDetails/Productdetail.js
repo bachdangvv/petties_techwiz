@@ -79,7 +79,7 @@ function ProductDetail(props) {
                                 
                                 {/* Main image */}
                                 <div className="main-image-container">
-                                    <img className="main-image" src={currentImage} alt="Product image" />
+                                    <img className="main-image" src={currentImage} alt="Product" />
                                     <div className="product-badge">Bán chạy</div>
                                 </div>
 
@@ -90,7 +90,7 @@ function ProductDetail(props) {
                                             className={`sub-image ${currentImage === image ? 'selected-sub-image' : ''}`}
                                             key={index}
                                             src={image}
-                                            alt='Sub product image'
+                                            alt='Sub product'
                                             onClick={() => setCurrentImage(image)}
                                         />
                                     ))}
@@ -284,7 +284,7 @@ function ProductDetail(props) {
                                 <div className="related-product-card">
                                     {/* Related product image */}
                                     <div className="related-product-image-container">
-                                        <img className="related-product-image" src={firstProduct} alt="Related product image" />
+                                        <img className="related-product-image" src={firstProduct} alt="Related product" />
                                     </div>
 
                                     <div className="related-product-informations-container">
@@ -318,7 +318,7 @@ function ProductDetail(props) {
                                 <div className="related-product-card">
                                     {/* Related product image */}
                                     <div className="related-product-image-container">
-                                        <img className="related-product-image" src={secondProduct} alt="Related product image" />
+                                        <img className="related-product-image" src={secondProduct} alt="Related product" />
                                     </div>
 
                                     <div className="related-product-informations-container">
@@ -352,7 +352,7 @@ function ProductDetail(props) {
                                 <div className="related-product-card">
                                     {/* Related product image */}
                                     <div className="related-product-image-container">
-                                        <img className="related-product-image" src={thirdProduct} alt="Related product image" />
+                                        <img className="related-product-image" src={thirdProduct} alt="Related product" />
                                     </div>
 
                                     <div className="related-product-informations-container">
