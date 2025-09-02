@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "year": "2009",
+    "title": "Thành lập Coffee Premium",
+    "description": "Khởi đầu với một cửa hàng nhỏ tại TP.HCM"
+  },
+  {
+    "id": 2,
+    "year": "2012",
+    "title": "Mở rộng sản xuất",
+    "description": "Xây dựng nhà máy rang xay hiện đại đầu tiên"
+  },
+  {
+    "id": 3,
+    "year": "2015",
+    "title": "Phát triển thương hiệu",
+    "description": "Mở rộng ra 20 tỉnh thành trên cả nước"
+  },
+  {
+    "id": 4,
+    "year": "2018",
+    "title": "Chứng nhận quốc tế",
+    "description": "Đạt chứng nhận ISO 22000 và Organic"
+  },
+  {
+    "id": 5,
+    "year": "2020",
+    "title": "Số hóa kinh doanh",
+    "description": "Ra mắt nền tảng bán hàng online"
+  }
+]

@@ -201,5 +201,282 @@ p {
 /*! Core Value Section */
 
 .core-values-container {
-    
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    max-width: 100%;
+    width: auto;
+    margin-top: 100px;
+}
+
+/* Heading container */
+.core-values-heading-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+}
+
+/* The Heading */
+.core-values-heading-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.core-values-heading-container p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Value cards container */
+.value-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-top: 50px;
+}
+
+/* The value card */
+.value-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
+    border: 1px solid rgba(228, 212, 200, 1);
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    /* Padding bottom of 270px */
+    padding: 20px 20px 270px 20px;
+}
+
+.value-card i {
+    color: rgba(139, 69, 19, 1);
+    font-size: 30px;
+}
+
+.value-card p {
+    width: 230px;
+}
+
+/*! Leader team container */
+.leader-team-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    max-width: 100%;
+    width: auto;
+    margin-top: 100px;
+}
+
+/* Leader team heading container */
+.leader-team-heading-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+}
+
+.leader-team-heading-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.leader-team-heading-container p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Leader cards container */
+.leader-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+
+/* Leader card */
+.leader-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 10px;
+    border: 1px solid rgba(228, 212, 200, 1);
+    border-radius: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 50px 30px;
+}
+
+/* Leader profile picture */
+.leader-card img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Leader name */
+.leader-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Leader role badge */
+.role-badge {
+    font-size: 10px;
+    border-radius: 6px;
+    background-color: rgba(212, 196, 160, 1);
+    padding: 3px 10px;
+}
+
+.leader-card p {
+    width: 300px;
+    height: 70px;
+}
+
+/*! Deployment journey container */
+.deployment-journey-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    max-width: 100%;
+    width: auto;
+    margin-top: 100px;
+}
+
+/* Heading of the section */
+.deployment-journey-heading-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    text-align: center;
+    margin-bottom: 50px; /* Added margin for spacing */
+}
+
+.deployment-journey-heading-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.deployment-journey-heading-container p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* The timeline layout container */
+.deployment-journey-timeline-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.deployment-journey-timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #d7ccc8;
+}
+
+/* Timline Item */
+.timeline-item {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.timeline-item::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: rgba(139, 69, 19, 1);
+    border: 2px solid #f8f5f1;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.timeline-content {
+    width: calc(50% - 40px);
+    height: 100px;
+    padding: 20px 30px;
+    background-color: white;
+    border: 1px solid #e4d4c8;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.timeline-content:hover {
+    box-shadow: 4px 4px 10px darkgrey;
+    transition: 100ms;
+}
+
+.timeline-year-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline-year {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: rgba(139, 69, 19, 1);
+    color: white;
+    font-size: 10px;
+    border-radius: 4px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    float: left;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    float: right;
+    text-align: left;
+}
+
+.timeline-item:nth-child(odd) .timeline-dot {
+    left: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+    left: 45%;
+}
+
+.timeline-item:nth-child(odd) .timeline-year-container {
+    justify-content: flex-end;
+}
+
+.timeline-item:nth-child(even) .timeline-year-container {
+    justify-content: flex-start;
 }
