@@ -1,5 +1,6 @@
 // Importing components
 import DeploymentTimeline from './sub-components/DeploymentTimeline';
+import IntroductionFooter from './sub-components/IntroductionFooter';
 
 // Importing images
 import HomeImage from '../../assets/home-image.png';
@@ -12,10 +13,10 @@ import JeffBezos from '../../assets/leaders/jeff-bezos.webp';
 import Faker from '../../assets/leaders/faker.webp';
 
 // Importing React Hooks
-import { useState, useEffect } from 'react';
+
 
 // Importing utils
-import useFetchData from './utils/get-data';
+
 
 // Importing CSS
 import './introduction.css';
@@ -254,6 +255,12 @@ export default function Introduction(props) {
                     <aside className='aside-right'></aside>
                 </div>
             </main>
+
+            {/* The Footer */}
+            {/* The Footer component was imported */}
+            <footer className='introduction-footer'>
+                <IntroductionFooter />
+            </footer>
         </>
     )
 };

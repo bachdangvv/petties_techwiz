@@ -155,6 +155,11 @@ p {
     transition: 100ms;
 }
 
+.learn-more-button:active {
+    opacity: 0.7;
+    transition: 100ms;
+}
+
 /* Signature products images container */
 .signature-products-images-container {
     display: flex;
@@ -422,7 +427,7 @@ p {
 }
 
 .timeline-content {
-    width: calc(50% - 20px);
+    width: calc(50% - 25px);
     height: 100px;
     padding: 20px 30px;
     background-color: white;
@@ -479,4 +484,55 @@ p {
 
 .timeline-item:nth-child(even) .timeline-year-container {
     justify-content: flex-start;
+}
+
+/* Footer */
+.introduction-footer {
+    place-content: center;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(139, 69, 19, 1);
+}
+
+.introduction-footer-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.introduction-footer-component h1 {
+    font-weight: bold;
+}
+
+.introduction-footer-component p {
+    color: white;
+}
+
+.navigating-button-container {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    column-gap: 20px;
+}
+
+.navigating-button-container button {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    place-content: center;
+    text-align: center;
+    width: auto;
+    height: 40px;
+    color: rgba(139, 69, 19, 1);
+    background-color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.navigating-button-container button:active {
+    opacity: 0.7;
+    transition: 100ms;
 }
