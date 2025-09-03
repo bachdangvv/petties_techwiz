@@ -117,10 +117,10 @@ p {
 .company-summarization-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    column-gap: 20px;
     align-items: center;
     place-content: center;
-    max-width: 100%;
+    max-width: 1300px;
     max-height: 600px;
     width: auto;
     height: auto;
@@ -204,7 +204,7 @@ p {
     display: flex;
     flex-direction: column;
     place-content: center;
-    max-width: 100%;
+    max-width: 1300px;
     width: auto;
     margin-top: 100px;
 }
@@ -232,9 +232,8 @@ p {
 .value-cards-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 60px;
     margin-top: 50px;
 }
 
@@ -270,7 +269,7 @@ p {
     display: flex;
     flex-direction: column;
     place-content: center;
-    max-width: 100%;
+    max-width: 1300px;
     width: auto;
     margin-top: 100px;
 }
@@ -297,7 +296,7 @@ p {
 .leader-cards-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     column-gap: 30px;
     margin-top: 50px;
@@ -380,7 +379,7 @@ p {
 .deployment-journey-timeline-container {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -423,7 +422,7 @@ p {
 }
 
 .timeline-content {
-    width: calc(50% - 40px);
+    width: calc(50% - 20px);
     height: 100px;
     padding: 20px 30px;
     background-color: white;
@@ -466,15 +465,16 @@ p {
 }
 
 .timeline-item:nth-child(odd) .timeline-dot {
-    left: 55%;
+    left: 52%;
 }
 
 .timeline-item:nth-child(even) .timeline-dot {
-    left: 45%;
+    left: 48%;
 }
 
 .timeline-item:nth-child(odd) .timeline-year-container {
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
 }
 
 .timeline-item:nth-child(even) .timeline-year-container {
