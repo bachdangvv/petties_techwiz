@@ -69,7 +69,7 @@ export default function Introduction(props) {
                 </div>
 
                 {/* Layout setting */}
-                <div className='container three-columns'>
+                <div className='introduction-container three-columns'>
                     {/* Aside left */}
                     <aside className='aside-left'></aside>
 

@@ -1,5 +1,5 @@
 /* Layout setting */
-.container {
+.introduction-container {
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
     height: auto;
