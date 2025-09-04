@@ -68,7 +68,7 @@ function ProductDetail(props) {
                     <aside className="aside-left"></aside>  {/* Aside left */}
 
                     {/* Actual main content */}
-                    <section className="main-content">
+                    <section className="product-detail-main-content">
                         <nav className="site-nav">
                             <p className="grey-site-path">Trang chủ / sản phẩm <strong className="strong-site-path">/ Cà phê Arabica Ethiopia</strong></p>
                         </nav>

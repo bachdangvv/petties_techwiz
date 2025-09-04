@@ -63,7 +63,7 @@ hr {
 
 /* Layout for mobile view */
 @media (max-width: 700px) {
-    .container {
+    .product-detail-container {
         grid-template-rows: 20px;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -92,7 +92,7 @@ Aside left, right and content */
     margin-left: 10px;
 }
 
-.main-content {
+.product-detail-main-content {
     float: left;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@ Aside left, right and content */
     padding: 10px;
 }
 
-.three-columns .main-content {
+.three-columns .product-detail-main-content {
     width: 100%;
 }
 

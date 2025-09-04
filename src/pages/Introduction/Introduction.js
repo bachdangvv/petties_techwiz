@@ -27,11 +27,11 @@ export default function Introduction(props) {
     return (
         <>
             {/* Main content */}
-            <main className='main'>
+            <main className='introduction-main'>
                 {/* Home image container */}
-                <div className='home-image-container'>
+                <div className='introduction-home-image-container'>
                     {/* Home image */}
-                    <img className='home-image' src={HomeImage} alt='Welcome to our website' />
+                    <img className='introduction-home-image' src={HomeImage} alt='Welcome to our website' />
 
                     <div className='home-welcome-message-container'>
                         {/* Welcome message */}
@@ -74,7 +74,7 @@ export default function Introduction(props) {
                     <aside className='aside-left'></aside>
 
                     {/* Grid Responsive Main Content */}
-                    <section className='main-content'>
+                    <section className='introduction-main-content'>
 
                         {/* Company founding story & signature products images container */}
                         <div className='company-summarization-container'>

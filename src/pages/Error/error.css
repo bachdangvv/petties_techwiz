@@ -30,7 +30,7 @@ p {
     text-align: center;
 }
 
-.main-content {
+.error-main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;

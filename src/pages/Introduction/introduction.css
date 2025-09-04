@@ -33,16 +33,15 @@ p {
 /*! Home Welcome Section */
 
 /* Home image container */
-.home-image-container {
+.introduction-home-image-container {
     position: relative;
-    top: 70px;
     place-content: center;
     padding: 0px;
     margin-bottom: 70px;
 }
 
 /* Home image */
-.home-image {
+.introduction-home-image {
     object-fit: cover;
     max-width: 100%;
     width: 100%;

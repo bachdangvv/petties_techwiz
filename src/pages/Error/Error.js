@@ -9,7 +9,7 @@ export default function ErrorPage() {
         <aside className='aside-left'></aside>
             <section className='error-page-container'>
                 <main className="main">
-                    <div className="main-content">
+                    <div className="error-main-content">
                         {/* Image and 404 error code */}
                         <div className="error-container">
                             <div className="content-box">

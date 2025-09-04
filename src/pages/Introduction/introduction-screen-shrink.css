@@ -1,6 +1,6 @@
 /* Mobile view */
 @media (max-width: 500px) {
-    .container {
+    .introduction-container {
         grid-template-rows: 20px;
         grid-template-columns: 1fr;
         grid-template-areas:
