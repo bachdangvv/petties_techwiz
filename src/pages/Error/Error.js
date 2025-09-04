@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 // Importing CSS
 import './error.css';
 
@@ -5,7 +7,7 @@ export default function ErrorPage() {
     return (
         <>
         <aside className='aside-left'></aside>
-            <section className='container'>
+            <section className='error-page-container'>
                 <main className="main">
                     <div className="main-content">
                         {/* Image and 404 error code */}
@@ -27,10 +29,10 @@ export default function ErrorPage() {
 
                         {/* 3 navigating buttons */}
                         <div className="function-buttons">
-                            <button className="back-to-home-button">
+                            <Link to="/homepage" className='back-to-home-button'>
                                 <i class="bi bi-house home-icon"></i>
                                 Về trang chủ
-                            </button>
+                            </Link>
 
                             <button className="back-button">
                                 <i class="bi bi-arrow-left go-back-icon"></i>
@@ -47,34 +49,34 @@ export default function ErrorPage() {
                         <div className="navigation">
                             <h3 className="navigation-heading">Hoặc thử các liên kết sau:</h3>
                             <div className="navigation-container">
-                                <div className="navigation-section">
+                                <Link to="/product" className="navigation-section">
                                     <div className="navigation-icon">
                                         <i class="bi bi-cup-hot"></i>
                                     </div>
                                     <h5>Sản phẩm</h5>
                                     <p className="brown-text">Cà phê cao cấp</p>
-                                </div>
-                                <div className="navigation-section">
+                                </Link>
+                                <Link className="navigation-section">
                                     <div className="navigation-icon">
                                         <i class="bi bi-percent"></i>
                                     </div>
                                     <h5>Khuyến mãi</h5>
                                     <p className="brown-text">Ưu đãi hấp dẫn</p>
-                                </div>
-                                <div className="navigation-section">
+                                </Link>
+                                <Link to="/blog" className="navigation-section">
                                     <div className="navigation-icon">
                                         <i class="bi bi-pencil-square"></i>
                                     </div>
                                     <h5>Blog</h5>
                                     <p className="brown-text">Kiến thức cà phê</p>
-                                </div>
-                                <div className="navigation-section">
+                                </Link>
+                                <Link to="/contact" className="navigation-section">
                                     <div className="navigation-icon">
                                         <i class="bi bi-telephone-fill"></i>
                                     </div>
                                     <h5>Liên hệ</h5>
                                     <p className="brown-text">Hỗ trợ 24/7</p>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

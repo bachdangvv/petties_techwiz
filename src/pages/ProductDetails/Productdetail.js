@@ -64,7 +64,7 @@ function ProductDetail(props) {
             {/* Main content */}
             <main className="main">
                 {/* Layout setting */}
-                <div className="container three-columns">   {/* 3 columns container */}
+                <div className="product-detail-container three-columns">   {/* 3 columns container */}
                     <aside className="aside-left"></aside>  {/* Aside left */}
 
                     {/* Actual main content */}

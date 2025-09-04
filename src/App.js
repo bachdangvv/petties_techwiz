@@ -42,7 +42,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/introduction" element={<Introduction />} />
         <Route path="/product-detail" element={<ProductDetail />} />
-        <Route path="/page-not-found" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );
