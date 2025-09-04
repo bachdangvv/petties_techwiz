@@ -40,7 +40,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/introduction" element={<Introduction />} />
+        <Route path="/about" element={<Introduction />} />
         <Route path="/product-detail" element={<ProductDetail />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
