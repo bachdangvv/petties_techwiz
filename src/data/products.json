@@ -1,0 +1,86 @@
+[
+    {
+        "id": "1",
+        "image": "",
+        "name": "Cà phê Arabica Ethiopia",
+        "description": "Hương vị nhẹ nhàng, thanh mát với notes hoa quả tự nhiên",
+        "reviews": {
+            "stars": "Star function",
+            "count": 124
+        },
+        "price": 299,
+        "discounted-price": 350,
+        "weight": "500g",
+        "badge-tag": "Bán chạy"
+    },
+    {
+        "id": "2",
+        "image": "",
+        "name": "Cà phê Robusta Đak Lak",
+        "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
+        "reviews": {
+            "stars": "Star function",
+            "count": 89
+        },
+        "price": 249,
+        "discounted-price": null,
+        "weight": "1kg",
+        "badge-tag": "Mới"
+    },
+    {
+        "id": "3",
+        "image": "",
+        "name": "Blend House Special",
+        "description": "Hỗn hợp độc đáo tạo nên hương vị cân bằng hoàn hảo",
+        "reviews": {
+            "stars": "Star function",
+            "count": 203
+        },
+        "price": 329,
+        "discounted-price": 380,
+        "weight": "500g",
+        "badge-tag": "Đặc biệt"
+    },
+    {
+        "id": "4",
+        "image": "",
+        "name": "Cold Brew Premium",
+        "description": "Dành riêng cho pha cold brew, ngọt tự nhiên",
+        "reviews": {
+            "stars": "Star function",
+            "count": 156
+        },
+        "price": 189,
+        "discounted-price": null,
+        "weight": "250g",
+        "badge-tag": "Mùa hè"
+    },
+    {
+        "id": "5",
+        "image": "",
+        "name": "Arabica Colombia",
+        "description": "Hương vị cacao nhẹ, vị ngọt tự nhiên",
+        "reviews": {
+            "stars": "Star function",
+            "count": 67
+        },
+        "price": 319,
+        "discounted-price": null,
+        "weight": "500g",
+        "badge-tag": null
+    },
+    {
+        "id": "6",
+        "image": "",
+        "name": "Robusta Lâm Đồng",
+        "description": "Đậm đà truyền thống, phù hợp phin và espresso",
+        "reviews": {
+            "stars": "Star function",
+            "count": 92
+        },
+        "price": 279,
+        "discounted-price": 320,
+        "weight": "1kg",
+        "badge-tag": "Giảm giá"
+    }
+]

@@ -13,7 +13,7 @@ import JeffBezos from '../../assets/leaders/jeff-bezos.webp';
 import Faker from '../../assets/leaders/faker.webp';
 
 // Importing React Hooks
-
+import { Link } from 'react-router-dom';
 
 // Importing utils
 
@@ -100,7 +100,7 @@ export default function Introduction(props) {
                                     Hôm nay, Coffee Premium tự hào phục vụ hơn 10,000 khách hàng trên toàn quốc và tiếp tục mở rộng để mang cà phê Việt Nam ra thế giới.
                                 </p>
 
-                                <button className='learn-more-button'>Tìm hiểu thêm</button>
+                                <Link to="/product" className='learn-more-button'>Tìm hiểu thêm</Link>
                             </div>
 
                             {/* Signature products images container */}
