@@ -8,22 +8,67 @@ import firstProduct from '../../assets/related-product-images/first-product.avif
 import secondProduct from '../../assets/related-product-images/second-product.avif';
 import thirdProduct from '../../assets/related-product-images/third-product.avif';
 
+// Importing React Hooks
+import { useState } from 'react';
+
+// Importing components
+import DetailedDescription from './DescriptionTab';
+import Specifications from './SpecificationsTab';
+import Reviews from './ReviewsTab';
+
 // Importing CSS
 import './product_detail.css';
 import './screen_shrink.css';
 import './animation.css';
 
-function ProductDetail() {
+function ProductDetail(props) {
+    // Cart icon animation
+    const [isHovered, setIsHovered] = useState(false);
+
+    const galleryImages = [mainShot, secondShot, thirdShot, fourthShot];
+
+    const [currentImage, setCurrentImage] = useState(galleryImages[0]);
+
+    const [currentQuantity, setCurrentQuantity] = useState(1);
+
+    const increaseQuantity = () => {
+        if(currentQuantity < 10) {
+            setCurrentQuantity(currentQuantity + 1);
+        };
+    };
+
+    const decreaseQuantity = () => {
+        if(currentQuantity > 1) {
+            setCurrentQuantity(currentQuantity - 1);
+        };
+    };
+
+    // Handling product tab root
+    const [activeTab, setActiveTab] = useState('description');
+
+    const renderTabContent = () => {
+        switch(activeTab) {
+            case 'description':
+                return <DetailedDescription />;
+            case 'specifications':
+                return <Specifications />;
+            case 'reviews':
+                return <Reviews />;
+            default:
+                return <DetailedDescription />;
+        }
+    };
+
     return (
         <>
             {/* Main content */}
             <main className="main">
                 {/* Layout setting */}
-                <div className="container three-columns">   {/* 3 columns container */}
+                <div className="product-detail-container three-columns">   {/* 3 columns container */}
                     <aside className="aside-left"></aside>  {/* Aside left */}
 
                     {/* Actual main content */}
-                    <section className="main-content">
+                    <section className="product-detail-main-content">
                         <nav className="site-nav">
                             <p className="grey-site-path">Trang chủ / sản phẩm <strong className="strong-site-path">/ Cà phê Arabica Ethiopia</strong></p>
                         </nav>
@@ -34,16 +79,21 @@ function ProductDetail() {
                                 
                                 {/* Main image */}
                                 <div className="main-image-container">
-                                    <img className="main-image" src={mainShot} alt="Product image" />
+                                    <img className="main-image" src={currentImage} alt="Product" />
                                     <div className="product-badge">Bán chạy</div>
                                 </div>
 
                                 {/* Sub images */}
                                 <div className="sub-images-container">
-                                    <img className="sub-image" src={mainShot} alt="Product image" />
-                                    <img className="sub-image" src={secondShot} alt="Product image" />
-                                    <img className="sub-image" src={thirdShot} alt="Product image" />
-                                    <img className="sub-image" src={fourthShot} alt="Product image" />
+                                    {galleryImages.map((image, index) => (
+                                        <img
+                                            className={`sub-image ${currentImage === image ? 'selected-sub-image' : ''}`}
+                                            key={index}
+                                            src={image}
+                                            alt='Sub product'
+                                            onClick={() => setCurrentImage(image)}
+                                        />
+                                    ))}
                                 </div>
                             </div>
 
@@ -97,27 +147,43 @@ function ProductDetail() {
 
                                 {/* Product specifications container */}
                                 <div className="specifications-container">
-                                <h4>Đặc điểm nổi bật</h4>
-                                <ul className="specifications-list">
-                                    <li>100% Arabica nguyên chất</li>
-                                    <li>Rang tươi mỗi ngày</li>
-                                    <li>Hương vị hoa quả thiên nhiên</li>
-                                    <li>Độ caffeine vừa phải</li>
-                                    <li>Phù hợp pha phin, espresso</li>
-                                </ul>
-                                </div>
+                                    <h4>Đặc điểm nổi bật</h4>
+                                    <ul className="specifications-list">
+                                        <li>100% Arabica nguyên chất</li>
+                                        <li>Rang tươi mỗi ngày</li>
+                                        <li>Hương vị hoa quả thiên nhiên</li>
+                                        <li>Độ caffeine vừa phải</li>
+                                        <li>Phù hợp pha phin, espresso</li>
+                                    </ul>
+                                    </div>
 
-                                {/* Product quantity container */}
-                                <div className="product-quantity-container">
-                                <h5>Số lượng: </h5>
+                                    {/* Product quantity container */}
+                                    <div className="product-quantity-container">
+                                    <h5>Số lượng: </h5>
 
-                                {/* Quantity adjustment function button container */}
-                                <div className="product-quantity-customize-container">
-                                    {/* Functional buttons */}
-                                    <button className="minus-button js-minus-button">-</button>
-                                    <input type="number" className="quantity-count js-quantity-count" value="1" min = "1" max = "10"/>
-                                    <button className="plus-button js-plus-button">+</button>
-                                </div>
+                                    {/* Quantity adjustment function button container */}
+                                    <div className="product-quantity-customize-container">
+                                        {/* Functional buttons */}
+
+                                        {/* Minus quantity button */}
+                                        <button
+                                            className={`minus-button ${currentQuantity === 1 ? 'inactive-button' : ''}`}
+                                            onClick={decreaseQuantity}>
+                                        -</button>
+                                        
+                                        {/* Displaying current quantity */}
+                                        <input 
+                                            className={`quantity-count ${currentQuantity === 1 || currentQuantity === 10 ? 'quantity-reached-limit' : ''}`}
+                                            type="number" 
+                                            value={currentQuantity}
+                                        />
+
+                                        {/* Plus quantity button */}
+                                        <button 
+                                            className={`plus-button ${currentQuantity === 10 ? 'inactive-button': ''}`}
+                                            onClick={increaseQuantity}>
+                                        +</button>
+                                    </div>
                                 </div>
 
                                 {/* Call to action buttons container */}
@@ -125,8 +191,12 @@ function ProductDetail() {
 
                                     {/* Add to cart button */}
                                     <div className="add-to-cart-button-container">
-                                        <button className="cta-button add-to-cart-button js-add-to-cart-button">
-                                            <i className="bi bi-cart cart-icon"></i>
+                                        <button
+                                            className="cta-button add-to-cart-button js-add-to-cart-button"
+                                            onMouseEnter={() => setIsHovered(true)}
+                                            onMouseLeave={() => setIsHovered(false)}
+                                        >
+                                            <i className={`bi bi-cart cart-icon ${isHovered ? 'cart-icon-animation' : ''}`}></i>
                                             <span className="add-to-cart-text">Thêm vào giỏ</span>
                                         </button>
                                     </div>
@@ -178,43 +248,28 @@ function ProductDetail() {
                         <div className="product-tabs-container">
                             {/* Navigator section */}
                             <div className="tabs-nav">
-                                <button className="js-detailed-description-tab-button tab-button button-clicked">
+                                <button
+                                    onClick={() => setActiveTab('description')}
+                                    className={`tab-button ${activeTab === 'description' ? 'button-clicked' : ''}`}>
                                     Mô tả chi tiết
                                 </button>
 
-                                <button className="js-specifications-tab-button tab-button">
+                                <button
+                                    onClick={() => setActiveTab('specifications')}
+                                    className={`tab-button ${activeTab === 'specifications' ? 'button-clicked' : ''}`}>
                                     Thông số kỹ thuật
                                 </button>
 
-                                <button className="js-review-tab-button tab-button">
+                                <button
+                                    onClick={() => setActiveTab('reviews')}
+                                    className={`tab-button ${activeTab === 'reviews' ? 'button-clicked' : ''}`}>
                                     Đánh giá (124)
                                 </button>
                             </div>
 
                             {/* Tab content (For each button above) */}
                             <div className="product-tab-root">
-                                <div className="tab-details js-tab-details">
-                                    <p>Về cà phê Arabica Ethiopia</p>
-
-                                    <p>Cà phê Arabica Ethiopia đặc biệt với hương vị nhẹ nhàng, thanh mát và notes 
-                                        hoa quả tự nhiên. Được trồng trên cao nguyên Ethiopia với độ cao 1500-2000m, 
-                                        mang đến trải nghiệm cà phê tinh tế và đậm đà.
-                                    </p>
-
-                                    <p>Hương vị đặc trưng</p>
-
-                                    <p>
-                                        Cà phê Arabica Ethiopia có hương vị nhẹ nhàng, thanh mát với notes hoa quả tự nhiên. 
-                                        Độ axit vừa phải tạo nên sự cân bằng hoàn hảo, phù hợp cho những ai yêu thích cà phê 
-                                        có hương vị tinh tế.
-                                    </p>
-
-                                    <p>Cách pha chế</p>
-
-                                    <p>
-                                        Phù hợp pha với phin, espresso, pour over. Tỷ lệ pha chế khuyến nghị: 1:15 (1g cà phê : 15ml nước). Nhiệt độ nước lý tưởng: 90-95&deg;C.
-                                    </p>
-                                </div>
+                                {renderTabContent()}
                             </div>
                         </div>
 
@@ -229,7 +284,7 @@ function ProductDetail() {
                                 <div className="related-product-card">
                                     {/* Related product image */}
                                     <div className="related-product-image-container">
-                                        <img className="related-product-image" src={firstProduct} alt="Related product image" />
+                                        <img className="related-product-image" src={firstProduct} alt="Related product" />
                                     </div>
 
                                     <div className="related-product-informations-container">
@@ -263,7 +318,7 @@ function ProductDetail() {
                                 <div className="related-product-card">
                                     {/* Related product image */}
                                     <div className="related-product-image-container">
-                                        <img className="related-product-image" src={secondProduct} alt="Related product image" />
+                                        <img className="related-product-image" src={secondProduct} alt="Related product" />
                                     </div>
 
                                     <div className="related-product-informations-container">
@@ -297,7 +352,7 @@ function ProductDetail() {
                                 <div className="related-product-card">
                                     {/* Related product image */}
                                     <div className="related-product-image-container">
-                                        <img className="related-product-image" src={thirdProduct} alt="Related product image" />
+                                        <img className="related-product-image" src={thirdProduct} alt="Related product" />
                                     </div>
 
                                     <div className="related-product-informations-container">
