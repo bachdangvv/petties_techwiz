@@ -4,12 +4,16 @@ import { useNavigate } from "react-router-dom";
 import COFFEE_IMAGES from "./images";
 import "./product.css";
 
+const TAGS = ["Bán chạy", "Mới", "Đặc biệt", "Giảm giá"];
+
 const PRODUCTS = Array.from({ length: 24 }, (_, i) => ({
   id: i + 1,
   name: `Arabica Blend ${i + 1}`,
   price: 30000 + (i % 8) * 5000,
+  grams: [250, 500][i % 2],
   image: COFFEE_IMAGES[i % COFFEE_IMAGES.length],
-  notes: ["Nutty", "Caramel", "Cocoa", "Citrus"][i % 4],
+  tag: TAGS[i % TAGS.length],
+  rating: 3 + (i % 3),
 }));
 
 function Product() {
@@ -17,13 +21,27 @@ function Product() {
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
   const [page, setPage] = useState(1);
+  const [sort, setSort] = useState("new");
   const pageSize = 12;
 
   const filtered = useMemo(() => {
-    if (!query) return PRODUCTS;
-    const q = query.toLowerCase();
-    return PRODUCTS.filter((p) => p.name.toLowerCase().includes(q));
-  }, [query]);
+    let list = PRODUCTS;
+    if (query) {
+      const q = query.toLowerCase();
+      list = list.filter((p) => p.name.toLowerCase().includes(q));
+    }
+    switch (sort) {
+      case "priceAsc":
+        list = [...list].sort((a, b) => a.price - b.price);
+        break;
+      case "priceDesc":
+        list = [...list].sort((a, b) => b.price - a.price);
+        break;
+      default:
+        list = [...list];
+    }
+    return list;
+  }, [query, sort]);
 
   const totalPages = Math.ceil(filtered.length / pageSize) || 1;
   const start = (page - 1) * pageSize;
@@ -35,16 +53,19 @@ function Product() {
     <div className="product-page">
       <aside className="product-aside">
         <div className="aside-card">
-          <h3 className="aside-title">Search</h3>
-          <input
-            className="search"
-            placeholder="Search coffees..."
-            value={query}
-            onChange={(e) => {
-              setQuery(e.target.value);
-              setPage(1);
-            }}
-          />
+          <h3 className="aside-title">Bộ lọc</h3>
+          <div className="filter-group">
+            <label className="filter-label">Tìm kiếm</label>
+            <input
+              className="search"
+              placeholder="Search coffees..."
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setPage(1);
+              }}
+            />
+          </div>
           <div className="mini-cart">
             <div className="mini-row">
               <span>Items</span>
@@ -60,30 +81,43 @@ function Product() {
       </aside>
 
       <main className="product-main">
-        <div className="header">
-          <div>
-            <h2>Our Coffee Selection</h2>
-            <p>Hand-picked specialty beans, roasted to perfection.</p>
+        <div className="page-head">
+          <h1>Cửa hàng cà phê</h1>
+          <p>Khám phá bộ sưu tập cà phê cao cấp của chúng tôi</p>
+        </div>
+        <div className="toolbar">
+          <div className="results">Hiển thị {filtered.length} kết quả</div>
+          <div className="sort">
+            <label>Sort</label>
+            <select value={sort} onChange={(e) => { setSort(e.target.value); setPage(1); }}>
+              <option value="new">Mới nhất</option>
+              <option value="priceAsc">Giá: Thấp → Cao</option>
+              <option value="priceDesc">Giá: Cao → Thấp</option>
+            </select>
           </div>
         </div>
 
-        <div className="grid">
+        <div className="grid products-grid">
           {current.map((p) => (
-            <div key={p.id} className="card">
+            <div key={p.id} className="card product-card">
               <div className="thumb">
                 <img src={p.image} alt={p.name} />
-                <div className="badge pill tag">{p.notes}</div>
+                <span className="badge tag">{p.tag}</span>
               </div>
               <div className="content">
                 <h3>{p.name}</h3>
+                <div className="meta-line">
+                  <span className="stars">{"★".repeat(p.rating)}{"☆".repeat(5 - p.rating)}</span>
+                  <span className="gram">{p.grams}g</span>
+                </div>
                 <div className="price">
                   <span>{p.price.toLocaleString()} đ</span>
                 </div>
                 <div className="cta">
                   <button className="btn btn-primary" onClick={() => addItem(p, 1)}>
-                    Add to cart
+                    Thêm vào giỏ
                   </button>
-                  <button className="btn btn-ghost" onClick={() => navigate("/productdetail")}>Details</button>
+                  <button className="btn btn-ghost" onClick={() => navigate("/productdetail")}>Chi tiết</button>
                 </div>
               </div>
             </div>

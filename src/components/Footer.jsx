@@ -53,7 +53,7 @@ export default function Footer() {
         {/* Newsletter */}
         <div className="footer-col newsletter">
           <h4>Nhận bản tin</h4>
-          <p>Đăng ký để nhận thông tin và sản phẩm mới nhất.</p>
+          <p>Đăng ký để nhận thông tin khuyến mãi và sản phẩm mới nhất.</p>
           <div className="newsletter-form">
             <input type="email" placeholder="Email của bạn" />
             <button type="submit" className="subscribe-button">
