@@ -1,9 +1,9 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 300ms;
-}
+} */
 
 a {
     color: inherit;
@@ -23,12 +23,12 @@ h1, h2, h3, h4, h5 {
     padding: 0;
 }
 
-p {
+/* p {
     font-size: 14px;
     color: rgba(125, 116, 116, 1);
     margin: 0;
     padding: 0;
-}
+} */
 
 /*! Home Welcome Section */
 

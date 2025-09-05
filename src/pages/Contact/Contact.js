@@ -1,6 +1,6 @@
 function Contact(){
     return (
-        <section className="contact-section">
+        <section className="contact-section page-enter">
             <div className="contact-header">
                 <h2>Liên hệ với chúng tôi</h2>
                 <p>Hãy để lại thông tin để chúng tôi có thể hỗ trợ bạn một cách tốt nhất</p>
@@ -13,24 +13,24 @@ function Contact(){
                     <form className="contact-form">
                         <div className="form-group-row">
                             <div className="form-group">
-                                <label for="fullName">Họ và tên *</label>
+                                <label htmlFor="fullName">Họ và tên *</label>
                                 <input type="text" id="fullName" placeholder="Nhập họ và tên" required/>
                             </div>
                             <div className="form-group">
-                                <label for="phoneNumber">Số điện thoại</label>
+                                <label htmlFor="phoneNumber">Số điện thoại</label>
                                 <input type="tel" id="phoneNumber" placeholder="Nhập số điện thoại" required/>
                             </div>
                         </div>
                         <div className="form-group">
-                            <label for="email">Email *</label>
+                            <label htmlFor="email">Email *</label>
                             <input type="email" id="email" placeholder="Nhập địa chỉ email" required/>
                         </div>
                         <div className="form-group">
-                            <label for="subject">Chủ đề</label>
+                            <label htmlFor="subject">Chủ đề</label>
                             <input type="text" id="subject" placeholder="Nhập chủ đề" required/>
                         </div>
                         <div className="form-group">
-                            <label for="message">Nội dung *</label>
+                            <label htmlFor="message">Nội dung *</label>
                             <textarea id="message" placeholder="Nhập nội dung tin nhắn..." required></textarea>
                         </div>
                         <button type="submit" className="submit-button">

@@ -40,8 +40,13 @@ a {
 
 .container {
   width: 100%;
+  max-width: 1180px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: auto
 }
+
+.section { padding: 48px 0 }
 
 /* Topbar */
 .topbar {
@@ -103,6 +108,12 @@ a {
   display: block;
   margin: 26px auto 0
 }
+
+/* Badges */
+.badge { display: inline-block; padding: 6px 10px; border-radius: 999px; font-weight: 700; font-size: 12px }
+.badge.best { background: #F5D0B5; color: #6B3B1E }
+.badge.new { background: #D8F3DC; color: #1B5E20 }
+.badge.sale { background: #FFE3E3; color: #9C2F2F }
 
 /* Hero */
 /* Hero – full width nhưng không quá cao */

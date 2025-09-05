@@ -5,14 +5,14 @@ import COFFEE_IMAGES from "./images";
 import "./product.css";
 
 const PRODUCTS = Array.from({ length: 24 }, (_, i) => ({
-  id: i + 1,
-  name: `Arabica Blend ${i + 1}`,
-  price: 30000 + (i % 8) * 5000,
+  id: 300 + i + 1,
+  name: `Single Origin ${i + 1}`,
+  price: 36000 + (i % 8) * 6000,
   image: COFFEE_IMAGES[i % COFFEE_IMAGES.length],
-  notes: ["Nutty", "Caramel", "Cocoa", "Citrus"][i % 4],
+  notes: ["Floral", "Berry", "Citrus", "Honey"][i % 4],
 }));
 
-function Product() {
+function Product3() {
   const { addItem, totals } = useCart();
   const navigate = useNavigate();
   const [query, setQuery] = useState("");
@@ -63,7 +63,7 @@ function Product() {
         <div className="header">
           <div>
             <h2>Our Coffee Selection</h2>
-            <p>Hand-picked specialty beans, roasted to perfection.</p>
+            <p>Unique flavors from distinct regions.</p>
           </div>
         </div>
 
@@ -91,33 +91,15 @@ function Product() {
         </div>
 
         <div className="pagination">
-          <button
-            className="pill"
-            disabled={page === 1}
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
-          >
-            Prev
-          </button>
+          <button className="pill" disabled={page === 1} onClick={() => setPage((p) => Math.max(1, p - 1))}>Prev</button>
           {Array.from({ length: totalPages }, (_, i) => (
-            <button
-              key={i}
-              className={`pill page ${page === i + 1 ? "active" : ""}`}
-              onClick={() => setPage(i + 1)}
-            >
-              {i + 1}
-            </button>
+            <button key={i} className={`pill page ${page === i + 1 ? "active" : ""}`} onClick={() => setPage(i + 1)}>{i + 1}</button>
           ))}
-          <button
-            className="pill"
-            disabled={page === totalPages}
-            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-          >
-            Next
-          </button>
+          <button className="pill" disabled={page === totalPages} onClick={() => setPage((p) => Math.min(totalPages, p + 1))}>Next</button>
         </div>
       </main>
     </div>
   );
 }
 
-export default Product;
+export default Product3;

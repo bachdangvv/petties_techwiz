@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 export default function Navbar() {
+  const { totals } = useCart();
+
   useEffect(() => {
     const menuToggle = document.getElementById("menuToggle");
     const mobilePanel = document.getElementById("mobilePanel");
@@ -194,7 +197,7 @@ export default function Navbar() {
                 <Link to="/cart">
                   <button className="btn cart" type="button" aria-label="Giỏ hàng">
                     <i className="fa-solid fa-cart-shopping"></i>
-                    <span className="cart-count">0</span>
+                    <span className="cart-count">{totals.count}</span>
                   </button>
                 </Link>
 
