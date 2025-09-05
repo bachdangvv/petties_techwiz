@@ -1,8 +1,8 @@
-function Cart(){
-    return(
-        <div>
+import CartForm from "../../components/CartForm";
 
-        </div>
+function Cart() {
+    return(
+        <CartForm />
     )
 };
 
