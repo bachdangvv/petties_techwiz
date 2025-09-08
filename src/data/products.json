@@ -1,17 +1,41 @@
 [
     {
         "id": "1",
-        "image": "",
+        "image": "/products-images/arabica-ethiopia/main-shot.avif",
         "name": "Cà phê Arabica Ethiopia",
         "description": "Hương vị nhẹ nhàng, thanh mát với notes hoa quả tự nhiên",
         "reviews": {
-            "stars": "Star function",
+            "stars": 4,
             "count": 124
         },
         "price": 299,
-        "discounted-price": 350,
+        "discountedPrice": 350,
         "weight": "500g",
-        "badge-tag": "Bán chạy"
+        "badgeTag": "Bán chạy",
+        "productDetail": {
+            "mainImage": "/products-images/arabica-ethiopia/main-shot.avif",
+            "subImages": [
+                "/products-images/arabica-ethiopia/main-shot.avif",
+                "/products-images/arabica-ethiopia/second-shot.avif",
+                "/products-images/arabica-ethiopia/third-shot.avif",
+                "/products-images/arabica-ethiopia/fourth.avif"
+            ],
+            "description": "Cà phê Arabica Ethiopia đặc biệt với hương vị nhẹ nhàng, thanh mát và notes hoa quả tự nhiên. Được trồng trên cao nguyên Ethiopia với độ cao 1500-2000m, mang đến trải nghiệm cà phê tinh tế và đậm đà.",
+            "highlightsList": [
+                "100% Arabica nguyên chất",
+                "Rang tươi mỗi ngày",
+                "Hương vị hoa quả tự nhiên",
+                "Độ caffeine vừa phải",
+                "Phù hợp pha phin, espresso"
+            ],
+            "detailedDescription": [
+                "Về cà phê Arabica Ethiopia",
+                "Cà phê Arabica Ethiopia đặc biệt với hương vị nhẹ nhàng, thanh mát và notes hoa quả tự nhiên. Được trồng trên cao nguyên Ethiopia với độ cao 1500-2000m, mang đến trải nghiệm cà phê tinh tế và đậm đà.",
+                "Hương vị đặc trưng",
+                "Cách pha chế",
+                "Phù hợp pha với phin, espresso, pour over. Tỷ lệ pha chế khuyến nghị: 1:15 (1g cà phê : 15ml nước). Nhiệt độ nước lý tưởng: 90-95°C."
+            ]
+        }
     },
     {
         "id": "2",
@@ -23,9 +47,9 @@
             "count": 89
         },
         "price": 249,
-        "discounted-price": null,
+        "discountedPrice": null,
         "weight": "1kg",
-        "badge-tag": "Mới"
+        "badgeTag": "Mới"
     },
     {
         "id": "3",
@@ -37,9 +61,9 @@
             "count": 203
         },
         "price": 329,
-        "discounted-price": 380,
+        "discountedPrice": 380,
         "weight": "500g",
-        "badge-tag": "Đặc biệt"
+        "badgeTag": "Đặc biệt"
     },
     {
         "id": "4",
@@ -51,9 +75,9 @@
             "count": 156
         },
         "price": 189,
-        "discounted-price": null,
+        "discountedPrice": null,
         "weight": "250g",
-        "badge-tag": "Mùa hè"
+        "badgeTag": "Mùa hè"
     },
     {
         "id": "5",
@@ -65,9 +89,9 @@
             "count": 67
         },
         "price": 319,
-        "discounted-price": null,
+        "discountedPrice": null,
         "weight": "500g",
-        "badge-tag": null
+        "badgeTag": null
     },
     {
         "id": "6",
@@ -79,8 +103,8 @@
             "count": 92
         },
         "price": 279,
-        "discounted-price": 320,
+        "discountedPrice": 320,
         "weight": "1kg",
-        "badge-tag": "Giảm giá"
+        "badgeTag": "Giảm giá"
     }
 ]

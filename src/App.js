@@ -15,6 +15,7 @@ import ErrorPage from "./pages/Error/Error";
 import Footer from "./components/Footer";
 import { CartProvider } from "./context/CartContext";
 import TestProductPage from "./test/productpage";
+import TestProductDetail from "./test/productdetailtest";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
 
               {/* Testing Area */}
               <Route path="/testpage" element={<TestProductPage />} />
+              <Route path="/testpage/:id" element={<TestProductDetail />} />
             </Routes>
           </div>
         </main>

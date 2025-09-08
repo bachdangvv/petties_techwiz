@@ -1,15 +1,14 @@
-// Importing current product images
-import mainShot from '../../assets/current-product-images/main-shot.avif';
-import secondShot from '../../assets/current-product-images/second-shot.avif';
-import thirdShot from '../../assets/current-product-images/third-shot.avif';
-import fourthShot from '../../assets/current-product-images/fourth-shot.avif';
 // Importing related product images
 import firstProduct from '../../assets/related-product-images/first-product.avif';
 import secondProduct from '../../assets/related-product-images/second-product.avif';
 import thirdProduct from '../../assets/related-product-images/third-product.avif';
 
+// Importing Data
+import productData from '../../data/products.json';
+
 // Importing React Hooks
-import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 // Importing components
 import DetailedDescription from './DescriptionTab';
@@ -18,19 +17,48 @@ import Reviews from './ReviewsTab';
 
 // Importing CSS Modules and other CSS files
 import styles from './product_detail.module.css';
-import styles from './animation.module.css';
+import animationStyles from './animation.module.css';
 import './screen_shrink.css';
 
 function ProductDetail(props) {
+    const renderPrice = (price) => {
+        const fixedPrice = price.toFixed(3);
+
+        return `${fixedPrice}đ`;
+    }
+
     // Cart icon animation
     const [isHovered, setIsHovered] = useState(false);
 
-    const galleryImages = [mainShot, secondShot, thirdShot, fourthShot];
-
-    const [currentImage, setCurrentImage] = useState(galleryImages[0]);
+    // const [currentImage, setCurrentImage] = useState(galleryImages[0]);
 
     const [currentQuantity, setCurrentQuantity] = useState(1);
 
+    // useParams
+    const { id } = useParams();
+    const [product, setProduct] = useState(null);
+    const [currentImage, setCurrentImage] = useState('');
+
+    useEffect(() => {
+        const foundProduct = productData.find(p => p.id === id);
+
+        if(foundProduct) {
+            setProduct(foundProduct);
+            setCurrentImage(foundProduct.productDetail.mainImage);
+        } else {
+            console.error(`Product ${id} not found`);
+        }
+    }, [id]);
+
+    if(!product) {
+        return (
+            <div>Loading...</div>
+        )
+    }
+
+    const details = product.productDetail;
+
+    // Increase & Decrease quantity
     const increaseQuantity = () => {
         if (currentQuantity < 10) {
             setCurrentQuantity(currentQuantity + 1);
@@ -80,18 +108,19 @@ function ProductDetail(props) {
                                 {/* Main image */}
                                 <div className={styles['main-image-container']}>
                                     <img className={styles['main-image']} src={currentImage} alt="Product" />
-                                    <div className={styles['product-badge']}>Bán chạy</div>
+                                    {/* Badge tag */}
+                                    <div className={styles['product-badge']}>{productData.badgeTag}</div>
                                 </div>
 
                                 {/* Sub images */}
                                 <div className={styles['sub-images-container']}>
-                                    {galleryImages.map((image, index) => (
+                                    {details.subImages.map((image, index) => (
                                         <img
                                             className={`${styles['sub-image']} ${currentImage === image ? styles['selected-sub-image'] : ''}`}
+                                            onClick={() => setCurrentImage(image)}
                                             key={index}
                                             src={image}
-                                            alt='Sub product'
-                                            onClick={() => setCurrentImage(image)}
+                                            alt='Sub thumbnail'
                                         />
                                     ))}
                                 </div>
@@ -99,7 +128,8 @@ function ProductDetail(props) {
 
                             {/* Product informations container */}
                             <div className={`${styles['product-informations-container']} ${styles['informations-container-animation']}`}>
-                                <h1>Cà phê Arabica Ethiopia</h1>
+                                {/* Product name */}
+                                <h1>{productData.name}</h1>
 
                                 {/* Product review container */}
                                 <div className={styles['product-review-container']}>
@@ -114,7 +144,7 @@ function ProductDetail(props) {
 
                                     {/* Rating count */}
                                     <div className={styles['product-review']}>
-                                        <p>4.8 (124 đánh giá)</p>
+                                        <p>4.8 ({productData.reviews.count} đánh giá)</p>
                                     </div>
                                 </div>
 
@@ -122,12 +152,12 @@ function ProductDetail(props) {
                                 <div className={styles['product-price-container']}>
                                     {/* Final price */}
                                     <div className={`${styles['product-pricing']} ${styles['product-final-price']}`}>
-                                        <h2>299.000đ</h2>
+                                        <h2>{renderPrice(productData.price)}</h2>
                                     </div>
 
                                     {/* Discounted price */}
                                     <div className={`${styles['product-pricing']} ${styles['product-discounted-price']}`}>
-                                        <p>350.000đ</p>
+                                        <p>{renderPrice(productData.discountedPrice)}</p>
                                     </div>
 
                                     {/* Discount percent */}
@@ -149,11 +179,11 @@ function ProductDetail(props) {
                                 <div className={styles['specifications-container']}>
                                     <h4>Đặc điểm nổi bật</h4>
                                     <ul className={styles['specifications-list']}>
-                                        <li>100% Arabica nguyên chất</li>
-                                        <li>Rang tươi mỗi ngày</li>
-                                        <li>Hương vị hoa quả thiên nhiên</li>
-                                        <li>Độ caffeine vừa phải</li>
-                                        <li>Phù hợp pha phin, espresso</li>
+                                        <li>{details.highlightsList[0]}</li>
+                                        <li>{details.highlightsList[1]}</li>
+                                        <li>{details.highlightsList[2]}</li>
+                                        <li>{details.highlightsList[3]}</li>
+                                        <li>{details.highlightsList[4]}</li>
                                     </ul>
                                 </div>
 
