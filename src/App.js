@@ -14,6 +14,7 @@ import Introduction from "./pages/Introduction/Introduction";
 import ErrorPage from "./pages/Error/Error";
 import Footer from "./components/Footer";
 import { CartProvider } from "./context/CartContext";
+import TestProductPage from "./test/productpage";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
               <Route path="/cart" element={<Cart />}/>
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/blog" element={<Blog />}/>
+
+              {/* Testing Area */}
+              <Route path="/testpage" element={<TestProductPage />} />
             </Routes>
           </div>
         </main>

@@ -18,8 +18,8 @@ import Reviews from './ReviewsTab';
 
 // Importing CSS Modules and other CSS files
 import styles from './product_detail.module.css';
-import './screen_shrink.module.css';
-import './animation.module.css';
+import styles from './animation.module.css';
+import './screen_shrink.css';
 
 function ProductDetail(props) {
     // Cart icon animation
