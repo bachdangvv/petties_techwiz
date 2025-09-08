@@ -29,7 +29,7 @@ function App() {
               <Route path="/product-robusta" element={<Product2 />}/>
               <Route path="/product-single-origin" element={<Product3 />}/>
               <Route path="/product-decaf" element={<Product4 />}/>
-              <Route path="/introduction" element={<Introduction />} />
+              <Route path="/about" element={<Introduction />} />
               <Route path="/cart" element={<Cart />}/>
               <Route path="/productdetail" element={<ProductDetail />}/>
               <Route path="/blog" element={<Blog />}/>

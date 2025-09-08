@@ -1,6 +1,6 @@
-export default function DetailedDescription() {
+export default function DetailedDescription( {styles} ) {
     return (
-        <div className="tab-details">
+        <div className={styles['tab-details']}>
             <p>Về cà phê Arabica Ethiopia</p>
 
             <p>Cà phê Arabica Ethiopia đặc biệt với hương vị nhẹ nhàng, thanh mát và notes 
