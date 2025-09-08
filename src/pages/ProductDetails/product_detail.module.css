@@ -56,6 +56,7 @@ hr {
     "aside-left     main-content    aside-right"
     "footer         footer          footer";
     row-gap: 10px;
+    max-width: 1600px;
     float: none;
     width: auto;
     margin: 0 auto;
@@ -96,7 +97,7 @@ Aside left, right and content */
     float: left;
     justify-content: center;
     align-items: center;
-    max-width: 1400px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     padding: 10px;
@@ -130,6 +131,7 @@ Aside left, right and content */
 
 /* Main product image */
 .main-image-container {
+    
     position: relative;
     z-index: 1;
 }

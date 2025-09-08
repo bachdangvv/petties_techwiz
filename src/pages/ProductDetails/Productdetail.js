@@ -21,6 +21,35 @@ import animationStyles from './animation.module.css';
 import './screen_shrink.css';
 
 function ProductDetail(props) {
+     // Increase & Decrease quantity
+    const increaseQuantity = () => {
+        if (currentQuantity < 10) {
+            setCurrentQuantity(currentQuantity + 1);
+        };
+    };
+
+    const decreaseQuantity = () => {
+        if (currentQuantity > 1) {
+            setCurrentQuantity(currentQuantity - 1);
+        };
+    };
+
+    // Handling product tab root
+    const [activeTab, setActiveTab] = useState('description');
+
+    const renderTabContent = () => {
+        switch (activeTab) {
+            case 'description':
+                return <DetailedDescription styles={styles} />;
+            case 'specifications':
+                return <Specifications styles={styles} />;
+            case 'reviews':
+                return <Reviews styles={styles} />;
+            default:
+                return <DetailedDescription styles={styles} />;
+        }
+    };
+
     const renderPrice = (price) => {
         const fixedPrice = price.toFixed(3);
 
@@ -58,35 +87,6 @@ function ProductDetail(props) {
 
     const details = product.productDetail;
 
-    // Increase & Decrease quantity
-    const increaseQuantity = () => {
-        if (currentQuantity < 10) {
-            setCurrentQuantity(currentQuantity + 1);
-        };
-    };
-
-    const decreaseQuantity = () => {
-        if (currentQuantity > 1) {
-            setCurrentQuantity(currentQuantity - 1);
-        };
-    };
-
-    // Handling product tab root
-    const [activeTab, setActiveTab] = useState('description');
-
-    const renderTabContent = () => {
-        switch (activeTab) {
-            case 'description':
-                return <DetailedDescription />;
-            case 'specifications':
-                return <Specifications />;
-            case 'reviews':
-                return <Reviews />;
-            default:
-                return <DetailedDescription />;
-        }
-    };
-
     return (
         <>
             {/* Main content */}
@@ -109,7 +109,7 @@ function ProductDetail(props) {
                                 <div className={styles['main-image-container']}>
                                     <img className={styles['main-image']} src={currentImage} alt="Product" />
                                     {/* Badge tag */}
-                                    <div className={styles['product-badge']}>{productData.badgeTag}</div>
+                                    <div className={styles['product-badge']}>{product.badgeTag}</div>
                                 </div>
 
                                 {/* Sub images */}
@@ -129,7 +129,7 @@ function ProductDetail(props) {
                             {/* Product informations container */}
                             <div className={`${styles['product-informations-container']} ${styles['informations-container-animation']}`}>
                                 {/* Product name */}
-                                <h1>{productData.name}</h1>
+                                <h1>{product.name}</h1>
 
                                 {/* Product review container */}
                                 <div className={styles['product-review-container']}>
@@ -144,7 +144,7 @@ function ProductDetail(props) {
 
                                     {/* Rating count */}
                                     <div className={styles['product-review']}>
-                                        <p>4.8 ({productData.reviews.count} đánh giá)</p>
+                                        <p>4.8 ({product.reviews.count} đánh giá)</p>
                                     </div>
                                 </div>
 
@@ -152,12 +152,12 @@ function ProductDetail(props) {
                                 <div className={styles['product-price-container']}>
                                     {/* Final price */}
                                     <div className={`${styles['product-pricing']} ${styles['product-final-price']}`}>
-                                        <h2>{renderPrice(productData.price)}</h2>
+                                        <h2>{renderPrice(product.price)}</h2>
                                     </div>
 
                                     {/* Discounted price */}
                                     <div className={`${styles['product-pricing']} ${styles['product-discounted-price']}`}>
-                                        <p>{renderPrice(productData.discountedPrice)}</p>
+                                        <p>{renderPrice(product.discountedPrice)}</p>
                                     </div>
 
                                     {/* Discount percent */}
@@ -226,7 +226,7 @@ function ProductDetail(props) {
                                             onMouseEnter={() => setIsHovered(true)}
                                             onMouseLeave={() => setIsHovered(false)}
                                         >
-                                            <i className={`bi bi-cart ${styles['cart-icon']} ${isHovered ? styles['cart-icon-animation'] : ''}`}></i>
+                                            <i className={`bi bi-cart ${styles['cart-icon']} ${isHovered ? animationStyles['cart-icon-animation'] : ''}`}></i>
                                             <span className={styles['add-to-cart-text']}>Thêm vào giỏ</span>
                                         </button>
                                     </div>
