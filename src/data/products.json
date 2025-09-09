@@ -5,11 +5,11 @@
         "name": "Cà phê Arabica Ethiopia",
         "description": "Hương vị nhẹ nhàng, thanh mát với notes hoa quả tự nhiên",
         "reviews": {
-            "stars": 4,
+            "stars": 4.8,
             "count": 124
         },
-        "price": 299,
-        "discountedPrice": 350,
+        "price": 299.000,
+        "discountedPrice": 350.000,
         "weight": "500g",
         "badgeTag": "Bán chạy",
         "productDetail": {
@@ -39,72 +39,172 @@
     },
     {
         "id": "2",
-        "image": "",
+        "image": "/products-images/robusta-dak-lak/main-shot.webp",
         "name": "Cà phê Robusta Đak Lak",
         "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
         "reviews": {
-            "stars": "Star function",
+            "stars": 4.5,
             "count": 89
         },
-        "price": 249,
+        "price": 249.000,
         "discountedPrice": null,
         "weight": "1kg",
-        "badgeTag": "Mới"
+        "badgeTag": "Mới",
+        "productDetail": {
+            "mainImage": "/products-images/robusta-dak-lak/main-shot.webp",
+            "subImages": [
+                "/products-images/robusta-dak-lak/main-shot.webp",
+                "/products-images/robusta-dak-lak/second-shot.webp",
+                "/products-images/robusta-dak-lak/third-shot.webp",
+                "/products-images/robusta-dak-lak/fourth-shot.webp"
+            ],
+            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
+            "highlightsList": [
+                "Hạt Robusta chọn lọc từ vùng đất đỏ bazan Đắk Lắk",
+                "Quy trình rang thủ công giữ trọn hương vị nguyên bản",
+                "Vị đắng mạnh mẽ, hòa quyện chút socola và gỗ trầm",
+                "Năng lượng bền bỉ, đánh thức tinh thần ngay lập tức",
+                "Thích hợp cho gu cà phê đậm, hợp dùng với sữa đặc Việt Nam"
+            ],
+            "detailedDescription": [
+
+            ]
+        }
     },
     {
         "id": "3",
-        "image": "",
+        "image": "/products-images/blend-house-special/main-shot.webp",
         "name": "Blend House Special",
         "description": "Hỗn hợp độc đáo tạo nên hương vị cân bằng hoàn hảo",
         "reviews": {
-            "stars": "Star function",
+            "stars": 4.1,
             "count": 203
         },
-        "price": 329,
-        "discountedPrice": 380,
+        "price": 329.000,
+        "discountedPrice": 380.000,
         "weight": "500g",
-        "badgeTag": "Đặc biệt"
+        "badgeTag": "Đặc biệt",
+        "productDetail": {
+            "mainImage": "/products-images/blend-house-special/main-shot.webp",
+            "subImages": [
+                "/products-images/blend-house-special/main-shot.webp",
+                "/products-images/blend-house-special/second-shot.webp",
+                "/products-images/blend-house-special/third-shot.webp",
+                "/products-images/blend-house-special/fourth-shot.webp"
+            ],
+            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
+            "highlightsList": [
+                "Công thức phối trộn bí quyết riêng của quán, cân bằng giữa Arabica và Robusta",
+                "Tầng hương phức hợp: nhẹ nhàng hoa quả, điểm xuyết cacao và hạt rang",
+                "Vị cân đối, hài hòa giữa đắng - chua - ngọt",
+                "Độ caffeine vừa phải, phù hợp thưởng thức hằng ngày",
+                "Linh hoạt pha chế: từ espresso, cappuccino đến cà phê sữa đá Việt Nam"
+            ],
+            "detailedDescription": [
+                
+            ]
+        }
     },
     {
         "id": "4",
-        "image": "",
+        "image": "/products-images/cold-brew-premium/main-shot.webp",
         "name": "Cold Brew Premium",
         "description": "Dành riêng cho pha cold brew, ngọt tự nhiên",
         "reviews": {
-            "stars": "Star function",
+            "stars": 4.2,
             "count": 156
         },
-        "price": 189,
+        "price": 189.000,
         "discountedPrice": null,
         "weight": "250g",
-        "badgeTag": "Mùa hè"
+        "badgeTag": "Mùa hè",
+        "productDetail": {
+            "mainImage": "/products-images/cold-brew-premium/main-shot.webp",
+            "subImages": [
+                "/products-images/cold-brew-premium/main-shot.webp",
+                "/products-images/cold-brew-premium/second-shot.webp",
+                "/products-images/cold-brew-premium/third-shot.webp",
+                "/products-images/cold-brew-premium/fourth-shot.webp"
+            ],
+            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
+            "highlightsList": [
+                "Chiết xuất chậm trong 12 - 18 giờ, giữ trọn hương vị tinh khiết",
+                "Vị êm mượt, dịu nhẹ, ít chua gắt",
+                "Hàm lượng caffeine ổn định, mang lại sự tỉnh táo bền lâu",
+                "Thưởng thức ngon nhất khi dùng lạnh, thêm đá hoặc sữa tươi",
+                "Phù hợp cho phong cách hiện đại, tiện lợi mang đi"
+            ],
+            "detailedDescription": [
+                
+            ]
+        }
     },
     {
         "id": "5",
-        "image": "",
+        "image": "/products-images/arabica-colombia/main-shot.webp",
         "name": "Arabica Colombia",
         "description": "Hương vị cacao nhẹ, vị ngọt tự nhiên",
         "reviews": {
-            "stars": "Star function",
+            "stars": 4,
             "count": 67
         },
-        "price": 319,
+        "price": 319.000,
         "discountedPrice": null,
         "weight": "500g",
-        "badgeTag": null
+        "badgeTag": "",
+        "productDetail": {
+            "mainImage": "/products-images/arabica-colombia/main-shot.webp",
+            "subImages": [
+                "/products-images/arabica-colombia/main-shot.webp",
+                "/products-images/arabica-colombia/second-shot.webp",
+                "/products-images/arabica-colombia/third-shot.webp",
+                "/products-images/arabica-colombia/fourth-shot.webp"
+            ],
+            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
+            "highlightsList": [
+                "Hạt Arabica trồng trên độ cao lý tưởng của vùng núi Colombia",
+                "Đặc trưng vị chua thanh, gợi nhớ trái cây nhiệt đới và caramel",
+                "Hậu vị ngọt dịu, kéo dài và tinh tế",
+                "Hàm lượng caffeine nhẹ nhàng, dễ thưởng thức nhiều lần trong ngày",
+                "Hoàn hảo cho pha pour-over, syphon và espresso single origin"
+            ],
+            "detailedDescription": [
+                
+            ]
+        }
     },
     {
         "id": "6",
-        "image": "",
+        "image": "/products-images/robusta-lam-dong/main-shot.webp",
         "name": "Robusta Lâm Đồng",
         "description": "Đậm đà truyền thống, phù hợp phin và espresso",
         "reviews": {
-            "stars": "Star function",
+            "stars": 4,
             "count": 92
         },
-        "price": 279,
-        "discountedPrice": 320,
+        "price": 279.000,
+        "discountedPrice": 320.000,
         "weight": "1kg",
-        "badgeTag": "Giảm giá"
+        "badgeTag": "Giảm giá",
+        "productDetail": {
+            "mainImage": "/products-images/robusta-lam-dong/main-shot.webp",
+            "subImages": [
+                "/products-images/robusta-lam-dong/main-shot.webp",
+                "/products-images/robusta-lam-dong/second-shot.webp",
+                "/products-images/robusta-lam-dong/third-shot.webp",
+                "/products-images/robusta-lam-dong/fourth-shot.webp"
+            ],
+            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
+            "highlightsList": [
+                "Nguồn gốc từ cao nguyên Lâm Đồng, khí hậu mát mẻ quanh năm",
+                "Hạt cà phê chắc khỏe, rang lên tỏa mùi thơm nồng nàn",
+                "Vị đắng đặc trưng, xen chút hạt dẻ và gỗ sồi",
+                "Hàm lượng caffeine dồi dào, tiếp thêm sinh lực mạnh mẽ",
+                "Lý tưởng cho gu cà phê đậm chất Việt, hợp uống phin hoặc pha máy"
+            ],
+            "detailedDescription": [
+                
+            ]
+        }
     }
 ]

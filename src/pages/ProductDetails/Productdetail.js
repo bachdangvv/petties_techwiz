@@ -52,12 +52,6 @@ function ProductDetail(props) {
         }
     };
 
-    const renderPrice = (price) => {
-        const fixedPrice = price.toFixed(3);
-
-        return `${fixedPrice}đ`;
-    }
-
     // Cart icon animation
     const [isHovered, setIsHovered] = useState(false);
 
@@ -146,7 +140,7 @@ function ProductDetail(props) {
 
                                     {/* Rating count */}
                                     <div className={styles['product-review']}>
-                                        <p>4.8 ({product.reviews.count} đánh giá)</p>
+                                        <p>{product.reviews.stars} ({product.reviews.count} đánh giá)</p>
                                     </div>
                                 </div>
 
@@ -154,12 +148,17 @@ function ProductDetail(props) {
                                 <div className={styles['product-price-container']}>
                                     {/* Final price */}
                                     <div className={`${styles['product-pricing']} ${styles['product-final-price']}`}>
-                                        <h2>{renderPrice(product.price)}</h2>
+                                        <h2>{product.price.toFixed(3)}đ</h2>
                                     </div>
 
                                     {/* Discounted price */}
                                     <div className={`${styles['product-pricing']} ${styles['product-discounted-price']}`}>
-                                        <p>{renderPrice(product.discountedPrice)}</p>
+                                        {/* <p>{product.discountedPrice.toFixed(3)}</p> */}
+                                        {typeof product.discountedPrice === 'number' && (
+                                            <del className="discounted-price">
+                                                {product.discountedPrice.toFixed(3)}đ
+                                            </del>
+                                        )}
                                     </div>
 
                                     {/* Discount percent */}
