@@ -223,7 +223,8 @@ function ProductDetail(props) {
                                     {/* Add to cart button */}
                                     <div className={styles['add-to-cart-button-container']}>
                                         <button
-                                            className={`${styles['cta-button']} ${styles['add-to-cart-button']} ${styles['js-add-to-cart-button']}`}
+                                            // className={`${styles['cta-button']} ${styles['add-to-cart-button']} ${styles['js-add-to-cart-button']}`}
+                                            className={`${styles['cta-button']} ${styles['add-to-cart-button']}`}
                                             onMouseEnter={() => setIsHovered(true)}
                                             onMouseLeave={() => setIsHovered(false)}
                                         >
