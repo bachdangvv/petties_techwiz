@@ -42,13 +42,13 @@ function ProductDetail(props) {
 
         switch (activeTab) {
             case 'description':
-                return <DetailedDescription data={product.productDetail.detailedDescription} />;
+                return <DetailedDescription styles={styles} data={product.productDetail.detailedDescription} />;
             case 'specifications':
                 return <Specifications styles={styles} />;
             case 'reviews':
                 return <Reviews styles={styles} />;
             default:
-                return <DetailedDescription data={product.productDetail.detailedDescription} />;
+                return <DetailedDescription styles={styles} data={product.productDetail.detailedDescription} />;
         }
     };
 
