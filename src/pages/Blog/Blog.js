@@ -15,7 +15,7 @@ function Blog() {
   const loadPosts = async (page = 1) => {
     setLoading(true);
     try {
-      const res = await fetch(`/page${page}.json`);
+      const res = await fetch(`/data/page${page}.json`);
       const data = await res.json();
       setPosts(data.all_posts);
 

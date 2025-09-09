@@ -1,0 +1,118 @@
+{
+  "featured_posts": [
+    {
+      "id": 1,
+      "title": "Cách pha cà phê ngon tại nhà như chuyên gia",
+      "slug": "cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia",
+      "category": "Hướng dẫn",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-1.jpg",
+      "excerpt": "Hướng dẫn chi tiết từng bước để tạo ra ly cà phê ngon và thơm phức ngay tại nhà của bạn.",
+      "tags": ["Cà phê"],
+      "content_url": "/blog/cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia"
+    },
+    {
+      "id": 2,
+      "title": "Khám phá vùng cà phê Dak Lak - Thủ phủ cà phê Việt Nam",
+      "slug": "kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam",
+      "category": "Xu hướng",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-2.jpg",
+      "excerpt": "Tìm hiểu về vùng đất cà phê nổi tiếng nhất Việt Nam...",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam"
+    }
+  ],
+  "all_posts": [
+    {
+      "id": 1,
+      "title": "Cách pha cà phê ngon tại nhà như chuyên gia",
+      "slug": "cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia",
+      "category": "Hướng dẫn",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-1.jpg",
+      "excerpt": "Hướng dẫn chi tiết từng bước để tạo ra ly cà phê ngon và thơm phức ngay tại nhà của bạn.",
+      "tags": ["Cà phê"],
+      "content_url": "/blog/cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia"
+    },
+    {
+      "id": 2,
+      "title": "Khám phá vùng cà phê Dak Lak - Thủ phủ cà phê Việt Nam",
+      "slug": "kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam",
+      "category": "Xu hướng",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-2.jpg",
+      "excerpt": "Tìm hiểu về vùng đất cà phê nổi tiếng nhất Việt Nam...",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam"
+    },
+    {
+      "id": 3,
+      "title": "Tác dụng của cà phê đối với sức khoẻ",
+      "slug": "tac-dung-cua-ca-phe-doi-voi-suc-khoe",
+      "category": "Sức khoẻ",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-3.jpg",
+      "excerpt": "Những lợi ích tuyệt vời của cà phê đối với sức khoẻ con người khi sử dụng đúng cách.",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/tac-dung-cua-ca-phe-doi-voi-suc-khoe"
+    },
+    {
+      "id": 4,
+      "title": "Phân biệt cà phê Arabica và Robusta",
+      "slug": "phan-biet-ca-phe-arabica-va-robusta",
+      "category": "Kiến thức",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-4.jpg",
+      "excerpt": "Hướng dẫn cách nhận biết và phân biệt hai loại cà phê phổ biến nhất hiện nay.",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/phan-biet-ca-phe-arabica-va-robusta"
+    },
+    {
+      "id": 5,
+      "title": "Xu hướng cà phê đặc biệt 2025",
+      "slug": "xu-huong-ca-phe-dac-biet-2025",
+      "category": "Xu hướng",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-5.jpg",
+      "excerpt": "Những xu hướng mới của ngành cà phê trong năm 2025.",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/xu-huong-ca-phe-dac-biet-2025"
+    },
+    {
+      "id": 6,
+      "title": "Cà phê và văn hoá Việt Nam",
+      "slug": "ca-phe-va-van-hoa-viet-nam",
+      "category": "Văn hoá",
+      "date": "2025-07-17",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-6.jpg",
+      "excerpt": "Tìm hiểu mối quan hệ giữa cà phê và văn hoá Việt Nam.",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/ca-phe-va-van-hoa-viet-nam"
+    }
+  ],
+  "categories": [
+    { "name": "Tất cả", "count": 6 },
+    { "name": "Hướng dẫn", "count": 1 },
+    { "name": "Khám phá", "count": 1 },
+    { "name": "Sức khoẻ", "count": 1 },
+    { "name": "Kiến thức", "count": 1 },
+    { "name": "Xu hướng", "count": 1 },
+    { "name": "Văn hoá", "count": 1 }
+  ],
+  "latest_posts": [
+    "Cách pha cà phê ngon tại nhà như chuyên gia",
+    "Khám phá vùng cà phê Dak Lak - Thủ phủ cà phê Việt Nam",
+    "Tác dụng của cà phê đối với sức khoẻ",
+    "Phân biệt cà phê Arabica và Robusta"
+  ],
+  "popular_tags": ["Cà phê", "Latte", "Robusta"]
+}
