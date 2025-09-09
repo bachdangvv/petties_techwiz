@@ -15,7 +15,7 @@ function Blog() {
   const loadPosts = async (page = 1) => {
     setLoading(true);
     try {
-      const res = await fetch(`/data/page${page}.json`);
+      const res = await fetch(`data/page${page}.json`);
       const data = await res.json();
       setPosts(data.all_posts);
 
@@ -40,10 +40,11 @@ function Blog() {
       <div className="row">
         {/* Blog posts */}
         <div className="col-md-8">
-          <h2 className="mb-4">Tất cả bài viết</h2>
+          <h2 className="mb-4 fw-bold">Tất cả bài viết</h2>
+
 
           {loading && <p>Đang tải...</p>}
-          <div id="blog-container" className="row g-4">
+          <div id="blog-container" className="row g-4 blog-container">
             {posts.map((post, idx) => (
               <div className="col-md-6" key={idx}>
                 <div className="card blog-card h-100 shadow-sm">
