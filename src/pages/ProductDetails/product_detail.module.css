@@ -142,6 +142,7 @@ Aside left, right and content */
     object-fit: cover;
     width: 700px;
     height: 400px;
+    max-width: none;
 }
 
 /* Sub image container */

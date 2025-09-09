@@ -38,15 +38,17 @@ function ProductDetail(props) {
     const [activeTab, setActiveTab] = useState('description');
 
     const renderTabContent = () => {
+    if (!product || !product.productDetail) return null;
+
         switch (activeTab) {
             case 'description':
-                return <DetailedDescription styles={styles} />;
+                return <DetailedDescription data={product.productDetail.detailedDescription} />;
             case 'specifications':
                 return <Specifications styles={styles} />;
             case 'reviews':
                 return <Reviews styles={styles} />;
             default:
-                return <DetailedDescription styles={styles} />;
+                return <DetailedDescription data={product.productDetail.detailedDescription} />;
         }
     };
 
@@ -103,7 +105,7 @@ function ProductDetail(props) {
 
                         {/* Product gallery */}
                         <div className={styles['product-gallery-container']}>
-                            <div className={`${styles['product-images-container']} ${styles['images-container-animation']}`}>
+                            <div className={`${styles['product-images-container']} ${animationStyles['images-container-animation']}`}>
 
                                 {/* Main image */}
                                 <div className={styles['main-image-container']}>
@@ -127,7 +129,7 @@ function ProductDetail(props) {
                             </div>
 
                             {/* Product informations container */}
-                            <div className={`${styles['product-informations-container']} ${styles['informations-container-animation']}`}>
+                            <div className={`${styles['product-informations-container']} ${animationStyles['informations-container-animation']}`}>
                                 {/* Product name */}
                                 <h1>{product.name}</h1>
 
