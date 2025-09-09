@@ -1,0 +1,76 @@
+{
+  "all_posts": [
+    {
+      "id": 7,
+      "title": "Lịch sử cà phê thế giới",
+      "slug": "lich-su-ca-phe-the-gioi",
+      "category": "Kiến thức",
+      "date": "2025-07-20",
+      "reading_time": "6 phút đọc",
+      "image": "/images/blog/blog-7.jpg",
+      "excerpt": "Cùng khám phá hành trình của hạt cà phê từ Ethiopia đến khắp thế giới.",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/lich-su-ca-phe-the-gioi"
+    },
+    {
+      "id": 8,
+      "title": "Cà phê và nghệ thuật Latte Art",
+      "slug": "ca-phe-va-nghe-thuat-latte-art",
+      "category": "Văn hoá",
+      "date": "2025-07-20",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-8.jpg",
+      "excerpt": "Latte Art không chỉ là đồ uống mà còn là nghệ thuật thưởng thức bằng mắt.",
+      "tags": ["Latte"],
+      "content_url": "/blog/ca-phe-va-nghe-thuat-latte-art"
+    },
+    {
+      "id": 9,
+      "title": "Top 5 loại cà phê đặc sản Việt Nam",
+      "slug": "top-5-loai-ca-phe-dac-san-viet-nam",
+      "category": "Khám phá",
+      "date": "2025-07-20",
+      "reading_time": "7 phút đọc",
+      "image": "/images/blog/blog-9.jpg",
+      "excerpt": "Danh sách những loại cà phê đặc sản nổi tiếng nhất Việt Nam mà bạn nên thử.",
+      "tags": ["Cà phê"],
+      "content_url": "/blog/top-5-loai-ca-phe-dac-san-viet-nam"
+    },
+    {
+      "id": 10,
+      "title": "Cà phê và giấc ngủ – Uống thế nào cho hợp lý?",
+      "slug": "ca-phe-va-giac-ngu-uong-the-nao-cho-hop-ly",
+      "category": "Sức khoẻ",
+      "date": "2025-07-20",
+      "reading_time": "5 phút đọc",
+      "image": "/images/blog/blog-10.jpg",
+      "excerpt": "Cà phê giúp tỉnh táo nhưng cũng ảnh hưởng đến giấc ngủ. Nên uống thế nào để cân bằng?",
+      "tags": ["Chuyên gia cà phê"],
+      "content_url": "/blog/ca-phe-va-giac-ngu-uong-the-nao-cho-hop-ly"
+    },
+    {
+      "id": 11,
+      "title": "Cà phê trong văn học và điện ảnh",
+      "slug": "ca-phe-trong-van-hoc-va-dien-anh",
+      "category": "Văn hoá",
+      "date": "2025-07-20",
+      "reading_time": "6 phút đọc",
+      "image": "/images/blog/blog-11.jpg",
+      "excerpt": "Từ những quán cà phê Paris đến phim Hollywood – cà phê luôn gắn liền với cảm hứng sáng tạo.",
+      "tags": ["Văn hoá"],
+      "content_url": "/blog/ca-phe-trong-van-hoc-va-dien-anh"
+    },
+    {
+      "id": 12,
+      "title": "Tương lai ngành cà phê: Công nghệ và bền vững",
+      "slug": "tuong-lai-nganh-ca-phe-cong-nghe-va-ben-vung",
+      "category": "Xu hướng",
+      "date": "2025-07-20",
+      "reading_time": "7 phút đọc",
+      "image": "/images/blog/blog-12.jpg",
+      "excerpt": "Ngành cà phê đang thay đổi mạnh mẽ nhờ công nghệ và xu hướng phát triển bền vững.",
+      "tags": ["Xu hướng"],
+      "content_url": "/blog/tuong-lai-nganh-ca-phe-cong-nghe-va-ben-vung"
+    }
+  ]
+}
