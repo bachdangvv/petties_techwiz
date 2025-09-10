@@ -98,5 +98,21 @@
       "tags": ["Chuyên gia cà phê"],
       "content_url": "/blog/ca-phe-va-van-hoa-viet-nam"
     }
-  ]
+  ],
+  "categories": [
+    { "name": "Tất cả", "count": 12 },
+    { "name": "Hướng dẫn", "count": 2 },
+    { "name": "Khám phá", "count": 2 },
+    { "name": "Sức khoẻ", "count": 2 },
+    { "name": "Kiến thức", "count": 2 },
+    { "name": "Xu hướng", "count": 2 },
+    { "name": "Văn hoá", "count": 2 }
+  ],
+  "latest_posts": [
+    "Tương lai ngành cà phê: Công nghệ và bền vững",
+    "Cà phê trong văn học và điện ảnh",
+    "Cà phê và giấc ngủ – Uống thế nào cho hợp lý?",
+    "Top 5 loại cà phê đặc sản Việt Nam"
+  ],
+  "popular_tags": ["Cà phê", "Latte", "Robusta", "Xu hướng"]
 }
