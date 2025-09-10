@@ -35,9 +35,6 @@ function App() {
               <Route path="/cart" element={<Cart />}/>
               <Route path="/product/:id" element={<ProductDetail />} />
               <Route path="/blog" element={<Blog />}/>
-
-              {/* Testing Area */}
-              <Route path="/testpage/:id" element={<TestProductDetail />} />
             </Routes>
           </div>
         </main>
