@@ -40,7 +40,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin: auto
