@@ -37,7 +37,6 @@ function App() {
               <Route path="/blog" element={<Blog />}/>
 
               {/* Testing Area */}
-              <Route path="/testpage" element={<TestProductPage />} />
               <Route path="/testpage/:id" element={<TestProductDetail />} />
             </Routes>
           </div>
