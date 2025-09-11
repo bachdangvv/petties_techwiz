@@ -34,7 +34,7 @@ function App() {
               <Route path="/about" element={<Introduction />} />
               <Route path="/cart" element={<Cart />}/>
               <Route path="/product/:id" element={<ProductDetail />} />
-              <Route path="/blog" element={<div className="blog-page"><Blog /></div>}/>
+              <Route path="/blog" element={<Blog />}/>
 
               {/* Testing Area */}
               <Route path="/testpage" element={<TestProductPage />} />
