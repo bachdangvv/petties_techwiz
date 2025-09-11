@@ -26,7 +26,7 @@ function App() {
           <div className="container">
             <Routes>
               <Route path="/" element={<Homepage />}/>
-              <Route path="/contact" element={<Contact />}/>
+              <Route path="/contact" element={<div className="contact-page"><Contact /></div>}/>
               <Route path="/product" element={<Product />}/>
               <Route path="/product-robusta" element={<Product2 />}/>
               <Route path="/product-single-origin" element={<Product3 />}/>
@@ -34,7 +34,7 @@ function App() {
               <Route path="/about" element={<Introduction />} />
               <Route path="/cart" element={<Cart />}/>
               <Route path="/product/:id" element={<ProductDetail />} />
-              <Route path="/blog" element={<Blog />}/>
+              <Route path="/blog" element={<div className="blog-page"><Blog /></div>}/>
 
               {/* Testing Area */}
               <Route path="/testpage" element={<TestProductPage />} />

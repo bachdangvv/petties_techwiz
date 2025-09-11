@@ -1,118 +1,127 @@
 {
-  "featured_posts": [
-    {
-      "id": 1,
-      "title": "Cách pha cà phê ngon tại nhà như chuyên gia",
-      "slug": "cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia",
-      "category": "Hướng dẫn",
-      "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
-      "image": "/images/blog-1.jpg",
-      "excerpt": "Hướng dẫn chi tiết từng bước để tạo ra ly cà phê ngon và thơm phức ngay tại nhà của bạn.",
-      "tags": ["Cà phê"],
-      "content_url": "/blog/cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia"
-    },
-    {
-      "id": 2,
-      "title": "Khám phá vùng cà phê Dak Lak - Thủ phủ cà phê Việt Nam",
-      "slug": "kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam",
-      "category": "Xu hướng",
-      "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
-      "image": "/images/blog-2.jpg",
-      "excerpt": "Tìm hiểu về vùng đất cà phê nổi tiếng nhất Việt Nam...",
-      "tags": ["Chuyên gia cà phê"],
-      "content_url": "/blog/kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam"
-    }
-  ],
   "all_posts": [
     {
       "id": 1,
-      "title": "Cách pha cà phê ngon tại nhà như chuyên gia",
-      "slug": "cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia",
-      "category": "Hướng dẫn",
+      "title": "The Annual Vet Visit: Why It's Non-Negotiable for Your Pet",
+      "slug": "the-annual-vet-visit-why-its-non-negotiable-for-your-pet",
+      "category": "Pet Health",
       "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
+      "reading_time": "5 mins reading time",
       "image": "/images/blog-1.jpg",
-      "excerpt": "Hướng dẫn chi tiết từng bước để tạo ra ly cà phê ngon và thơm phức ngay tại nhà của bạn.",
-      "tags": ["Cà phê"],
-      "content_url": "/blog/cach-pha-ca-phe-ngon-tai-nha-nhu-chuyen-gia"
+      "tags": ["Veterinary Care"],
+      "content_url": "/blog/the-annual-vet-visit-why-its-non-negotiable-for-your-pet",
+      "content": "We all want our furry friends to live long, healthy lives. One of the most crucial steps in ensuring this is the often-dreaded annual veterinary check-up. While your pet may seem perfectly healthy, these visits are essential for preventive care and early disease detection.\n\nThink of it as routine maintenance for your car. You don't wait for the engine to fail before getting an oil change. Similarly, a vet can spot subtle signs of illness—like a heart murmur, dental disease, or early arthritis—long before you notice any symptoms at home. For senior pets (over 7 years old), these visits should ideally become biannual, as age-related issues can develop rapidly.\n\nA typical wellness exam includes a nose-to-tail physical inspection, weight and vital sign checks, and important discussions about nutrition, behavior, and parasite prevention. It's also the perfect time to ensure vaccinations are up-to-date. This proactive approach doesn't just extend your pet's life; it often saves you money in the long run by avoiding expensive emergency treatments for advanced conditions. An hour a year is a small price to pay for their well-being."
     },
     {
       "id": 2,
-      "title": "Khám phá vùng cà phê Dak Lak - Thủ phủ cà phê Việt Nam",
-      "slug": "kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam",
-      "category": "Xu hướng",
+      "title": "Decoding Pet Food Labels: How to Choose the Best Diet",
+      "slug": "decoding-pet-food-labels-how-to-choose-the-best-diet",
+      "category": "Nutrition",
       "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
+      "reading_time": "4 mins reading time",
       "image": "/images/blog-2.jpg",
-      "excerpt": "Tìm hiểu về vùng đất cà phê nổi tiếng nhất Việt Nam...",
-      "tags": ["Chuyên gia cà phê"],
-      "content_url": "/blog/kham-pha-vung-ca-phe-dak-lak-thu-phu-ca-phe-viet-nam"
+      "excerpt": "Learn how to read and understand pet food labels to make the best nutritional choices for your dog or cat.",
+      "tags": ["Pet Food"],
+      "content_url": "/blog/decoding-pet-food-labels-how-to-choose-the-best-diet",
+      "content": "Walking down the pet food aisle can be overwhelming. With hundreds of brands and formulas all claiming to be the best, how do you choose the right food for your dog or cat? Understanding how to read a pet food label is your first step toward making an informed decision.\n\nFirst, look for an AAFCO statement. This ensures the food is 'complete and balanced' for a specific life stage (e.g., puppy, adult, senior). Next, examine the ingredient list. Ingredients are listed by weight, so the first few are the most prominent. Look for a high-quality, identifiable animal protein source (like 'chicken' or 'salmon') as the first ingredient, not a vague term like 'meat by-products.'\n\nBeware of marketing buzzwords like 'premium,' 'natural,' or 'grain-free.' These are not legally defined and don't necessarily indicate higher quality. Instead, focus on the nutritional adequacy statement and the guaranteed analysis, which breaks down the minimum percentages of crude protein and fat. Remember, the best food is one that keeps your individual pet at a healthy weight, with a shiny coat and good energy. When in doubt, your veterinarian is your best resource for dietary advice."
     },
     {
       "id": 3,
-      "title": "Tác dụng của cà phê đối với sức khoẻ",
-      "slug": "tac-dung-cua-ca-phe-doi-voi-suc-khoe",
-      "category": "Sức khoẻ",
+      "title": "The Hidden Danger: A Guide to Dental Health in Pets",
+      "slug": "the-hidden-danger-a-guide-to-dental-health-in-pets",
+      "category": "Pet Health",
       "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
+      "reading_time": "5 mins reading time",
       "image": "/images/blog-3.jpg",
-      "excerpt": "Những lợi ích tuyệt vời của cà phê đối với sức khoẻ con người khi sử dụng đúng cách.",
-      "tags": ["Chuyên gia cà phê"],
-      "content_url": "/blog/tac-dung-cua-ca-phe-doi-voi-suc-khoe"
+      "excerpt": "Dental disease affects most pets by age three. Learn how to protect your pet's oral and overall health.",
+      "tags": ["Dental Health", "Veterinary Care"],
+      "content_url": "/blog/the-hidden-danger-a-guide-to-dental-health-in-pets",
+      "content": "Did you know that over 80% of dogs and cats show signs of dental disease by age three? Bad breath isn't just unpleasant—it's often a sign of serious oral health issues. Periodontal disease is a painful infection of the gums and structures supporting the teeth, and it can have consequences far beyond the mouth.\n\nBacteria from infected gums can enter the bloodstream and damage the heart, liver, and kidneys. Preventing this starts at home. Regular brushing with pet-safe toothpaste is the gold standard. Start slowly, use positive reinforcement, and make it a positive experience. If brushing isn't possible, dental chews, water additives, and prescription dental diets can help reduce plaque.\n\nHowever, home care isn't a substitute for professional cleanings. Your vet will recommend dental procedures under anesthesia, which allow for a thorough cleaning, polishing, and examination below the gumline where most disease lurks. While anesthesia can seem scary, modern protocols are very safe, and the benefits of a pain-free, healthy mouth far outweigh the risks. Prioritizing dental health is a key part of responsible pet ownership."
     },
     {
       "id": 4,
-      "title": "Phân biệt cà phê Arabica và Robusta",
-      "slug": "phan-biet-ca-phe-arabica-va-robusta",
-      "category": "Kiến thức",
+      "title": "Parasite Prevention 101: Fleas, Ticks, and Heartworm",
+      "slug": "parasite-prevention-101-fleas-ticks-and-heartworm",
+      "category": "Preventive Care",
       "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
+      "reading_time": "4 mins reading time",
       "image": "/images/blog-4.jpg",
-      "excerpt": "Hướng dẫn cách nhận biết và phân biệt hai loại cà phê phổ biến nhất hiện nay.",
-      "tags": ["Chuyên gia cà phê"],
-      "content_url": "/blog/phan-biet-ca-phe-arabica-va-robusta"
+      "excerpt": "Protect your pet from dangerous parasites with our comprehensive guide to flea, tick, and heartworm prevention.",
+      "tags": ["Parasite"],
+      "content_url": "/blog/parasite-prevention-101-fleas-ticks-and-heartworm",
+      "content": "Protecting your pet from parasites is a year-round job. Fleas, ticks, and heartworms are more than just nuisances; they transmit diseases that can cause severe discomfort, illness, and even be fatal.\n\nFleas can cause allergic dermatitis, anemia, and tapeworms. Ticks are notorious for spreading Lyme disease, Anaplasmosis, and other serious infections. The most deadly of all is heartworm, spread by mosquitoes, which causes irreversible damage to the heart and lungs. Treatment for heartworm disease is expensive, complex, and hard on your dog. For cats, there is no treatment.\n\nThe good news? Prevention is easy, safe, and cost-effective. There are numerous options available, from monthly chewables and topicals to longer-lasting collars. Your veterinarian can recommend the best protocol based on your geographic location, your pet's lifestyle (indoor vs. outdoor), and their health history. Never use dog medication on a cat, as it can be lethal. Consistent, preventive care is the simplest way to keep your pet safe from these external and internal invaders."
     },
     {
       "id": 5,
-      "title": "Xu hướng cà phê đặc biệt 2025",
-      "slug": "xu-huong-ca-phe-dac-biet-2025",
-      "category": "Xu hướng",
+      "title": "Is Your Pet Packing on the Pounds? The Pet Obesity Epidemic",
+      "slug": "is-your-pet-packing-on-the-pounds-the-pet-obesity-epidemic",
+      "category": "Nutrition",
       "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
+      "reading_time": "5 mins reading time",
       "image": "/images/blog-5.jpg",
-      "excerpt": "Những xu hướng mới của ngành cà phê trong năm 2025.",
-      "tags": ["Chuyên gia cà phê"],
-      "content_url": "/blog/xu-huong-ca-phe-dac-biet-2025"
+      "excerpt": "Obesity is a growing problem for pets. Learn how to identify and address weight issues in your dog or cat.",
+      "tags": ["Pet Food", "Obesity"],
+      "content_url": "/blog/is-your-pet-packing-on-the-pounds-the-pet-obesity-epidemic",
+      "content": "Those extra treats and pleading eyes can be hard to resist, but obesity is one of the most common and preventable health problems in pets today. Over half of all dogs and cats are overweight, which significantly impacts their quality and length of life.\n\nCarrying excess weight puts stress on joints, leading to arthritis and torn ligaments. It increases the risk of diabetes, heart disease, respiratory problems, and certain cancers. It can even shorten a pet's life expectancy by up to two years.\n\nHow can you tell if your pet is overweight? You should be able to easily feel their ribs under a thin layer of fat and see a visible waist when looking from above. If you're unsure, ask your vet. Managing weight involves two key steps: measuring their food precisely (no free-feeding!) and incorporating daily exercise. Swap out high-calorie treats for healthy alternatives like green beans, carrots, or a piece of their kibble. A weight management plan from your vet is the healthiest and safest way to help your pet shed pounds."
     },
     {
       "id": 6,
-      "title": "Cà phê và văn hoá Việt Nam",
-      "slug": "ca-phe-va-van-hoa-viet-nam",
-      "category": "Văn hoá",
+      "title": "Spaying and Neutering: Beyond Population Control",
+      "slug": "spaying-and-neutering-beyond-population-control",
+      "category": "Preventive Care",
       "date": "2025-07-17",
-      "reading_time": "5 phút đọc",
+      "reading_time": "4 mins reading time",
       "image": "/images/blog-6.jpg",
-      "excerpt": "Tìm hiểu mối quan hệ giữa cà phê và văn hoá Việt Nam.",
-      "tags": ["Chuyên gia cà phê"],
-      "content_url": "/blog/ca-phe-va-van-hoa-viet-nam"
+      "excerpt": "Discover the health and behavioral benefits of spaying and neutering your pets beyond preventing unwanted litters.",
+      "tags": ["Veterinary Care", "Neuter", "Surgery"],
+      "content_url": "/blog/spaying-and-neutering-beyond-population-control",
+      "content": "The decision to spay (for females) or neuter (for males) your pet is a significant one. While preventing unwanted litters is a primary benefit, the advantages for your pet's long-term health and behavior are equally important.\n\nFor females, spaying before their first heat cycle dramatically reduces the risk of mammary cancer and eliminates the risk of pyometra, a life-threatening uterine infection. For males, neutering prevents testicular cancer and reduces the risk of prostate problems. It also often reduces undesirable behaviors such as roaming, mounting, and urine marking.\n\nThe best age for this surgery can vary based on breed and size, so it's essential to discuss the timing with your veterinarian. While the procedure is a routine surgery, it still requires general anesthesia, so pre-operative blood work is recommended to ensure your pet is a good candidate. This single decision is a powerful step toward ensuring a healthier, longer life for your companion."
     }
   ],
   "categories": [
-    { "name": "Tất cả", "count": 12 },
-    { "name": "Hướng dẫn", "count": 2 },
-    { "name": "Khám phá", "count": 2 },
-    { "name": "Sức khoẻ", "count": 2 },
-    { "name": "Kiến thức", "count": 2 },
-    { "name": "Xu hướng", "count": 2 },
-    { "name": "Văn hoá", "count": 2 }
+    { "name": "Pet Health", "count": 1 },
+    { "name": "Nutrition", "count": 2 },
+    { "name": "Preventive Care", "count": 2 }
   ],
   "latest_posts": [
-    "Tương lai ngành cà phê: Công nghệ và bền vững",
-    "Cà phê trong văn học và điện ảnh",
-    "Cà phê và giấc ngủ – Uống thế nào cho hợp lý?",
-    "Top 5 loại cà phê đặc sản Việt Nam"
+    {
+      "id": 1,
+      "title": "The Annual Vet Visit: Why It's Non-Negotiable for Your Pet",
+      "slug": "the-annual-vet-visit-why-its-non-negotiable-for-your-pet",
+      "category": "Pet Health",
+      "date": "2025-07-17",
+      "reading_time": "5 mins reading time",
+      "image": "/images/blog-1.jpg",
+      "tags": ["Veterinary Care"],
+      "content_url": "/blog/the-annual-vet-visit-why-its-non-negotiable-for-your-pet",
+      "content": "We all want our furry friends to live long, healthy lives. One of the most crucial steps in ensuring this is the often-dreaded annual veterinary check-up. While your pet may seem perfectly healthy, these visits are essential for preventive care and early disease detection.\n\nThink of it as routine maintenance for your car. You don't wait for the engine to fail before getting an oil change. Similarly, a vet can spot subtle signs of illness—like a heart murmur, dental disease, or early arthritis—long before you notice any symptoms at home. For senior pets (over 7 years old), these visits should ideally become biannual, as age-related issues can develop rapidly.\n\nA typical wellness exam includes a nose-to-tail physical inspection, weight and vital sign checks, and important discussions about nutrition, behavior, and parasite prevention. It's also the perfect time to ensure vaccinations are up-to-date. This proactive approach doesn't just extend your pet's life; it often saves you money in the long run by avoiding expensive emergency treatments for advanced conditions. An hour a year is a small price to pay for their well-being."
+    },
+    {
+      "id": 2,
+      "title": "Decoding Pet Food Labels: How to Choose the Best Diet",
+      "slug": "decoding-pet-food-labels-how-to-choose-the-best-diet",
+      "category": "Nutrition",
+      "date": "2025-07-17",
+      "reading_time": "4 mins reading time",
+      "image": "/images/blog-2.jpg",
+      "excerpt": "Learn how to read and understand pet food labels to make the best nutritional choices for your dog or cat.",
+      "tags": ["Pet Food"],
+      "content_url": "/blog/decoding-pet-food-labels-how-to-choose-the-best-diet",
+      "content": "Walking down the pet food aisle can be overwhelming. With hundreds of brands and formulas all claiming to be the best, how do you choose the right food for your dog or cat? Understanding how to read a pet food label is your first step toward making an informed decision.\n\nFirst, look for an AAFCO statement. This ensures the food is 'complete and balanced' for a specific life stage (e.g., puppy, adult, senior). Next, examine the ingredient list. Ingredients are listed by weight, so the first few are the most prominent. Look for a high-quality, identifiable animal protein source (like 'chicken' or 'salmon') as the first ingredient, not a vague term like 'meat by-products.'\n\nBeware of marketing buzzwords like 'premium,' 'natural,' or 'grain-free.' These are not legally defined and don't necessarily indicate higher quality. Instead, focus on the nutritional adequacy statement and the guaranteed analysis, which breaks down the minimum percentages of crude protein and fat. Remember, the best food is one that keeps your individual pet at a healthy weight, with a shiny coat and good energy. When in doubt, your veterinarian is your best resource for dietary advice."
+    },
+    {
+      "id": 3,
+      "title": "The Hidden Danger: A Guide to Dental Health in Pets",
+      "slug": "the-hidden-danger-a-guide-to-dental-health-in-pets",
+      "category": "Pet Health",
+      "date": "2025-07-17",
+      "reading_time": "5 mins reading time",
+      "image": "/images/blog-3.jpg",
+      "excerpt": "Dental disease affects most pets by age three. Learn how to protect your pet's oral and overall health.",
+      "tags": ["Dental Health", "Veterinary Care"],
+      "content_url": "/blog/the-hidden-danger-a-guide-to-dental-health-in-pets",
+      "content": "Did you know that over 80% of dogs and cats show signs of dental disease by age three? Bad breath isn't just unpleasant—it's often a sign of serious oral health issues. Periodontal disease is a painful infection of the gums and structures supporting the teeth, and it can have consequences far beyond the mouth.\n\nBacteria from infected gums can enter the bloodstream and damage the heart, liver, and kidneys. Preventing this starts at home. Regular brushing with pet-safe toothpaste is the gold standard. Start slowly, use positive reinforcement, and make it a positive experience. If brushing isn't possible, dental chews, water additives, and prescription dental diets can help reduce plaque.\n\nHowever, home care isn't a substitute for professional cleanings. Your vet will recommend dental procedures under anesthesia, which allow for a thorough cleaning, polishing, and examination below the gumline where most disease lurks. While anesthesia can seem scary, modern protocols are very safe, and the benefits of a pain-free, healthy mouth far outweigh the risks. Prioritizing dental health is a key part of responsible pet ownership."
+    }
   ],
-  "popular_tags": ["Cà phê", "Latte", "Robusta", "Xu hướng"]
+  "popular_tags": ["Veterinary Care", "Pet Food", "Parasite", "Obesity", "Surgery", "Dental Health", "Skin Health", "Senior Pets", "Pet Behavior"]
 }
