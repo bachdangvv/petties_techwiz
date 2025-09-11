@@ -6,6 +6,8 @@ import './components/HeaderFooter/footer.css';
 // Importing pages CSS files
 import './pages/HomePage/homepage.css';
 import './pages/Contact/contact.css';
+import './pages/Cart/cart.module.css';
+import './pages/Product/product.module.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";

@@ -1,228 +1,596 @@
 [
-    {
-        "id": "1",
-        "image": "/products-images/arabica-ethiopia/main-shot.avif",
-        "name": "Cà phê Arabica Ethiopia",
-        "description": "Hương vị nhẹ nhàng, thanh mát với notes hoa quả tự nhiên",
-        "reviews": {
-            "stars": 4.8,
-            "count": 124
-        },
-        "price": 299.000,
-        "discountedPrice": 350.000,
-        "weight": "500g",
-        "badgeTag": "Bán chạy",
-        "productDetail": {
-            "mainImage": "/products-images/arabica-ethiopia/main-shot.avif",
-            "subImages": [
-                "/products-images/arabica-ethiopia/main-shot.avif",
-                "/products-images/arabica-ethiopia/second-shot.avif",
-                "/products-images/arabica-ethiopia/third-shot.avif",
-                "/products-images/arabica-ethiopia/fourth-shot.avif"
-            ],
-            "description": "Cà phê Arabica Ethiopia đặc biệt với hương vị nhẹ nhàng, thanh mát và notes hoa quả tự nhiên. Được trồng trên cao nguyên Ethiopia với độ cao 1500-2000m, mang đến trải nghiệm cà phê tinh tế và đậm đà.",
-            "highlightsList": [
-                "100% Arabica nguyên chất",
-                "Rang tươi mỗi ngày",
-                "Hương vị hoa quả tự nhiên",
-                "Độ caffeine vừa phải",
-                "Phù hợp pha phin, espresso"
-            ],
-            "detailedDescription": [
-                "Về cà phê Arabica Ethiopia",
-                "Cà phê Arabica Ethiopia đặc biệt với hương vị nhẹ nhàng, thanh mát và notes hoa quả tự nhiên. Được trồng trên cao nguyên Ethiopia với độ cao 1500-2000m, mang đến trải nghiệm cà phê tinh tế và đậm đà.",
-                "Hương vị đặc trưng",
-                "Cách pha chế",
-                "Phù hợp pha với phin, espresso, pour over. Tỷ lệ pha chế khuyến nghị: 1:15 (1g cà phê : 15ml nước). Nhiệt độ nước lý tưởng: 90-95°C."
-            ]
-        }
-    },
-    {
-        "id": "2",
-        "image": "/products-images/robusta-dak-lak/main-shot.webp",
-        "name": "Cà phê Robusta Đak Lak",
-        "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
-        "reviews": {
-            "stars": 4.5,
-            "count": 89
-        },
-        "price": 249.000,
-        "discountedPrice": null,
-        "weight": "1kg",
-        "badgeTag": "Mới",
-        "productDetail": {
-            "mainImage": "/products-images/robusta-dak-lak/main-shot.webp",
-            "subImages": [
-                "/products-images/robusta-dak-lak/main-shot.webp",
-                "/products-images/robusta-dak-lak/second-shot.webp",
-                "/products-images/robusta-dak-lak/third-shot.webp",
-                "/products-images/robusta-dak-lak/fourth-shot.webp"
-            ],
-            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
-            "highlightsList": [
-                "Hạt Robusta chọn lọc từ vùng đất đỏ bazan Đắk Lắk",
-                "Quy trình rang thủ công giữ trọn hương vị nguyên bản",
-                "Vị đắng mạnh mẽ, hòa quyện chút socola và gỗ trầm",
-                "Năng lượng bền bỉ, đánh thức tinh thần ngay lập tức",
-                "Thích hợp cho gu cà phê đậm, hợp dùng với sữa đặc Việt Nam"
-            ],
-            "detailedDescription": [
-                "Xuất phát từ vùng đất đỏ bazan Đắk Lắk - thủ phủ cà phê của Việt Nam, Robusta nơi đây nổi tiếng với sự mạnh mẽ, đậm đà và hương vị khó quên. Những hạt cà phê được nuôi dưỡng trong khí hậu nhiệt đới nắng gió, cùng thổ nhưỡng màu mỡ, tạo nên bản sắc riêng biệt mà không nơi nào có được.",
-                "Cà phê Robusta Đắk Lắk đặc biệt phù hợp để pha cà phê phin truyền thống hay espresso đậm đặc.",
-                "Tỷ lệ khuyến nghị: 1:12 (1g cà phê : 12ml nước).",
-                "Khi thêm một chút sữa đặc hoặc đường nâu, hương vị sẽ trở nên cân bằng, hài hòa hơn."
-            ]
-        }
-    },
-    {
-        "id": "3",
-        "image": "/products-images/blend-house-special/main-shot.webp",
-        "name": "Blend House Special",
-        "description": "Hỗn hợp độc đáo tạo nên hương vị cân bằng hoàn hảo",
-        "reviews": {
-            "stars": 4.1,
-            "count": 203
-        },
-        "price": 329.000,
-        "discountedPrice": 380.000,
-        "weight": "500g",
-        "badgeTag": "Đặc biệt",
-        "productDetail": {
-            "mainImage": "/products-images/blend-house-special/main-shot.webp",
-            "subImages": [
-                "/products-images/blend-house-special/main-shot.webp",
-                "/products-images/blend-house-special/second-shot.webp",
-                "/products-images/blend-house-special/third-shot.webp",
-                "/products-images/blend-house-special/fourth-shot.webp"
-            ],
-            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
-            "highlightsList": [
-                "Công thức phối trộn bí quyết riêng của quán, cân bằng giữa Arabica và Robusta",
-                "Tầng hương phức hợp: nhẹ nhàng hoa quả, điểm xuyết cacao và hạt rang",
-                "Vị cân đối, hài hòa giữa đắng - chua - ngọt",
-                "Độ caffeine vừa phải, phù hợp thưởng thức hằng ngày",
-                "Linh hoạt pha chế: từ espresso, cappuccino đến cà phê sữa đá Việt Nam"
-            ],
-            "detailedDescription": [
-                "Giới thiệu Blend House Special",
-                "Blend House Special là sự kết hợp tinh tế giữa những hạt Arabica thơm nhẹ và Robusta đậm đà, được rang theo công thức đặc biệt của nhà. Sự hòa quyện này mang đến một tách cà phê cân bằng, vừa đủ mạnh mẽ để tỉnh táo, vừa đủ tinh tế để thưởng thức trọn vẹn từng lớp hương vị.",
-                "Hương vị đặc trưng",
-                "Aroma: Hương thơm nồng nàn của hạt rang mới, phảng phất chút caramel.",
-                "Taste: Vị đắng dịu xen lẫn vị chua nhẹ tự nhiên, tạo cảm giác hài hòa.",
-                "Body: Đậm vừa, mượt mà và dễ uống, phù hợp với nhiều khẩu vị.",
-                "Blend House Special có thể pha được nhiều phong cách khác nhau, từ phin truyền thống, espresso, cho đến pour over hiện đại.",
-                "Tỷ lệ khuyến nghị: 1:14 (1g cà phê : 14ml nước).",
-                "Nhiệt độ nước lý tưởng: 90-94°C.",
-                "Phù hợp uống đen nguyên chất hoặc thêm sữa để tạo ly cà phê sữa béo ngậy, cân bằng hương vị."
-            ]
-        }
-    },
-    {
-        "id": "4",
-        "image": "/products-images/cold-brew-premium/main-shot.webp",
-        "name": "Cold Brew Premium",
-        "description": "Dành riêng cho pha cold brew, ngọt tự nhiên",
-        "reviews": {
-            "stars": 4.2,
-            "count": 156
-        },
-        "price": 189.000,
-        "discountedPrice": null,
-        "weight": "250g",
-        "badgeTag": "Mùa hè",
-        "productDetail": {
-            "mainImage": "/products-images/cold-brew-premium/main-shot.webp",
-            "subImages": [
-                "/products-images/cold-brew-premium/main-shot.webp",
-                "/products-images/cold-brew-premium/second-shot.webp",
-                "/products-images/cold-brew-premium/third-shot.webp",
-                "/products-images/cold-brew-premium/fourth-shot.webp"
-            ],
-            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
-            "highlightsList": [
-                "Chiết xuất chậm trong 12 - 18 giờ, giữ trọn hương vị tinh khiết",
-                "Vị êm mượt, dịu nhẹ, ít chua gắt",
-                "Hàm lượng caffeine ổn định, mang lại sự tỉnh táo bền lâu",
-                "Thưởng thức ngon nhất khi dùng lạnh, thêm đá hoặc sữa tươi",
-                "Phù hợp cho phong cách hiện đại, tiện lợi mang đi"
-            ],
-            "detailedDescription": [
-                "Giới thiệu Cold Brew Premium",
-                "Cold Brew Premium là lựa chọn lý tưởng cho những ai yêu thích sự tươi mát và tinh tế của cà phê ủ lạnh. Được chiết xuất chậm trong nhiều giờ với nước mát, loại cà phê này giữ trọn hương vị nguyên bản, đồng thời loại bỏ đi vị gắt, mang đến trải nghiệm mượt mà và dễ chịu.",
-                "Hương vị đặc trưng",
-                "Aroma: Hương thơm dịu nhẹ của trái cây tươi và caramel ngọt ngào.",
-                "Taste: Vị ngọt tự nhiên, ít đắng, thanh thoát và cân bằng.",
-                "Body: Kết cấu nhẹ nhàng, tinh khiết, mang lại cảm giác sảng khoái.",
-                "Aftertaste: Dư vị mát lạnh, tươi mới, kéo dài dễ chịu."
-            ]
-        }
-    },
-    {
-        "id": "5",
-        "image": "/products-images/arabica-colombia/main-shot.webp",
-        "name": "Arabica Colombia",
-        "description": "Hương vị cacao nhẹ, vị ngọt tự nhiên",
-        "reviews": {
-            "stars": 4,
-            "count": 67
-        },
-        "price": 319.000,
-        "discountedPrice": null,
-        "weight": "500g",
-        "badgeTag": "",
-        "productDetail": {
-            "mainImage": "/products-images/arabica-colombia/main-shot.webp",
-            "subImages": [
-                "/products-images/arabica-colombia/main-shot.webp",
-                "/products-images/arabica-colombia/second-shot.webp",
-                "/products-images/arabica-colombia/third-shot.webp",
-                "/products-images/arabica-colombia/fourth-shot.webp"
-            ],
-            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
-            "highlightsList": [
-                "Hạt Arabica trồng trên độ cao lý tưởng của vùng núi Colombia",
-                "Đặc trưng vị chua thanh, gợi nhớ trái cây nhiệt đới và caramel",
-                "Hậu vị ngọt dịu, kéo dài và tinh tế",
-                "Hàm lượng caffeine nhẹ nhàng, dễ thưởng thức nhiều lần trong ngày",
-                "Hoàn hảo cho pha pour-over, syphon và espresso single origin"
-            ],
-            "detailedDescription": [
-                
-            ]
-        }
-    },
-    {
-        "id": "6",
-        "image": "/products-images/robusta-lam-dong/main-shot.webp",
-        "name": "Robusta Lâm Đồng",
-        "description": "Đậm đà truyền thống, phù hợp phin và espresso",
-        "reviews": {
-            "stars": 4,
-            "count": 92
-        },
-        "price": 279.000,
-        "discountedPrice": 320.000,
-        "weight": "1kg",
-        "badgeTag": "Giảm giá",
-        "productDetail": {
-            "mainImage": "/products-images/robusta-lam-dong/main-shot.webp",
-            "subImages": [
-                "/products-images/robusta-lam-dong/main-shot.webp",
-                "/products-images/robusta-lam-dong/second-shot.webp",
-                "/products-images/robusta-lam-dong/third-shot.webp",
-                "/products-images/robusta-lam-dong/fourth-shot.webp"
-            ],
-            "description": "Đậm đà, mạnh mẽ với độ caffeine cao",
-            "highlightsList": [
-                "Nguồn gốc từ cao nguyên Lâm Đồng, khí hậu mát mẻ quanh năm",
-                "Hạt cà phê chắc khỏe, rang lên tỏa mùi thơm nồng nàn",
-                "Vị đắng đặc trưng, xen chút hạt dẻ và gỗ sồi",
-                "Hàm lượng caffeine dồi dào, tiếp thêm sinh lực mạnh mẽ",
-                "Lý tưởng cho gu cà phê đậm chất Việt, hợp uống phin hoặc pha máy"
-            ],
-            "detailedDescription": [
-                
-            ]
-        }
+  {
+    "id": "1",
+    "image": "/pet-images/pet-pro1.jpg",
+    "name": "Dry Dog Food Beef Flavor",
+    "category": "Food",
+    "petType": "Dog",
+    "description": "High-protein dry dog food with real beef and added vitamins.",
+    "reviews": { "stars": 4.7, "count": 214 },
+    "price": 29.99,
+    "badgeTag": "Best Seller",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro1.jpg",
+      "subImages": [
+        "/pet-images/pet-pro1.jpg",
+        "/pet-images/pet-pro1-1.jpg",
+        "/pet-images/pet-pro1-2.jpg",
+        "/pet-images/pet-pro1-3.jpg"
+      ],
+      "description": "Complete and balanced nutrition for adult dogs with crunchy kibbles and beef flavor.",
+      "highlightsList": [
+        "Real beef as first ingredient",
+        "Omega-3 for shiny coat",
+        "Added vitamins and minerals",
+        "No artificial colors",
+        "Great taste dogs love"
+      ],
+      "detailedDescription": [
+        "Formulated by pet nutritionists to support overall health.",
+        "Feeding guide on the pack depending on weight and activity level.",
+        "Store in a cool dry place and reseal for freshness."
+      ]
     }
+  },
+  {
+    "id": "2",
+    "image": "/pet-images/pet-pro2.jpg",
+    "name": "Grain-Free Cat Salmon",
+    "category": "Food",
+    "petType": "Cat",
+    "description": "Grain-free dry cat food with salmon and sweet potato.",
+    "reviews": { "stars": 4.6, "count": 178 },
+    "price": 34.5,
+    "badgeTag": "Popular",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro2.jpg",
+      "subImages": [
+        "/pet-images/pet-pro2.jpg",
+        "/pet-images/pet-pro2-1.jpg",
+        "/pet-images/pet-pro2-2.jpg",
+        "/pet-images/pet-pro2-3.jpg"
+      ],
+      "description": "Supports healthy digestion and a shiny coat with salmon oil.",
+      "highlightsList": [
+        "Grain-free recipe",
+        "Rich in omega fatty acids",
+        "Taurine for heart health",
+        "Crunchy texture cats like",
+        "No corn, wheat or soy"
+      ],
+      "detailedDescription": [
+        "Suitable for adult cats of all breeds.",
+        "Transition gradually when switching from other food.",
+        "Provide fresh water at all times."
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "image": "/pet-images/pet-pro3.jpg",
+    "name": "Cozy Plush Pet Bed (M)",
+    "category": "Bed",
+    "petType": "Dog,Cat",
+    "description": "Round donut-shaped plush bed ideal for small to medium pets.",
+    "reviews": { "stars": 4.4, "count": 92 },
+    "price": 45.0,
+    "badgeTag": "Comfort",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro3.jpg",
+      "subImages": [
+        "/pet-images/pet-pro3.jpg",
+        "/pet-images/pet-pro3-1.jpg",
+        "/pet-images/pet-pro3-2.jpg",
+        "/pet-images/pet-pro3-3.jpg"
+      ],
+      "description": "Ultra-soft faux fur with raised rim for head and neck support.",
+      "highlightsList": [
+        "Non-slip bottom",
+        "Machine washable cover",
+        "Breathable filling",
+        "Neutral color fits any room",
+        "Lightweight and portable"
+      ],
+      "detailedDescription": [
+        "Diameter ~60cm, suitable up to 12kg pets.",
+        "Remove inner cushion before washing for best results.",
+        "Perfect for cats and small dogs who love to curl up."
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "image": "/pet-images/pet-pro4.jpg",
+    "name": "Anti-Shed Pet Shampoo",
+    "category": "Shampoo",
+    "petType": "Dog,Cat",
+    "description": "Gentle cleansing shampoo with aloe vera reduces shedding and odors.",
+    "reviews": { "stars": 4.2, "count": 63 },
+    "price": 12.99,
+    "badgeTag": "New",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro4.jpg",
+      "subImages": [
+        "/pet-images/pet-pro4.jpg",
+        "/pet-images/pet-pro4-1.jpg",
+        "/pet-images/pet-pro4-2.jpg",
+        "/pet-images/pet-pro4-3.jpg"
+      ],
+      "description": "pH-balanced formula safe for frequent use on dogs and cats.",
+      "highlightsList": [
+        "Aloe and vitamin E",
+        "Deodorizes and conditions",
+        "Tear-free formula",
+        "Paraben-free",
+        "Leaves coat soft and shiny"
+      ],
+      "detailedDescription": [
+        "Wet coat thoroughly, apply shampoo, lather and rinse well.",
+        "Avoid contact with eyes and ears.",
+        "Follow with conditioner for extra softness."
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "image": "/pet-images/pet-pro5.jpg",
+    "name": "Portable Metal Pet Cage (L)",
+    "category": "Cage",
+    "petType": "Dog",
+    "description": "Foldable metal crate with double doors and removable tray.",
+    "reviews": { "stars": 4.3, "count": 120 },
+    "price": 89.0,
+    "badgeTag": "Durable",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro5.jpg",
+      "subImages": [
+        "/pet-images/pet-pro5.jpg",
+        "/pet-images/pet-pro5-1.jpg",
+        "/pet-images/pet-pro5-2.jpg",
+        "/pet-images/pet-pro5-3.jpg"
+      ],
+      "description": "Ideal for training and safe transport with secure latches.",
+      "highlightsList": [
+        "Easy fold and carry handle",
+        "Rust-resistant coating",
+        "Leak-proof tray",
+        "Ventilated design",
+        "Rubber feet to protect floors"
+      ],
+      "detailedDescription": [
+        "Size 90x60x65cm fits medium to large dogs.",
+        "Cover with a blanket to create a cozy den.",
+        "Assemble in minutes with no tools required."
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "image": "/pet-images/pet-pro6.jpg",
+    "name": "Reflective Harness & Leash",
+    "category": "Harness",
+    "petType": "Dog",
+    "description": "No-pull harness with reflective straps and matching leash.",
+    "reviews": { "stars": 4.5, "count": 156 },
+    "price": 24.0,
+    "badgeTag": "Safety",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro6.jpg",
+      "subImages": [
+        "/pet-images/pet-pro6.jpg",
+        "/pet-images/pet-pro6-1.jpg",
+        "/pet-images/pet-pro6-2.jpg",
+        "/pet-images/pet-pro6-3.jpg"
+      ],
+      "description": "Adjustable straps distribute pressure evenly for comfort.",
+      "highlightsList": [
+        "Breathable mesh",
+        "Quick-release buckles",
+        "Reflective stitching for night walks",
+        "Front and back leash attachment",
+        "Multiple sizes available"
+      ],
+      "detailedDescription": [
+        "Measure chest girth before choosing a size.",
+        "Hand wash and air dry for longevity.",
+        "Ideal for training energetic dogs."
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "image": "/pet-images/pet-pro7.jpg",
+    "name": "Interactive Feather Cat Toy",
+    "category": "Toy",
+    "petType": "Cat",
+    "description": "Automatic rotating feather toy keeps cats entertained.",
+    "reviews": { "stars": 4.1, "count": 88 },
+    "price": 17.5,
+    "badgeTag": "Fun",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro7.jpg",
+      "subImages": [
+        "/pet-images/pet-pro7.jpg",
+        "/pet-images/pet-pro7-1.jpg",
+        "/pet-images/pet-pro7-2.jpg",
+        "/pet-images/pet-pro7-3.jpg"
+      ],
+      "description": "USB rechargeable with multiple speed modes.",
+      "highlightsList": [
+        "Stimulates hunting instincts",
+        "Auto shut-off",
+        "Durable feather wand",
+        "Anti-slip base",
+        "Low noise motor"
+      ],
+      "detailedDescription": [
+        "Place on a flat surface and supervise playtime.",
+        "Charge for 2 hours for up to 8 hours of play.",
+        "Replace feathers when worn."
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "image": "/pet-images/pet-pro8.jpg",
+    "name": "Wet Food Chicken Stew",
+    "category": "Food",
+    "petType": "Dog",
+    "description": "Canned chicken stew with vegetables for adult dogs.",
+    "reviews": { "stars": 4.3, "count": 140 },
+    "price": 3.49,
+    "badgeTag": "Tasty",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro8.jpg",
+      "subImages": [
+        "/pet-images/pet-pro8.jpg",
+        "/pet-images/pet-pro8-1.jpg",
+        "/pet-images/pet-pro8-2.jpg",
+        "/pet-images/pet-pro8-3.jpg"
+      ],
+      "description": "Serve alone or mix with dry food for variety.",
+      "highlightsList": [
+        "Real chicken and broth",
+        "No artificial flavors",
+        "Soft texture for easy chewing",
+        "Balanced nutrition",
+        "Great for picky eaters"
+      ],
+      "detailedDescription": [
+        "Refrigerate unused portion and use within 3 days.",
+        "Follow feeding guide based on weight.",
+        "Always provide fresh water."
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "image": "/pet-images/pet-pro9.jpg",
+    "name": "Cat Litter Box with Lid",
+    "category": "Cage",
+    "petType": "Cat",
+    "description": "Covered litter box with carbon filter to reduce odors.",
+    "reviews": { "stars": 4.2, "count": 101 },
+    "price": 39.99,
+    "badgeTag": "Clean",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro9.jpg",
+      "subImages": [
+        "/pet-images/pet-pro9.jpg",
+        "/pet-images/pet-pro9-1.jpg",
+        "/pet-images/pet-pro9-2.jpg",
+        "/pet-images/pet-pro9-3.jpg"
+      ],
+      "description": "Flip-top lid for easy cleaning and deep base to prevent leaks.",
+      "highlightsList": [
+        "Activated carbon filter",
+        "Privacy for cats",
+        "Non-stick interior",
+        "Includes scoop",
+        "Modern design"
+      ],
+      "detailedDescription": [
+        "Place in a quiet corner to encourage use.",
+        "Replace filter every 2-3 months.",
+        "Use clumping litter for best results."
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "image": "/pet-images/pet-pro10.jpg",
+    "name": "Milk Replacer Powder",
+    "category": "Food",
+    "petType": "Dog",
+    "description": "Nutritional milk replacer for newborn and orphaned puppies.",
+    "reviews": { "stars": 4.5, "count": 64 },
+    "price": 21.99,
+    "badgeTag": "Puppy",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro10.jpg",
+      "subImages": [
+        "/pet-images/pet-pro10.jpg",
+        "/pet-images/pet-pro10-1.jpg",
+        "/pet-images/pet-pro10-2.jpg",
+        "/pet-images/pet-pro10-3.jpg"
+      ],
+      "description": "Fortified with vitamins and minerals to support growth.",
+      "highlightsList": [
+        "Easy to mix",
+        "Highly digestible",
+        "Use as supplement for pregnant dogs",
+        "Great taste",
+        "Measuring scoop included"
+      ],
+      "detailedDescription": [
+        "Mix with warm water according to instructions.",
+        "Feed with bottle or bowl depending on age.",
+        "Consult vet for feeding schedule."
+      ]
+    }
+  },
+  {
+    "id": "11",
+    "image": "/pet-images/pet-pro11.jpg",
+    "name": "Calming Pet Bed Cave (S)",
+    "category": "Bed",
+    "petType": "Cat,Small Dog",
+    "description": "Covered cave-style bed that helps reduce anxiety.",
+    "reviews": { "stars": 4.6, "count": 87 },
+    "price": 42.0,
+    "badgeTag": "Calming",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro11.jpg",
+      "subImages": [
+        "/pet-images/pet-pro11.jpg",
+        "/pet-images/pet-pro11-1.jpg",
+        "/pet-images/pet-pro11-2.jpg",
+        "/pet-images/pet-pro11-3.jpg"
+      ],
+      "description": "Soft plush with removable cushion and anti-slip bottom.",
+      "highlightsList": [
+        "Cozy den-like design",
+        "Machine washable",
+        "Neutral gray color",
+        "Lightweight",
+        "Breathable fabric"
+      ],
+      "detailedDescription": [
+        "Great for cats and toy breeds up to 6kg.",
+        "Place in a quiet area to create a safe spot.",
+        "Foldable for travel."
+      ]
+    }
+  },
+  {
+    "id": "12",
+    "image": "/pet-images/pet-pro12.jpg",
+    "name": "Hypoallergenic Shampoo",
+    "category": "Shampoo",
+    "petType": "Cat",
+    "description": "Fragrance-free gentle shampoo for sensitive skin.",
+    "reviews": { "stars": 4.0, "count": 45 },
+    "price": 11.5,
+    "badgeTag": "Sensitive",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro12.jpg",
+      "subImages": [
+        "/pet-images/pet-pro12.jpg",
+        "/pet-images/pet-pro12-1.jpg",
+        "/pet-images/pet-pro12-2.jpg",
+        "/pet-images/pet-pro12-3.jpg"
+      ],
+      "description": "Soothes itchy skin and reduces dander without harsh chemicals.",
+      "highlightsList": [
+        "Soap-free",
+        "Moisturizes skin",
+        "Easy rinse",
+        "Vet recommended",
+        "Leaves fur soft"
+      ],
+      "detailedDescription": [
+        "Use lukewarm water and avoid chilling after bath.",
+        "Dry thoroughly with towel.",
+        "Safe for kittens over 8 weeks."
+      ]
+    }
+  },
+  {
+    "id": "13",
+    "image": "/pet-images/pet-pro13.jpg",
+    "name": "Small Animal Carrier Cage",
+    "category": "Cage",
+    "petType": "Cat,Small Dog",
+    "description": "Lightweight plastic carrier with metal door for travel.",
+    "reviews": { "stars": 4.3, "count": 110 },
+    "price": 32.99,
+    "badgeTag": "Travel",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro13.jpg",
+      "subImages": [
+        "/pet-images/pet-pro13.jpg",
+        "/pet-images/pet-pro13-1.jpg",
+        "/pet-images/pet-pro13-2.jpg",
+        "/pet-images/pet-pro13-3.jpg"
+      ],
+      "description": "Comfortable top handle and ventilation on all sides.",
+      "highlightsList": [
+        "IATA-compliant size",
+        "Easy assembly",
+        "Sturdy door latch",
+        "Rounded edges",
+        "Fits airline under-seat in cabin (check airline)"
+      ],
+      "detailedDescription": [
+        "Use a soft blanket inside for comfort.",
+        "Ideal for vet visits and short trips.",
+        "Max load 8kg."
+      ]
+    }
+  },
+  {
+    "id": "14",
+    "image": "/pet-images/pet-pro14.jpg",
+    "name": "Leather Dog Harness (M)",
+    "category": "Harness",
+    "petType": "Dog",
+    "description": "Premium leather harness with metal hardware.",
+    "reviews": { "stars": 4.2, "count": 52 },
+    "price": 39.5,
+    "badgeTag": "Premium",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro14.jpg",
+      "subImages": [
+        "/pet-images/pet-pro14.jpg",
+        "/pet-images/pet-pro14-1.jpg",
+        "/pet-images/pet-pro14-2.jpg",
+        "/pet-images/pet-pro14-3.jpg"
+      ],
+      "description": "Elegant and durable with comfortable padding.",
+      "highlightsList": [
+        "Hand-stitched leather",
+        "Adjustable straps",
+        "Solid D-ring",
+        "Soft inner lining",
+        "Classic look"
+      ],
+      "detailedDescription": [
+        "Condition leather occasionally to keep supple.",
+        "Remove when swimming or bathing.",
+        "Measure chest for proper fit."
+      ]
+    }
+  },
+  {
+    "id": "15",
+    "image": "/pet-images/pet-pro15.jpg",
+    "name": "Dental Chew Toys (3-Pack)",
+    "category": "Toy",
+    "petType": "Dog",
+    "description": "Durable rubber chew toys that help clean teeth.",
+    "reviews": { "stars": 4.1, "count": 134 },
+    "price": 15.99,
+    "badgeTag": "Value",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro15.jpg",
+      "subImages": [
+        "/pet-images/pet-pro15.jpg",
+        "/pet-images/pet-pro15-1.jpg",
+        "/pet-images/pet-pro15-2.jpg",
+        "/pet-images/pet-pro15-3.jpg"
+      ],
+      "description": "Textured surfaces massage gums and reduce plaque.",
+      "highlightsList": [
+        "Non-toxic rubber",
+        "Suitable for medium chewers",
+        "Bright colors",
+        "Floats in water",
+        "Easy to clean"
+      ],
+      "detailedDescription": [
+        "Supervise use; replace if damaged.",
+        "Great for fetch and solo play.",
+        "Helps relieve boredom."
+      ]
+    }
+  },
+  {
+    "id": "16",
+    "image": "/pet-images/pet-pro16.jpg",
+    "name": "Freeze-Dried Salmon Treats",
+    "category": "Food",
+    "petType": "Cat,Dog",
+    "description": "Single-ingredient treats made from 100% salmon.",
+    "reviews": { "stars": 4.8, "count": 260 },
+    "price": 9.99,
+    "badgeTag": "Healthy",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro16.jpg",
+      "subImages": [
+        "/pet-images/pet-pro16.jpg",
+        "/pet-images/pet-pro16-1.jpg",
+        "/pet-images/pet-pro16-2.jpg",
+        "/pet-images/pet-pro16-3.jpg"
+      ],
+      "description": "Perfect for training and rewarding good behavior.",
+      "highlightsList": [
+        "No additives",
+        "High in protein",
+        "Cats and dogs love it",
+        "Easy to break into small pieces",
+        "Resealable pouch"
+      ],
+      "detailedDescription": [
+        "Use as treat only; not a complete meal.",
+        "Keep sealed to maintain freshness.",
+        "Great topper for picky eaters."
+      ]
+    }
+  },
+  {
+    "id": "17",
+    "image": "/pet-images/pet-pro17.jpg",
+    "name": "Cooling Gel Pet Mat",
+    "category": "Bed",
+    "petType": "Dog,Cat",
+    "description": "Self-cooling mat keeps pets comfortable during hot days.",
+    "reviews": { "stars": 4.0, "count": 75 },
+    "price": 26.0,
+    "badgeTag": "Summer",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro17.jpg",
+      "subImages": [
+        "/pet-images/pet-pro17.jpg",
+        "/pet-images/pet-pro17-1.jpg",
+        "/pet-images/pet-pro17-2.jpg",
+        "/pet-images/pet-pro17-3.jpg"
+      ],
+      "description": "Pressure-activated gel cooling—no electricity or water needed.",
+      "highlightsList": [
+        "Easy to wipe clean",
+        "Non-toxic gel",
+        "Folds for travel",
+        "Fits crates and floors",
+        "Helps prevent overheating"
+      ],
+      "detailedDescription": [
+        "Place in shade for best effect.",
+        "Supervise if pet chews beds.",
+        "Replace if punctured."
+      ]
+    }
+  },
+  {
+    "id": "18",
+    "image": "/pet-images/pet-pro18.jpg",
+    "name": "Cat Teaser Wand with Bells",
+    "category": "Toy",
+    "petType": "Cat",
+    "description": "Flexible teaser wand with feathers and bells.",
+    "reviews": { "stars": 4.7, "count": 190 },
+    "price": 8.5,
+    "badgeTag": "Playtime",
+    "productDetail": {
+      "mainImage": "/pet-images/pet-pro18.jpg",
+      "subImages": [
+        "/pet-images/pet-pro18.jpg",
+        "/pet-images/pet-pro18-1.jpg",
+        "/pet-images/pet-pro18-2.jpg",
+        "/pet-images/pet-pro18-3.jpg"
+      ],
+      "description": "Encourages exercise and bonding with your cat.",
+      "highlightsList": [
+        "Sturdy carbon rod",
+        "Replaceable feather head",
+        "Pleasant jingle bells",
+        "Comfortable grip",
+        "Great for all ages"
+      ],
+      "detailedDescription": [
+        "Do not leave cat unattended with wand.",
+        "Store safely after play to prolong life.",
+        "A must-have for active cats."
+      ]
+    }
+  }
 ]

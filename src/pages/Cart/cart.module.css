@@ -1,0 +1,247 @@
+.cartPage {
+    width: 1320px;
+    max-width: 100%;
+    background: #f8f9fa;
+    min-height: 100vh;
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+    margin-bottom: 1rem
+}
+
+.actions {
+    display: flex;
+    gap: .5rem
+}
+
+.empty {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    color: #6c757d
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 1.25rem;
+    margin-top: 1rem
+}
+
+.items {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1rem
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 80px 1fr 150px 100px 30px;
+    align-items: center;
+    gap: .75rem;
+    border-bottom: 1px solid #f1f3f5;
+    padding: .75rem 0
+}
+
+.row:last-child {
+    border-bottom: none
+}
+
+.thumb img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee
+}
+
+.info h4 {
+    margin: 0 0 .25rem 0;
+    font-size: 1rem
+}
+
+.muted {
+    color: #6c757d;
+    font-size: .9rem
+}
+
+.qty {
+    display: flex;
+    align-items: center;
+    gap: .4rem
+}
+
+.pill {
+    border: 1px solid #e9ecef;
+    background: #fff;
+    border-radius: 8px;
+    padding: .35rem .5rem;
+    cursor: pointer
+}
+
+.qtyInput {
+    width: 52px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: .35rem
+}
+
+.lineTotal {
+    font-weight: 700
+}
+
+.remove {
+    border: 0;
+    background: transparent;
+    color: #d33;
+    font-size: 18px;
+    cursor: pointer
+}
+
+.summary {
+    position: sticky;
+    top: 1rem
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .06)
+}
+
+.sumRow {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    color: #495057
+}
+
+.total {
+    font-weight: 800;
+    border-top: 1px solid #f1f3f5;
+    padding-top: .75rem
+}
+
+.buttonPri {
+    align-items: center;
+    background-color: rgb(152, 53, 182);
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 6px;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-out;
+    z-index: 1;
+}
+
+.buttonPri::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgb(25, 25, 153);
+    z-index: 0;
+    transition: bottom 0.3s ease-out;
+}
+
+.buttonPri:hover::before {
+    bottom: 0;
+}
+
+.buttonPri span {
+    position: relative;
+    z-index: 1;
+}
+
+.checkoutForm {
+    display: grid;
+    gap: .5rem;
+    margin-top: 1rem
+}
+
+.checkoutForm input {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: .6rem .75rem;
+    font-size: .95rem
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem
+}
+
+@media(max-width:1000px) {
+    .layout {
+        grid-template-columns: 1fr
+    }
+
+    .summary {
+        position: static
+    }
+}
+
+/* Modal */
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000
+}
+
+.modal {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+    width: min(520px, calc(100vw - 24px));
+    padding: 1rem
+}
+
+.modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem
+}
+
+.modalClose {
+    border: 0;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer
+}

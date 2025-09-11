@@ -1,18 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: all 300ms;
-} */
-
-/* html, body {
-    background-color: rgba(250, 248, 245, 1);
-    font-size: 14px;
-    font: 500 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif; color:var(--t);
-    margin: 0;
-    padding: 0;
-} */
-
 a {
     color: inherit;
     text-decoration: none;
@@ -30,11 +15,6 @@ h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
 }
-/* 
-p {
-    margin: 10px;
-    padding: 0;
-} */
 
 hr {
     border: none;
@@ -48,19 +28,21 @@ hr {
 /* Desktop view */
 .product-detail-container {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    height: auto;
+    grid-template-columns: 5px minmax(0, 1fr) 5px; /* auto co giãn, không tràn */
     grid-template-areas:
-    "header         header          header"
-    "aside-left     site-nav    aside-right"
-    "aside-left     main-content    aside-right"
-    "footer         footer          footer";
+        "header         header          header"
+        "aside-left     site-nav        aside-right"
+        "aside-left     main-content    aside-right"
+        "footer         footer          footer";
     row-gap: 10px;
-    max-width: 1600px;
-    float: none;
-    width: auto;
-    margin: 0 auto;
+    max-width: 1200px; /* <= Giới hạn tổng width để không quá rộng */
+    width: 100%;
+    margin: 0 auto; /* luôn căn giữa */
+    padding-top: 75px;
+    box-sizing: border-box; /* tính cả padding vào width */
+    overflow-x: hidden;     /* chặn thanh cuộn ngang */
 }
+
 
 /* Layout for mobile view */
 @media (max-width: 700px) {
@@ -246,27 +228,6 @@ Aside left, right and content */
     font-weight: bold;
 }
 
-.product-discounted-price {
-    text-decoration: line-through;
-    opacity: 0.8;
-    font-size: 1rem;
-}
-
-.product-discounted-percent {
-    text-align: center;
-    background-color: rgba(216, 24, 57, 1);
-    width: 48px;
-    height: 20px;
-    font-size: 12px;
-    color: white;
-    border-radius: 6px;
-}
-
-.product-discounted-percent p {
-    margin: 0;
-    padding: 0;
-}
-
 /* Product description container */
 .product-description-container {
     width: 650px;
@@ -306,233 +267,150 @@ Aside left, right and content */
     font-size: 1.5rem;
 }
 
-/* Product quantity container */
+/* Quantity container */
 .product-quantity-container {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 40px;
-}
-
-/* Functional button container */
-.product-quantity-customize-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* khi hẹp thì xuống dòng */
 }
 
 .product-quantity-container h5 {
-    margin-top: 5px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-/* Minus and plus quantity button */
-.minus-button, .plus-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 40px;
-    height: 30px;
-    font-size: 22px;
-    background: transparent;
-    border: 1px solid rgba(232, 219, 211, 1);
-    border-radius: 7px;
-    cursor: pointer;
+.product-quantity-customize-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.minus-button:hover, .plus-button:hover {
-    background-color: rgba(230, 215, 192, 1);
+/* Nút + và - */
+.minus-button,
+.plus-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
+.minus-button:hover,
+.plus-button:hover {
+  background: #f5f5f5;
+}
+
+/* Ô input số lượng */
 .quantity-count {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    background: transparent;
-    width: 30px;
-    opacity: 0.97;
-    border: none;
-    color: rgb(46, 46, 46);
-    margin: 0px 30px 0px 30px;
-    padding: 0;
+  width: 50px;
+  height: 36px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
 }
 
-.quantity-reached-limit {
-    opacity: 1;
-    color: black;
-    font-weight: bold;
-}
-
-/* Styling the inactive button from JS className */
-.inactive-button {
-    opacity: 0.5;
-}
-
-/* Product CTA (Call to action) buttons container */
+/* CTA buttons */
 .product-cta-buttons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 650px;
-}
-
-.bi-cart {
-    color: white;
-    margin-right: 20px;
-}
-
-.bi-heart, .bi-share {
-    color: black;
-}
-
-.cta-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 6px;
-    border: none;
-    overflow: hidden;
-    width: auto;
-    height: auto;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  width: 100%;
 }
 
 .add-to-cart-button {
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(139, 69, 19, 1);
-    color: white;
-    font-weight: bold;
-    width: 550px;
-    height: 35px;
-}
-
-.cart-icon-animation {
-    transform: translateX(-200px);
-    transition: 300ms;
+  flex: 1;
+  min-width: 160px;
+  background: #8b4513;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .add-to-cart-button:hover {
-    opacity: 0.93;
-    transition: 300ms;
-}
-
-.add-to-cart-button:hover .add-to-cart-text {
-    margin-left: -15px;
-}
-
-.add-to-cart-button:active {
-    opacity: 0.75;
-    transition: 70ms;
+  background: #6f3610;
 }
 
 .action-buttons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    column-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
-.like-button, .share-button {
-    border: 1px solid rgba(226, 210, 200, 1);
-    color: black;
-    width: 40px;
-    height: 35px;
+.like-button,
+.share-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
 }
 
-.like-button:hover, .share-button:hover {
-    background-color: rgba(230, 215, 192, 1);
-    transition: 300ms;
-}
-
-.like-button:hover {
-    .bi-heart {
-        color: rgba(216, 24, 104, 1);
-    }
-}
-
-.like-button:active {
-    background-color: rgba(216, 24, 104, 1);
-    transition: 150ms;
-    .bi-heart {
-        color: white;
-        transition: 150ms;
-    }
-}
-
+.like-button:hover,
 .share-button:hover {
-    .bi-share {
-        color: blue;
-    }
+  background: #f5f5f5;
 }
 
-.share-button:active {
-    background-color: rgba(82, 130, 243, 1);
-    transition: 150ms;
-    .bi-share {
-        color: white;
-        transition: 150ms;
-    }
-}
-
+/* Buy button */
 .buy-button {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 6px;
-    border: none;
-    background: transparent;
-    background-color: rgba(212, 196, 160, 1);
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.9rem;
-    width: 650px;
-    height: 35px;
-    margin: 10px 0px 0px 0px;   /* Margin top of 10px */
-    padding: 0;
+  width: 100%;
+  background: #d4c4a0;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .buy-button:hover {
-    opacity: 0.87;
-    transition: 300ms;
+  background: #c2b18d;
 }
 
 .buy-button:active {
-    background-color: rgba(139, 69, 19, 1);
-    color: white;
-    transition: 100ms;
+  background: #8b4513;
+  color: #fff;
 }
 
+/* Commitment icons */
 .commitment-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .commitment-icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .commitment-container p {
-    font-size: 12px;
-}
-
-.commitment-icon {
-    color: rgba(139, 69, 19, 1);
+  font-size: 0.85rem;
+  margin: 0;
+  color: #444;
 }
 
 /* Style the product tabs container */

@@ -7,7 +7,7 @@ import thirdProduct from '../../assets/related-product-images/third-product.avif
 import productData from '../../data/products.json';
 
 // Importing React Hooks
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'; 
 import { useState, useEffect } from 'react';
 
 // Importing components
@@ -94,7 +94,7 @@ function ProductDetail(props) {
                     {/* Actual main content */}
                     <section className={styles['product-detail-main-content']}>
                         <nav className={styles['site-nav']}>
-                            <p className={styles['grey-site-path']}>Trang chủ / sản phẩm <strong className={styles['strong-site-path']}>/ Cà phê Arabica Ethiopia</strong></p>
+                            <p className={styles['grey-site-path']}>Trang chủ / sản phẩm <strong className={styles['strong-site-path']}>/ {product.name} </strong></p>
                         </nav>
 
                         {/* Product gallery */}
@@ -110,15 +110,7 @@ function ProductDetail(props) {
 
                                 {/* Sub images */}
                                 <div className={styles['sub-images-container']}>
-                                    {details.subImages.map((image, index) => (
-                                        <img
-                                            className={`${styles['sub-image']} ${currentImage === image ? styles['selected-sub-image'] : ''}`}
-                                            onClick={() => setCurrentImage(image)}
-                                            key={index}
-                                            src={image}
-                                            alt='Sub thumbnail'
-                                        />
-                                    ))}
+                                    
                                 </div>
                             </div>
 
@@ -140,7 +132,7 @@ function ProductDetail(props) {
 
                                     {/* Rating count */}
                                     <div className={styles['product-review']}>
-                                        <p>{product.reviews.stars} ({product.reviews.count} đánh giá)</p>
+                                        <p>{product.reviews.stars} ({product.reviews.count} feedback)</p>
                                     </div>
                                 </div>
 
@@ -148,7 +140,7 @@ function ProductDetail(props) {
                                 <div className={styles['product-price-container']}>
                                     {/* Final price */}
                                     <div className={`${styles['product-pricing']} ${styles['product-final-price']}`}>
-                                        <h2>{product.price.toFixed(3)}đ</h2>
+                                        <h2>{product.price.toFixed(3)}$</h2>
                                     </div>
 
                                     {/* Discounted price */}
@@ -156,29 +148,23 @@ function ProductDetail(props) {
                                         {/* <p>{product.discountedPrice.toFixed(3)}</p> */}
                                         {typeof product.discountedPrice === 'number' && (
                                             <del className="discounted-price">
-                                                {product.discountedPrice.toFixed(3)}đ
+                                                {product.discountedPrice.toFixed(3)} $
                                             </del>
                                         )}
-                                    </div>
-
-                                    {/* Discount percent */}
-                                    <div className={`${styles['product-pricing']} ${styles['product-discounted-percent']}`}>
-                                        <p>-15%</p>
                                     </div>
                                 </div>
 
                                 {/* Product description container */}
                                 <div className={styles['product-description-container']}>
-                                    <h4>Mô tả sản phẩm</h4>
+                                    <h4>Description</h4>
                                     <p className={styles['product-description']}>
-                                        Cà phê Arabica Ethiopia đặc biệt với hương vị nhẹ nhàng, thanh mát và notes hoa quả tự nhiên.
-                                        Được trồng trên cao nguyên Ethiopia với độ cao 1500-2000m, mang đến trải nghiệm cà phê tinh tế và đậm đà.
+                                        {product.productDetail.description}
                                     </p>
                                 </div>
 
                                 {/* Product specifications container */}
                                 <div className={styles['specifications-container']}>
-                                    <h4>Đặc điểm nổi bật</h4>
+                                    <h4>Outstanding features</h4>
                                     <ul className={styles['specifications-list']}>
                                         <li>{details.highlightsList[0]}</li>
                                         <li>{details.highlightsList[1]}</li>
@@ -190,7 +176,7 @@ function ProductDetail(props) {
 
                                 {/* Product quantity container */}
                                 <div className={styles['product-quantity-container']}>
-                                    <h5>Số lượng: </h5>
+                                    <h5>Quantity: </h5>
 
                                     {/* Quantity adjustment function button container */}
                                     <div className={styles['product-quantity-customize-container']}>
@@ -228,7 +214,7 @@ function ProductDetail(props) {
                                             onMouseLeave={() => setIsHovered(false)}
                                         >
                                             {/* <i className={`bi bi-cart ${styles['cart-icon']} ${isHovered ? animationStyles['cart-icon-animation'] : ''}`}></i> */}
-                                            <span className={styles['add-to-cart-text']}>Thêm vào giỏ</span>
+                                            <span className={styles['add-to-cart-text']}>Add to cart</span>
                                         </button>
                                     </div>
 
@@ -249,7 +235,7 @@ function ProductDetail(props) {
 
                                 {/* Buy button container */}
                                 <div className={styles['buy-button-container']}>
-                                    <button className={styles['buy-button']}>Mua ngay</button>
+                                    <button className={styles['buy-button']}>Buy now</button>
                                 </div>
 
                                 {/* Commitment container */}
@@ -257,19 +243,19 @@ function ProductDetail(props) {
                                     {/* Free delivery */}
                                     <div className={`${styles['free-delivery-container']} ${styles['commitment-icon-container']}`}>
                                         <i className={`bi bi-truck ${styles['commitment-icon']}`}></i>
-                                        <p>Giao hàng miễn phí</p>
+                                        <p>Free ship</p>
                                     </div>
 
                                     {/* High quality guarantee */}
                                     <div className={`${styles['guarantee-container']} ${styles['commitment-icon-container']}`}>
                                         <i className={`bi bi-shield ${styles['commitment-icon']}`}></i>
-                                        <p>Bảo hành chất lượng</p>
+                                        <p>Quality warranty</p>
                                     </div>
 
                                     {/* Easy return */}
                                     <div className={`${styles['easy-return-container']} ${styles['commitment-icon-container']}`}>
                                         <i className={`bi bi-arrow-left-circle ${styles['commitment-icon']}`}></i>
-                                        <p>Đổi trả dễ dàng</p>
+                                        <p>Easy returns</p>
                                     </div>
                                 </div>
                             </div>
@@ -282,19 +268,19 @@ function ProductDetail(props) {
                                 <button
                                     onClick={() => setActiveTab('description')}
                                     className={`${styles['tab-button']} ${activeTab === 'description' ? styles['button-clicked'] : ''}`}>
-                                    Mô tả chi tiết
+                                    Detail description
                                 </button>
 
                                 <button
                                     onClick={() => setActiveTab('specifications')}
                                     className={`${styles['tab-button']} ${activeTab === 'specifications' ? styles['button-clicked'] : ''}`}>
-                                    Thông số kỹ thuật
+                                    Technical specifications
                                 </button>
 
                                 <button
                                     onClick={() => setActiveTab('reviews')}
                                     className={`${styles['tab-button']} ${activeTab === 'reviews' ? styles['button-clicked'] : ''}`}>
-                                    Đánh giá (124)
+                                    Feedback (124)
                                 </button>
                             </div>
 
@@ -307,7 +293,7 @@ function ProductDetail(props) {
                         {/* Relevant products container */}
                         <div className={styles['related-products-root']}>
                             {/* The heading */}
-                            <h2>Sản phẩm liên quan</h2>
+                            <h2>Related products</h2>
 
                             {/* Related product card 3 columns grid container */}
                             <div className={styles['related-products-container']}>
@@ -315,11 +301,11 @@ function ProductDetail(props) {
                                 <div className={styles['related-product-card']}>
                                     {/* Related product image */}
                                     <div className={styles['related-product-image-container']}>
-                                        <img className={styles['related-product-image']} src={firstProduct} alt="Related product" />
+                                        <img className={styles['related-product-image']} src="/pet-images/pet-pro6.jpg" alt="Related product" />
                                     </div>
 
                                     <div className={styles['related-product-informations-container']}>
-                                        <div>Cà phê Robusta Đak Lak</div>
+                                        <div>Reflective Harness & Leash</div>
 
                                         {/* Star icons container */}
                                         <div className={styles['related-product-star-container']}>
@@ -334,12 +320,12 @@ function ProductDetail(props) {
                                         </div>
 
                                         <div className={styles['related-product-price-container']}>
-                                            <h2>249.000đ</h2>
+                                            <h2>24.00$</h2>
 
                                             {/* Buy button container */}
                                             <div className={styles['related-product-buy-button-container']}>
                                                 <i className={`bi bi-cart ${styles['related-product-cart-icon']}`}></i>
-                                                <button className={styles['related-product-buy-button']}>Mua</button>
+                                                <button className={styles['related-product-buy-button']}>Buy</button>
                                             </div>
                                         </div>
                                     </div>
@@ -349,11 +335,11 @@ function ProductDetail(props) {
                                 <div className={styles['related-product-card']}>
                                     {/* Related product image */}
                                     <div className={styles['related-product-image-container']}>
-                                        <img className={styles['related-product-image']} src={secondProduct} alt="Related product" />
+                                        <img className={styles['related-product-image']} src="/pet-images/pet-pro5.jpg" alt="Related product" />
                                     </div>
 
                                     <div className={styles['related-product-informations-container']}>
-                                        <div>Blend House Special</div>
+                                        <div>Portable Metal Pet Cage (L)</div>
 
                                         {/* Star icons container */}
                                         <div className={styles['related-product-star-container']}>
@@ -368,12 +354,12 @@ function ProductDetail(props) {
                                         </div>
 
                                         <div className={styles['related-product-price-container']}>
-                                            <h2>329.000đ</h2>
+                                            <h2>89.00$</h2>
 
                                             {/* Buy button container */}
                                             <div className={styles['related-product-buy-button-container']}>
                                                 <i className={`bi bi-cart ${styles['related-product-cart-icon']}`}></i>
-                                                <button className={styles['related-product-buy-button']}>Mua</button>
+                                                <button className={styles['related-product-buy-button']}>Buy</button>
                                             </div>
                                         </div>
                                     </div>
@@ -383,11 +369,11 @@ function ProductDetail(props) {
                                 <div className={styles['related-product-card']}>
                                     {/* Related product image */}
                                     <div className={styles['related-product-image-container']}>
-                                        <img className={styles['related-product-image']} src={thirdProduct} alt="Related product" />
+                                        <img className={styles['related-product-image']} src="/pet-images/pet-pro4.jpg" alt="Related product" />
                                     </div>
 
                                     <div className={styles['related-product-informations-container']}>
-                                        <div>Cold Brew Premium</div>
+                                        <div>Anti-Shed Pet Shampoo</div>
 
                                         {/* Star icons container */}
                                         <div className={styles['related-product-star-container']}>
@@ -402,12 +388,12 @@ function ProductDetail(props) {
                                         </div>
 
                                         <div className={styles['related-product-price-container']}>
-                                            <h2>189.000đ</h2>
+                                            <h2>12.99$</h2>
 
                                             {/* Buy button container */}
                                             <div className={styles['related-product-buy-button-container']}>
                                                 <i className={`bi bi-cart ${styles['related-product-cart-icon']}`}></i>
-                                                <button className={styles['related-product-buy-button']}>Mua</button>
+                                                <button className={styles['related-product-buy-button']}>Buy</button>
                                             </div>
                                         </div>
                                     </div>
