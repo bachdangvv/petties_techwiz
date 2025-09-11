@@ -60,7 +60,11 @@
   min-width: 300px;
 }
 
-.contact-left h2 {
+.contact-left-title {
+  padding-bottom: 30px;
+}
+
+.contact-left-title h2 {
   font-size: 40px;
   font-weight: bold;
   line-height: 1.1;
@@ -68,7 +72,7 @@
 }
 
 .contact-info {
-  margin-top: 20px;
+  padding-top: 30px;
   list-style: none;
 }
 .contact-info li {

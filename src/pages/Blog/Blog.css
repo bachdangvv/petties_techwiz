@@ -205,6 +205,8 @@
 
 .post-detail h2 {
   margin-bottom: 10px;
+  height: 100%;
+  color:#0D1164;
 }
 
 .post-detail .meta {

@@ -7,10 +7,6 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
-    const faPhonefont = <FontAwesomeIcon icon={faPhone} />
-    const falocationdotfont = <FontAwesomeIcon icon={faLocationDot} />
-     const faEnvelopefont = <FontAwesomeIcon icon={faEnvelope} />
-     const faShareNodesfont = <FontAwesomeIcon icon={faShareNodes} />
   const [formData, setFormData] = useState({
     name: "",
     petType: "",
@@ -40,12 +36,11 @@ function Contact() {
 
       {/* Main Content */}
       <div className="contact-container">
-        {/* <div className="meow-shape">
-          <img src="/images/shape/meow.png" alt="meow shape" />
-        </div> */}
         {/* Left Info */}
         <div className="contact-left">
-          <h2 className="contact-left-title">We Are Always Available For You &amp; Your Pets</h2>
+          <div className="contact-left-title">
+          <h2>We Are Always Available For You &amp; Your Pets</h2>
+          </div>
           <ul className="contact-info">
             <li><FontAwesomeIcon icon={faPhone} /> +123 8989 444</li>
             <li><FontAwesomeIcon icon={faLocationDot} /> 256 Avenue, New York City</li>
