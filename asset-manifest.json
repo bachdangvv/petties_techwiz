@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/petties_techwiz/static/css/main.110819b8.css",
-    "main.js": "/petties_techwiz/static/js/main.01f1e002.js",
+    "main.js": "/petties_techwiz/static/js/main.1bd707f2.js",
     "static/js/453.adcabb10.chunk.js": "/petties_techwiz/static/js/453.adcabb10.chunk.js",
     "static/media/doctor3.png": "/petties_techwiz/static/media/doctor3.5bd1e155fe7e82e85672.png",
     "static/media/str1.png": "/petties_techwiz/static/media/str1.0da1f4253bbb2a0733dd.png",
@@ -20,11 +20,11 @@
     "static/media/first-product.avif": "/petties_techwiz/static/media/first-product.c73c7468f17a7545b22c.avif",
     "index.html": "/petties_techwiz/index.html",
     "main.110819b8.css.map": "/petties_techwiz/static/css/main.110819b8.css.map",
-    "main.01f1e002.js.map": "/petties_techwiz/static/js/main.01f1e002.js.map",
+    "main.1bd707f2.js.map": "/petties_techwiz/static/js/main.1bd707f2.js.map",
     "453.adcabb10.chunk.js.map": "/petties_techwiz/static/js/453.adcabb10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.110819b8.css",
-    "static/js/main.01f1e002.js"
+    "static/js/main.1bd707f2.js"
   ]
 }
