@@ -2,6 +2,7 @@
   "name": "coffee_premium",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bachdangvv.github.io/petties_techwiz",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.1",
     "@fortawesome/free-brands-svg-icons": "^7.0.1",
