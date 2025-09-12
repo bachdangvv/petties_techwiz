@@ -181,7 +181,7 @@ function Apphomepage() {
         
         {/* Welcome circle badge */}
         <div className="welcome-message-badge-container">
-          <img src={welcomeBadge} alt="Welcome badge" />
+          <img className="welcome-message-badge" src={welcomeBadge} alt="Welcome badge" />
         </div>
       </div>
     </div>

@@ -216,7 +216,38 @@
 
 .welcome-message-badge-container {
   position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation-name: infiniteSpin;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
+
+@keyframes infiniteSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.welcome-message-badge {
+  width: 200px;
+  height: 200px;
+}
+
+/* .welcome-message-logo {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+} */
 
 .hero2-section {
   display: flex; 
