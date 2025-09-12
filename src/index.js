@@ -5,7 +5,8 @@ import './components/HeaderFooter/header.css';
 import './components/HeaderFooter/footer.css';
 // Importing pages CSS files
 import './pages/HomePage/homepage.css';
-import './pages/Contact/contact.css';
+import './pages/Contact/contact.module.css';
+import './pages/Blog/blog.module.css';
 import './pages/Cart/cart.module.css';
 import './pages/Product/product.module.css';
 import App from './App';
