@@ -68,7 +68,7 @@ function Blog() {
               <h2 className={styles.blogTitle}>
                 {selectedCategory
                   ? `Category: ${selectedCategory}`
-                  : "All Post"}
+                  : "Pet Care"}
               </h2>
               {loading && <p>Đang tải...</p>}
 
