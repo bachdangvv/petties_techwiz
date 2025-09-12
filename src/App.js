@@ -7,7 +7,7 @@ import Cart from "./pages/Cart/Cart";
 import { Routes, Route, } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Apphomepage from "./components/Apphomepage";
-import Introduction from "./pages/Introduction/Introduction";
+import About from "./pages/Introduction/About";
 import ErrorPage from "./pages/Error/Error";
 import Footer from "./components/Footer";
 import { CartProvider } from "./context/CartContext";
@@ -27,7 +27,7 @@ function App() {
               <Route path="/contact" element={<div className="contact-page"><Contact /></div>}/>
               <Route path="/product" element={<Product />}/>
               <Route path="/error" element={<ErrorPage />}/>
-              <Route path="/about" element={<Introduction />} />
+              <Route path="/about" element={<About />} />
               <Route path="/cart" element={<Cart />}/>
               <Route path="/productdetail/:id" element={<ProductDetail />} />
               <Route path="/blog" element={<div className="blog-page"><Blog /></div>}/>

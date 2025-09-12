@@ -2,15 +2,15 @@
 import DeploymentTimeline from './sub-components/DeploymentTimeline';
 import IntroductionFooter from './sub-components/IntroductionFooter';
 
-// Importing images
-import HomeImage from '../../assets/home-image.png';
-import firstImage from '../../assets/signature-products-images/first-product.avif';
-import secondImage from '../../assets/signature-products-images/second-product.avif';
-import thirdImage from '../../assets/signature-products-images/third-product.avif';
-import fourthImage from '../../assets/signature-products-images/fourth-product.avif';
-import JackMa from '../../assets/leaders/jack-ma.webp';
-import JeffBezos from '../../assets/leaders/jeff-bezos.webp';
-import Faker from '../../assets/leaders/faker.webp';
+// Importing images (pet care theme)
+import HomeImage from '../../assets/homepage/bg1.png';
+import firstImage from '../../assets/homepage/str1.png';
+import secondImage from '../../assets/homepage/str2.png';
+import thirdImage from '../../assets/homepage/str3.png';
+import fourthImage from '../../assets/homepage/str4.png';
+import DrBhimrao from '../../assets/homepage/doctor1.png';
+import Karim from '../../assets/homepage/doctor2.png';
+import Anil from '../../assets/homepage/doctor3.png';
 
 // Importing React Hooks
 import { Link } from 'react-router-dom';
@@ -23,7 +23,7 @@ import './introduction.css';
 import './introduction-layout.css';
 import './introduction-screen-shrink.css';
 
-export default function Introduction(props) {
+export default function About(props) {
     return (
         <>
             {/* Main content */}
@@ -35,8 +35,8 @@ export default function Introduction(props) {
 
                     <div className='home-welcome-message-container'>
                         {/* Welcome message */}
-                        <h1>Câu chuyện của Coffee Premium</h1>
-                        <p>Hành trình 15 năm kiến tạo hương vị cà phê tuyệt vời</p>
+                        <h1>Our Pet Care Journey</h1>
+                        <p>Partnering with you to nurture your pet’s health and happiness</p>
                     </div>
                 </div>
 
@@ -45,26 +45,26 @@ export default function Introduction(props) {
                     {/* Accomplishment (4 accomplishments) */}
                     <div className='store-accomplishment'>
                         <i className="bi bi-award accomplishment-icon"></i>
-                        <h1>15+</h1>
-                        <p>Năm kinh nghiệm</p>
+                        <h1>10+</h1>
+                        <p>Years of pet care</p>
                     </div>
 
                     <div className='store-accomplishment'>
                         <i className="bi bi-people-fill accomplishment-icon"></i>
-                        <h1>10,000+</h1>
-                        <p>Khách hàng hài lòng</p>
+                        <h1>5,000+</h1>
+                        <p>Pet families served</p>
                     </div>
 
                     <div className='store-accomplishment'>
-                        <i className="bi bi-cup-hot accomplishment-icon"></i>
-                        <h1>500+</h1>
-                        <p>Tấn cà phê/năm</p>
+                        <i className="bi bi-heart-pulse accomplishment-icon"></i>
+                        <h1>20,000+</h1>
+                        <p>Consultations and treatments</p>
                     </div>
 
                     <div className='store-accomplishment'>
                         <i className="bi bi-globe accomplishment-icon"></i>
-                        <h1>50+</h1>
-                        <p>Tỉnh thành phủ sóng</p>
+                        <h1>30+</h1>
+                        <p>Care hubs nationwide</p>
                     </div>
                 </div>
 
@@ -83,24 +83,24 @@ export default function Introduction(props) {
                                 {/* The founding story contains a heading, 3 paragraphs and 'Learn More' button */}
 
                                 {/* The story heading */}
-                                <h1>Câu chuyện thành lập</h1>
+                                <h1>Our Care Story</h1>
 
                                 {/* Paragraph 1 */}
                                 <p>
-                                    Coffee Premium ra đời từ tình yêu dành cho cà phê và khát vọng mang đến cho người Việt Nam những ly cà phê chất lượng cao nhất. Bắt đầu từ một cửa hàng nhỏ tại TP.HCM năm 2009, chúng tôi đã không ngừng phát triển và trở thành một trong những thương hiệu cà phê uy tín hàng đầu Việt Nam.
+                                    FurEver Care was founded from a love for animals and the desire to provide comprehensive care: nutrition, exercise, training, and veterinary services. Starting from a small clinic in 2014, we have become a trusted destination for pet parents.
                                 </p>
 
                                 {/* Paragraph 2 */}
                                 <p>
-                                    Với triết lý "Chất lượng tạo nên thương hiệu", chúng tôi luôn đặt chất lượng sản phẩm lên hàng đầu. Mỗi hạt cà phê đều được tuyển chọn kỹ lưỡng từ những vùng trồng cà phê nổi tiếng, qua quy trình rang xay hiện đại để mang đến hương vị tuyệt vời nhất.
+                                    Guided by the philosophy “Health First,” we focus on tailored nutrition, complete vaccination schedules, and safe environments so pets can thrive.
                                 </p>
 
                                 {/* Paragraph 3 */}
                                 <p>
-                                    Hôm nay, Coffee Premium tự hào phục vụ hơn 10,000 khách hàng trên toàn quốc và tiếp tục mở rộng để mang cà phê Việt Nam ra thế giới.
+                                    Today, FurEver Care supports over 5,000 families with medical care, spa and grooming, basic training, and nutrition counseling.
                                 </p>
 
-                                <Link to="/product" className='learn-more-button'>Tìm hiểu thêm</Link>
+                                <Link to="/contact" className='learn-more-button'>Book a consultation</Link>
                             </div>
 
                             {/* Signature products images container */}
@@ -113,13 +113,13 @@ export default function Introduction(props) {
                                     <img
                                         src={firstImage}
                                         className='signature-product-image'
-                                        alt='Signature product'
+                                        alt='Featured service'
                                     />
 
                                     <img
                                         src={secondImage}
                                         className='signature-product-image'
-                                        alt='Signature product'
+                                        alt='Featured service'
                                     />
                                 </div>
                                 
@@ -128,13 +128,13 @@ export default function Introduction(props) {
                                     <img
                                         src={thirdImage}
                                         className='signature-product-image'
-                                        alt='Signature product'
+                                        alt='Featured service'
                                     />
 
                                     <img
                                         src={fourthImage}
                                         className='signature-product-image'
-                                        alt='Signature product'
+                                        alt='Featured service'
                                     />
                                 </div>
                             </div>
@@ -144,49 +144,45 @@ export default function Introduction(props) {
                         <div className='core-values-container'>
                             {/* The Heading container */}
                             <div className='core-values-heading-container'>
-                                <h1>Giá trị cốt lõi</h1>
-                                <p>Những giá trị định hướng mọi hoạt động của Coffee Premium</p>
+                                <h1>Our Core Values</h1>
+                                <p>The values that guide everything we do at FurEver Care</p>
                             </div>
 
                             {/* The container of values (4 cards) */}
                             <div className='value-cards-container'>
                                 {/* Card 1 */}
                                 <div className='value-card'>
-                                    <i className="bi bi-cup-hot value-icon"></i>    {/*Value icon */}
-                                    <h3>Chất lượng tuyệt đối</h3>
+                                    <i className="bi bi-shield-check value-icon"></i>
+                                    <h3>Safe and evidence-based</h3>
                                     <p>
-                                        Cam kết mang đến những sản phẩm cà phê chất lượng cao nhất, 
-                                        từ khâu tuyển chọn đến chế biến
+                                        Care protocols designed by veterinarians and grounded in science
                                     </p>
                                 </div>
 
                                 {/* Card 2 */}
                                 <div className='value-card'>
-                                    <i className="bi bi-heart value-icon"></i>      {/*Value icon */}
-                                    <h3>Đam mê cà phê</h3>
+                                    <i className="bi bi-heart value-icon"></i>
+                                    <h3>Compassionate and attentive</h3>
                                     <p>
-                                        Tiều yêu dành cho cà phê là động lực thức đẩy chúng tôi không 
-                                        ngừng sáng tạo và hoàn thiện
+                                        Every pet is family and receives attentive, loving care
                                     </p>
                                 </div>
 
                                 {/* Card 3 */}
                                 <div className='value-card'>
-                                    <i className="bi bi-people value-icon"></i>     {/*Value icon */}
-                                    <h3>Khách hàng là trọng tâm</h3>
+                                    <i className="bi bi-people value-icon"></i>
+                                    <h3>Pet parents at the center</h3>
                                     <p>
-                                        Luôn đặt sự hài lòng của khách hàng lên hàng đầu trong mọi 
-                                        hoạt động kinh doanh
+                                        We listen to your needs and support you throughout your journey
                                     </p>
                                 </div>
 
                                 {/* Card 4 */}
                                 <div className='value-card'>
-                                    <i className="bi bi-leaf value-icon"></i>       {/*Value icon */}
-                                    <h3>Bền vững môi trường</h3>
+                                    <i className="bi bi-bandaid value-icon"></i>
+                                    <h3>Prevention and recovery</h3>
                                     <p>
-                                        Cam kết bảo vệ môi trường thông qua các hoạt động sản xuất 
-                                        và kinh doanh bền vững
+                                        We prioritize vaccination, deworming, and regular checkups
                                     </p>
                                 </div>
                             </div>
@@ -196,42 +192,39 @@ export default function Introduction(props) {
                         <div className='leader-team-container'>
                             {/* Leader team heading container */}
                             <div className='leader-team-heading-container'>
-                                <h1>Đội ngũ lãnh đạo</h1>
-                                <p>Những con người tài năng đứng sau thành công của Coffee Premium</p>
+                                <h1>Our Veterinary Team</h1>
+                                <p>Trusted experts dedicated to your pet’s health</p>
                             </div>
 
                             {/* Leader cards container (3 cards) */}
                             <div className='leader-cards-container'>
                                 {/* Card 1 */}
                                 <div className='leader-card'>
-                                    <img src={JackMa} alt='Jack Ma' />          {/* Profile Image */}
-                                    <h3>Jack Ma</h3>
-                                    <div className='role-badge'>Founder & CEO</div>
+                                    <img src={DrBhimrao} alt='Dr. Bhimrao' />
+                                    <h3>Dr. Bhimrao</h3>
+                                    <div className='role-badge'>Chief Veterinarian</div>
                                     <p>
-                                        Với 20 năm kinh nghiệm trong ngành cà phê, ông Jack Ma đã 
-                                        dẫn dắt Coffee Premium trở thành thương hiệu uy tín
+                                        Internal medicine specialist with deep experience managing chronic conditions
                                     </p>
                                 </div>
 
                                 {/* Card 2 */}
                                 <div className='leader-card'>
-                                    <img src={Faker} alt='Faker' />             {/* Profile Image */}
-                                    <h3>Faker</h3>
-                                    <div className='role-badge'>Head of Quality</div>
+                                    <img src={Karim} alt='Dr. Karim' />
+                                    <h3>Dr. Karim</h3>
+                                    <div className='role-badge'>Nutrition Specialist</div>
                                     <p>
-                                        Chuyên gia rang xay với 15 năm kinh nghiệm, đảm bảo mỗi batch 
-                                        cà phê đều đạt chất lượng tuyệt đối
+                                        Tailored diet plans by breed, age, and health condition
                                     </p>
                                 </div>
 
                                 {/* Card 3 */}
                                 <div className='leader-card'>
-                                    <img src={JeffBezos} alt='Jeff Bezos' />    {/* Profile Image */}
-                                    <h3>Jeff Bezos</h3>
-                                    <div className='role-badge'>Head of Operation</div>
+                                    <img src={Anil} alt='Dr. Anil' />
+                                    <h3>Dr. Anil</h3>
+                                    <div className='role-badge'>Surgery</div>
                                     <p>
-                                        Quản lý toàn bộ chuỗi cung ứng và đảm bảo sản phẩm đến tay 
-                                        khách hàng nhanh chóng, chất lượng
+                                        Safe procedures and dedicated post-op care
                                     </p>
                                 </div>
                             </div>
@@ -241,8 +234,8 @@ export default function Introduction(props) {
                         <div className='deployment-journey-container'>
                             {/* Deployment journey heading container */}
                             <div className='deployment-journey-heading-container'>
-                                <h1>Hành trình phát triển</h1>
-                                <p>Những cột mốc quan trọng trong lịch sử Coffee Premium</p>
+                                <h1>Our Service Milestones</h1>
+                                <p>Key milestones in our pet care services</p>
                             </div>
 
                             {/* Deployment journey timeline */}
