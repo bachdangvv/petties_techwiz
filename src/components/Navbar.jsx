@@ -209,14 +209,14 @@ export default function Navbar() {
             </div>
           </nav>
 
-          <div id="searchPopover" className="search-popover" role="dialog" aria-modal="true" aria-label="Tìm kiếm sản phẩm">
+          <div id="searchPopover" className="search-popover" role="dialog" aria-modal="true" aria-label="Search Product">
             <div className="search-row">
               <i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-              <input id="searchInput" className="search-input" type="text" placeholder="Tìm kiếm sản phẩm, bài viết..." />
+              <input id="searchInput" className="search-input" type="text" placeholder="Search product, news..." />
               <span className="kbd">/</span>
               <div className="search-actions">
-                <button id="searchSubmit" className="btn" type="button">Tìm</button>
-                <button id="searchClose" className="search-close" type="button" aria-label="Đóng tìm kiếm">
+                <button id="searchSubmit" className="btn" type="button">Search</button>
+                <button id="searchClose" className="search-close" type="button" aria-label="Close">
                 <i className="fa-solid fa-xmark"></i>
                 </button>
               </div>

@@ -1,15 +1,17 @@
+import styles from "./HeaderFooter/Footer.module.css";
+
 export default function Footer() {
-    
   return (
-    <footer className="main-footer">
-      <div className="footer-content">
+    <footer className={styles.mainFooter}>
+      <div className={styles.footerContent}>
         {/* About Us */}
-        <div className="footer-col about-us">
+        <div className={`${styles.footerCol} ${styles.aboutUs}`}>
           <h4>FurEver Care</h4>
           <p>
-            High-quality pet accessory sales and care services. Bringing you the safest and best experience in sending and caring for pets.
+            High-quality pet accessory sales and care services. Bringing you the
+            safest and best experience in sending and caring for pets.
           </p>
-          <div className="social-icons">
+          <div className={styles.socialIcons}>
             <a href="#" aria-label="Facebook">
               <i className="fab fa-facebook-f"></i>
             </a>
@@ -26,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="footer-col quick-links">
+        <div className={`${styles.footerCol} ${styles.quickLinks}`}>
           <h4>Links</h4>
           <ul>
             <li><a href="#">Homepage</a></li>
@@ -38,7 +40,7 @@ export default function Footer() {
         </div>
 
         {/* Customer Support */}
-        <div className="footer-col customer-support">
+        <div className={`${styles.footerCol} ${styles.customerSupport}`}>
           <h4>Customer Support</h4>
           <ul>
             <li><a href="#">Delivery policy</a></li>
@@ -50,25 +52,27 @@ export default function Footer() {
         </div>
 
         {/* Newsletter */}
-        <div className="footer-col newsletter">
+        <div className={`${styles.footerCol} ${styles.newsletter}`}>
           <h4>Newsletter</h4>
-          <p>Sign up to receive promotional information and the latest products.</p>
-          <div className="newsletter-form">
+          <p>
+            Sign up to receive promotional information and the latest products.
+          </p>
+          <div className={styles.newsletterForm}>
             <input type="email" placeholder="Email" />
-            <button type="submit" className="subscribe-button">
+            <button type="submit" className={styles.subscribeButton}>
               Register
             </button>
           </div>
-          <div className="contact-info">
+          <div className={styles.contactInfo}>
             <p><i className="fas fa-phone-alt"></i> 0123 456 789</p>
-            <p><i className="fas fa-envelope"></i> info@coffeepremium.com</p>
-            <p><i className="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</p>
+            <p><i className="fas fa-envelope"></i> info@furevercare.com</p>
+            <p><i className="fas fa-map-marker-alt"></i> 123 ABC Address, New York</p>
           </div>
         </div>
       </div>
 
       {/* Footer Bottom */}
-      <div className="footer-bottom">
+      <div className={styles.footerBottom}>
         <p>&copy; Copyright © 2025. All Rights Reserved.</p>
       </div>
     </footer>

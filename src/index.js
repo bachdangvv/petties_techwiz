@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom/client';
 // Importing Header & Footer CSS files
 import './components/HeaderFooter/header.css';
-import './components/HeaderFooter/footer.css';
+import './components/HeaderFooter/Footer.module.css';
 // Importing pages CSS files
 import './pages/HomePage/homepage.css';
 import './pages/Contact/contact.module.css';
