@@ -11,456 +11,454 @@ import badgeLogo from '../assets/homepage/hero1-logo.png';
 
 function Apphomepage() {
     useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
-  }, []);
+        AOS.init({ duration: 1000, once: true });
+    }, []);
 
-  useEffect(() => {
-    // 1) ABOUT CAROUSEL
-    const el = document.querySelector(".about-media.swiper");
-    if (el && typeof Swiper !== "undefined") {
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const swiper = new Swiper(el, {
-        loop: true,
-        speed: 600,
-        autoplay: reduceMotion
-          ? false
-          : {
-              delay: 3000,
-              disableOnInteraction: false,
-            },
-        pagination: {
-          el: el.querySelector(".swiper-pagination"),
-          clickable: true,
-        },
-        touchReleaseOnEdges: true,
-        grabCursor: true,
-      });
+    useEffect(() => {
+        // 1) ABOUT CAROUSEL
+        const el = document.querySelector(".about-media.swiper");
+        if (el && typeof Swiper !== "undefined") {
+            const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            const swiper = new Swiper(el, {
+                loop: true,
+                speed: 600,
+                autoplay: reduceMotion
+                    ? false
+                    : {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                pagination: {
+                    el: el.querySelector(".swiper-pagination"),
+                    clickable: true,
+                },
+                touchReleaseOnEdges: true,
+                grabCursor: true,
+            });
 
-      el.addEventListener("mouseenter", () => {
-        if (swiper.autoplay) swiper.autoplay.stop();
-      });
-      el.addEventListener("mouseleave", () => {
-        if (swiper.autoplay) swiper.autoplay.start();
-      });
-    }
+            el.addEventListener("mouseenter", () => {
+                if (swiper.autoplay) swiper.autoplay.stop();
+            });
+            el.addEventListener("mouseleave", () => {
+                if (swiper.autoplay) swiper.autoplay.start();
+            });
+        }
 
-    // 2) HEADER EFFECT ON SCROLL
-    const header = document.querySelector("header");
-    const onScroll = () => {
-      const scrolled = window.scrollY > 10;
-      header?.classList.toggle("scrolled", scrolled);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
+        // 2) HEADER EFFECT ON SCROLL
+        const header = document.querySelector("header");
+        const onScroll = () => {
+            const scrolled = window.scrollY > 10;
+            header?.classList.toggle("scrolled", scrolled);
+        };
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
 
-    // 3) SMOOTH SCROLL
-    document.querySelectorAll('a[href^="#"]').forEach((a) => {
-      a.addEventListener("click", (e) => {
-        const id = a.getAttribute("href");
-        const target = id && id.length > 1 ? document.querySelector(id) : null;
-        if (!target) return;
-        e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    });
-
-    // 4) ADD TO CART TOAST
-    const buttons = document.querySelectorAll(".card .btn.btn-primary");
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const card = btn.closest(".card");
-        const name = card ? card.querySelector("h3, .h6")?.textContent?.trim() : "Sản phẩm";
-        showToast(`Đã thêm “${name || "sản phẩm"}” vào giỏ hàng`);
-      });
-    });
-
-    function showToast(message) {
-      let holder = document.querySelector("#toast-holder");
-      if (!holder) {
-        holder = document.createElement("div");
-        holder.id = "toast-holder";
-        Object.assign(holder.style, {
-          position: "fixed",
-          right: "16px",
-          bottom: "16px",
-          zIndex: "9999",
+        // 3) SMOOTH SCROLL
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+            a.addEventListener("click", (e) => {
+                const id = a.getAttribute("href");
+                const target = id && id.length > 1 ? document.querySelector(id) : null;
+                if (!target) return;
+                e.preventDefault();
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            });
         });
-        document.body.appendChild(holder);
-      }
-      const t = document.createElement("div");
-      t.textContent = message;
-      Object.assign(t.style, {
-        background: "#4B2E23",
-        color: "#fff",
-        padding: "10px 14px",
-        marginTop: "10px",
-        borderRadius: "10px",
-        boxShadow: "0 10px 24px rgba(0,0,0,.25)",
-        fontWeight: "600",
-        maxWidth: "320px",
-        whiteSpace: "nowrap",
-        textOverflow: "ellipsis",
-        overflow: "hidden",
-        transform: "translateY(10px)",
-        opacity: "0",
-        transition: "transform .2s ease, opacity .2s ease",
-      });
-      holder.appendChild(t);
-      requestAnimationFrame(() => {
-        t.style.opacity = "1";
-        t.style.transform = "translateY(0)";
-      });
-      setTimeout(() => {
-        t.style.opacity = "0";
-        t.style.transform = "translateY(10px)";
-        setTimeout(() => t.remove(), 200);
-      }, 2200);
-    }
 
-    // 5) LAZY ENHANCE
-    const imgs = document.querySelectorAll("img");
-    if ("IntersectionObserver" in window && imgs.length) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("loaded");
-              io.unobserve(e.target);
+        // 4) ADD TO CART TOAST
+        const buttons = document.querySelectorAll(".card .btn.btn-primary");
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const card = btn.closest(".card");
+                const name = card ? card.querySelector("h3, .h6")?.textContent?.trim() : "Sản phẩm";
+                showToast(`Đã thêm “${name || "sản phẩm"}” vào giỏ hàng`);
+            });
+        });
+
+        function showToast(message) {
+            let holder = document.querySelector("#toast-holder");
+            if (!holder) {
+                holder = document.createElement("div");
+                holder.id = "toast-holder";
+                Object.assign(holder.style, {
+                    position: "fixed",
+                    right: "16px",
+                    bottom: "16px",
+                    zIndex: "9999",
+                });
+                document.body.appendChild(holder);
             }
-          });
-        },
-        { rootMargin: "100px" }
-      );
+            const t = document.createElement("div");
+            t.textContent = message;
+            Object.assign(t.style, {
+                background: "#4B2E23",
+                color: "#fff",
+                padding: "10px 14px",
+                marginTop: "10px",
+                borderRadius: "10px",
+                boxShadow: "0 10px 24px rgba(0,0,0,.25)",
+                fontWeight: "600",
+                maxWidth: "320px",
+                whiteSpace: "nowrap",
+                textOverflow: "ellipsis",
+                overflow: "hidden",
+                transform: "translateY(10px)",
+                opacity: "0",
+                transition: "transform .2s ease, opacity .2s ease",
+            });
+            holder.appendChild(t);
+            requestAnimationFrame(() => {
+                t.style.opacity = "1";
+                t.style.transform = "translateY(0)";
+            });
+            setTimeout(() => {
+                t.style.opacity = "0";
+                t.style.transform = "translateY(10px)";
+                setTimeout(() => t.remove(), 200);
+            }, 2200);
+        }
 
-      imgs.forEach((img) => io.observe(img));
-    }
-  }, []);
+        // 5) LAZY ENHANCE
+        const imgs = document.querySelectorAll("img");
+        if ("IntersectionObserver" in window && imgs.length) {
+            const io = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((e) => {
+                        if (e.isIntersecting) {
+                            e.target.classList.add("loaded");
+                            io.unobserve(e.target);
+                        }
+                    });
+                },
+                { rootMargin: "100px" }
+            );
 
-  const [formData, setFormData] = useState({
-      name: "",
-      petType: "",
-      service: "",
-      date: "",
-      time: "",
-      phone: "",
+            imgs.forEach((img) => io.observe(img));
+        }
+    }, []);
+
+    const [formData, setFormData] = useState({
+        name: "",
+        petType: "",
+        service: "",
+        date: "",
+        time: "",
+        phone: "",
     });
-  
+
     const handleChange = (e) => {
-      const { name, value } = e.target;
-      setFormData({ ...formData, [name]: value });
-    };
-  
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      console.log("Booking Info:", formData);
-      alert("✅ Reservation submitted successfully!");
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
     };
 
-  return (
-    <>
-    <div className="hero1-section">
-        <img src="/images/shape/meow-shape.png" alt="cat" className="shape shape-cat" />
-  <img src="/images/shape/ball-shape.png" alt="yarn" className="shape shape-yarn" />
-        <div className="hero1-row">
-      <div className="hero1-content">
-        <h1 className="hero1-title" data-aos="fade-right">Trusted Pet Center</h1>
-        <h2 className="hero1-subtitle" data-aos="fade-right">For Caring & Veterinary Service</h2>
-        <p className="hero1-description" data-aos="fade-right">
-          Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
-        </p>
-        {/* <button className="hero1-read-more-button">
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Booking Info:", formData);
+        alert("✅ Reservation submitted successfully!");
+    };
+
+    return (
+        <>
+            <div className="hero1-section">
+                <img src="/images/shape/meow-shape.png" alt="cat" className="shape shape-cat" />
+                <img src="/images/shape/ball-shape.png" alt="yarn" className="shape shape-yarn" />
+                <div className="hero1-row">
+                    <div className="hero1-content">
+                        <h1 className="hero1-title" data-aos="fade-right">Trusted Pet Center</h1>
+                        <h2 className="hero1-subtitle" data-aos="fade-right">For Caring & Veterinary Service</h2>
+                        <p className="hero1-description" data-aos="fade-right">
+                            Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
+                        </p>
+                        {/* <button className="hero1-read-more-button">
           Read More →
         </button> */}
 
-        {/* Navigating button */}
-        <button className="hero1-read-more-button">
-            <div>Read More</div>
+                        {/* Navigating button */}
+                        <button className="hero1-read-more-button">
+                            <div>Read More</div>
 
-            <i id='nav-arrow-icon' className="bi bi-arrow-right"></i>
-        </button>
-        </div>
-      </div>
-      {/* Right side */}
-      <div className="hero1-row hero1-right-row">
-        <img className="hero1-right-img" src="/images/hero-1.png" data-aos="fade-left" alt="Welcome thumbnail"/>
-        
-        {/* Welcome circle badge */}
-        <div className="welcome-message-badge-container">
-          <img className="welcome-message-badge" src={welcomeBadge} alt="Welcome badge" />
-        </div>
-      </div>
-    </div>
+                            <i id='nav-arrow-icon' className="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                {/* Right side */}
+                <div className="hero1-row hero1-right-row">
+                    <img className="hero1-right-img" src="/images/hero-1.png" data-aos="fade-left" alt="Welcome thumbnail" />
+
+                    {/* Welcome circle badge */}
+                    <div className="welcome-message-badge-container">
+                        <img className="welcome-message-badge" src={welcomeBadge} alt="Welcome badge" />
+                    </div>
+                </div>
+            </div>
 
             <div className="emergency-section">
-  <div className="emergency-row">
-    {/* Cột trái: Ảnh */}
-    <div className="emergency-image">
-      <img src="/images/dog.png" alt="Dog" />
-      {/* Shape trang trí */}
-      <img src="/images/shape-crown.png" alt="crown" className="shape crown" />
-      <img src="/images/shape-bone.png" alt="bone" className="shape bone" />
-      <img src="/images/shape-bowl.png" alt="bowl" className="shape bowl" />
-    </div>
+                <div className="emergency-row">
+                    {/* Cột trái: Ảnh */}
+                    <div className="emergency-image">
+                        <img src="/images/dog.png" alt="Dog" />
+                        {/* Shape trang trí */}
+                        <img src="/images/shape/shape-crown.svg" alt="crown" className="shape crown"  data-aos="fade-right"/>
+                        <img src="/images/shape/shape-bowl.svg" alt="bowl" className="shape bowl"  data-aos="fade-up"/>
+                    </div>
 
-    {/* Cột phải: Nội dung */}
-    <div className="emergency-content">
-      <h4 className="emergency-subtitle">WHY WE ARE THE BEST 🐾</h4>
-      <h2 className="emergency-title">Pet Emergencies <br />What You Need To Know.</h2>
-      <p className="emergency-desc">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse. We
-        understand that your furry friend is a treasured member of your family
-        and deserves pets are the best care and attention possible.
-      </p>
+                    {/* Cột phải: Nội dung */}
+                    <div className="emergency-content">
+                        <h4 className="emergency-subtitle">WHY WE ARE THE BEST 🐾</h4>
+                        <h2 className="emergency-title">Pet Care Service <br />What You Need To Know.</h2>
+                        <p className="emergency-desc">
+                            At FurEver Care Center, we go beyond emergencies. From professional veterinary services to a fully equipped pet shop and dedicated pet care & grooming solutions.
+<br />Our team of experienced and passionate staff is committed to ensuring the health, happiness, and well-being of every pet.
+                        </p>
 
-      <div className="emergency-features">
-        <div className="feature">
-          <span className="icon">✔</span>
-          <div>
-            <h3>More Experience</h3>
-            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
-          </div>
-        </div>
+                        <div className="emergency-features">
+                            <div className="feature">
+                                <span className="icon">✔</span>
+                                <div>
+                                    <h3>Professional Veterinary Services</h3>
+                                    <p>Trusted medical care with skilled veterinarians.</p>
+                                </div>
+                            </div>
 
-        <div className="feature">
-          <span className="icon">✔</span>
-          <div>
-            <h3>Affordable Pricing</h3>
-            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
-          </div>
-        </div>
+                            <div className="feature">
+                                <span className="icon">✔</span>
+                                <div>
+                                    <h3>Pet Shop & Supplies</h3>
+                                    <p>Quality products to meet all your pet’s daily needs.</p>
+                                </div>
+                            </div>
 
-        <div className="feature">
-          <span className="icon">✔</span>
-          <div>
-            <h3>Modern Pet Training</h3>
-            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
-          </div>
-        </div>
+                            <div className="feature">
+                                <span className="icon">✔</span>
+                                <div>
+                                    <h3>Pet Grooming & Care</h3>
+                                    <p>Full grooming, daycare, and boarding services for comfort and style.</p>
+                                </div>
+                            </div>
 
-        <div className="feature">
-          <span className="icon">✔</span>
-          <div>
-            <h3>Maintain A Daily Routine</h3>
-            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    <div className="hero2-row">
-            <h2 className="hero2-title" data-aos="fade-up">WE CHANGE YOUR LIFE & WORLD</h2>
-            <p className="hero2-des" data-aos="fade-up">Meet Our Expertise Pet Doctors</p>
-        </div>
-    <div className="hero2-section">
-        
-        <div className="hero2-col">
-      <div className="hero2-content">
-        <div className="hero2-img-wrapper">
-            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
-        <div className="hero2-img">
-            
-        <img style={{
-                        WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
-                        maskImage: "url(/images/shape/team_mask_img.svg)",
-                        WebkitMaskRepeat: "no-repeat",
-                        maskRepeat: "no-repeat",
-                        WebkitMaskSize: "cover",
-                        maskSize: "cover"
-                      }} src="/images/vet-doc-1.jpg" data-aos="fade-up"/>
-                      </div>
-                      </div>
-        <p className="hero2-team">
-          Daria Andaloro
-        </p>
-        <p className="hero2-name">
-          Veterinary Technician
-        </p>
-        </div>
-      </div>
-      <div className="hero2-col">
-      <div className="hero2-content">
-        <div className="hero2-img-wrapper">
-            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
-        <div className="hero2-img">
-        <img style={{
-                        WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
-                        maskImage: "url(/images/shape/team_mask_img.svg)",
-                        WebkitMaskRepeat: "no-repeat",
-                        maskRepeat: "no-repeat",
-                        WebkitMaskSize: "cover",
-                        maskSize: "cover"
-                      }} src="/images/vet-doc-2.jpg"  data-aos="fade-up"/>
-                      </div>
-                      </div>
-        <p className="hero2-team">
-          Michael Brian
-        </p>
-        <p className="hero2-name">
-          Medicine Specialist
-        </p>
-        </div>
-      </div>
-      <div className="hero2-col">
-      <div className="hero2-content">
-        <div className="hero2-img-wrapper">
-            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
-        <div className="hero2-img">
-        <img style={{
-                        WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
-                        maskImage: "url(/images/shape/team_mask_img.svg)",
-                        WebkitMaskRepeat: "no-repeat",
-                        maskRepeat: "no-repeat",
-                        WebkitMaskSize: "cover",
-                        maskSize: "cover"
-                      }} src="/images/vet-doc-3.jpg"  data-aos="fade-up"/>
-                      </div>
-                      </div>
-        <p className="hero2-team">
-          Kenroly Gajon
-        </p>
-        <p className="hero2-name">
-          Food Technician
-        </p>
-        
-      </div>
-      </div>
-      <div className="hero2-col">
-      <div className="hero2-content">
-        <div className="hero2-img-wrapper">
-            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
-        <div className="hero2-img">
-        <img style={{
-                        WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
-                        maskImage: "url(/images/shape/team_mask_img.svg)",
-                        WebkitMaskRepeat: "no-repeat",
-                        maskRepeat: "no-repeat",
-                        WebkitMaskSize: "cover",
-                        maskSize: "cover"
-                      }} src="/images/vet-doc-4.jpg"  data-aos="fade-up"/>
-                      </div>
-                      </div>
-        <p className="hero2-team">
-          Lizay Arianya
-        </p>
-        <p className="hero2-name">
-          Veterinary Technician
-        </p>
-        </div>
-      </div>
-    </div>
-    <div class="marquee__area">
-            <div class="marquee__wrap">
-                <div class="marquee__box">
-                	                    <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                    </div>
-                <div class="marquee__box">
-                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
-                                    </div>
+                            <div className="feature">
+                                <span className="icon">✔</span>
+                                <div>
+                                    <h3>Experienced Staff</h3>
+                                    <p>A passionate, knowledgeable team that truly cares about pets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    <div className="hero3-section">
-        <img src="/images/shape/hand_shape03.png" alt="hand" className="shape-hand" />
-        <div class="contact-booking">
-  <h2 class="contact-booking-title"  data-aos="fade-right">Schedule A Visit Today!</h2>
-  <form onSubmit={handleSubmit} class="booking-form">
-    <div class="form-row">
-      <div class="form-group">
-        <label>Name</label>
-        <input
-          type="text"
-          name="name"
-          placeholder="Type Full Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-      </div>
 
-      <div class="form-group">
-        <label>Pet Type</label>
-        <select
-          name="petType"
-          value={formData.petType}
-          onChange={handleChange}
-          required
-        >
-          <option value="">Select Pet Type</option>
-          <option value="Dog">Dog</option>
-          <option value="Cat">Cat</option>
-          <option value="Bird">Bird</option>
-        </select>
-      </div>
+            <div class="marquee__area">
+                <div class="marquee__wrap">
+                    <div class="marquee__box">
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                    </div>
+                    <div class="marquee__box">
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                    </div>
+                </div>
+            </div>
+            <div className="hero3-section">
+                <img src="/images/shape/hand_shape03.png" alt="hand" className="shape-hand" />
+                <div class="contact-booking">
+                    <h2 class="contact-booking-title" data-aos="fade-right">Schedule A Visit Today!</h2>
+                    <form onSubmit={handleSubmit} class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Type Full Name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
 
-      <div class="form-group">
-        <label>Interest In</label>
-        <select
-          name="service"
-          value={formData.service}
-          onChange={handleChange}
-          required
-        >
-          <option value="">Select Service</option>
-          <option value="Grooming">Grooming</option>
-          <option value="Boarding">Boarding</option>
-          <option value="Veterinary">Veterinary</option>
-        </select>
-      </div>
-    </div>
+                            <div class="form-group">
+                                <label>Pet Type</label>
+                                <select
+                                    name="petType"
+                                    value={formData.petType}
+                                    onChange={handleChange}
+                                    required
+                                >
+                                    <option value="">Select Pet Type</option>
+                                    <option value="Dog">Dog</option>
+                                    <option value="Cat">Cat</option>
+                                    <option value="Bird">Bird</option>
+                                </select>
+                            </div>
 
-    <div class="form-row">
-      <div class="form-group">
-        <label>Date</label>
-        <input
-          type="date"
-          name="date"
-          value={formData.date}
-          onChange={handleChange}
-          required
-        />
-      </div>
+                            <div class="form-group">
+                                <label>Interest In</label>
+                                <select
+                                    name="service"
+                                    value={formData.service}
+                                    onChange={handleChange}
+                                    required
+                                >
+                                    <option value="">Select Service</option>
+                                    <option value="Grooming">Grooming</option>
+                                    <option value="Boarding">Boarding</option>
+                                    <option value="Veterinary">Veterinary</option>
+                                </select>
+                            </div>
+                        </div>
 
-      <div class="form-group">
-        <label>Time</label>
-        <input
-          type="time"
-          name="time"
-          value={formData.time}
-          onChange={handleChange}
-          required
-        />
-      </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input
+                                    type="date"
+                                    name="date"
+                                    value={formData.date}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
 
-      <div class="form-group">
-        <label>Phone</label>
-        <input
-          type="tel"
-          name="phone"
-          placeholder="+123 888 ...."
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        />
-      </div>
-    </div>
-    <div className="contact-btn">
-    <button type="submit" class="submit-btn"  data-aos="fade-left">
-      Start A Reservation →
-    </button>
-    </div>
-  </form>
-</div>
-    </div>
-    </>
-  );
+                            <div class="form-group">
+                                <label>Time</label>
+                                <input
+                                    type="time"
+                                    name="time"
+                                    value={formData.time}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="+123 888 ...."
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div className="contact-btn">
+                            <button type="submit" class="submit-btn" data-aos="fade-left">
+                                Start A Reservation →
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div className="hero2-row">
+                <h2 className="hero2-title" data-aos="fade-up">WE CHANGE YOUR LIFE & WORLD</h2>
+                <p className="hero2-des" data-aos="fade-up">Meet Our Expertise Pet Doctors</p>
+            </div>
+            <div className="hero2-section">
+
+                <div className="hero2-col">
+                    <div className="hero2-content">
+                        <div className="hero2-img-wrapper">
+                            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
+                            <div className="hero2-img">
+
+                                <img style={{
+                                    WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
+                                    maskImage: "url(/images/shape/team_mask_img.svg)",
+                                    WebkitMaskRepeat: "no-repeat",
+                                    maskRepeat: "no-repeat",
+                                    WebkitMaskSize: "cover",
+                                    maskSize: "cover"
+                                }} src="/images/vet-doc-1.jpg" data-aos="fade-up" />
+                            </div>
+                        </div>
+                        <p className="hero2-team">
+                            Daria Andaloro
+                        </p>
+                        <p className="hero2-name">
+                            Veterinary Technician
+                        </p>
+                    </div>
+                </div>
+                <div className="hero2-col">
+                    <div className="hero2-content">
+                        <div className="hero2-img-wrapper">
+                            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
+                            <div className="hero2-img">
+                                <img style={{
+                                    WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
+                                    maskImage: "url(/images/shape/team_mask_img.svg)",
+                                    WebkitMaskRepeat: "no-repeat",
+                                    maskRepeat: "no-repeat",
+                                    WebkitMaskSize: "cover",
+                                    maskSize: "cover"
+                                }} src="/images/vet-doc-2.jpg" data-aos="fade-up" />
+                            </div>
+                        </div>
+                        <p className="hero2-team">
+                            Michael Brian
+                        </p>
+                        <p className="hero2-name">
+                            Medicine Specialist
+                        </p>
+                    </div>
+                </div>
+                <div className="hero2-col">
+                    <div className="hero2-content">
+                        <div className="hero2-img-wrapper">
+                            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
+                            <div className="hero2-img">
+                                <img style={{
+                                    WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
+                                    maskImage: "url(/images/shape/team_mask_img.svg)",
+                                    WebkitMaskRepeat: "no-repeat",
+                                    maskRepeat: "no-repeat",
+                                    WebkitMaskSize: "cover",
+                                    maskSize: "cover"
+                                }} src="/images/vet-doc-3.jpg" data-aos="fade-up" />
+                            </div>
+                        </div>
+                        <p className="hero2-team">
+                            Kenroly Gajon
+                        </p>
+                        <p className="hero2-name">
+                            Food Technician
+                        </p>
+
+                    </div>
+                </div>
+                <div className="hero2-col">
+                    <div className="hero2-content">
+                        <div className="hero2-img-wrapper">
+                            <img src="/images/shape/foot-shape.png" alt="foot" className="shape-foot" />
+                            <div className="hero2-img">
+                                <img style={{
+                                    WebkitMaskImage: "url(/images/shape/team_mask_img.svg)",
+                                    maskImage: "url(/images/shape/team_mask_img.svg)",
+                                    WebkitMaskRepeat: "no-repeat",
+                                    maskRepeat: "no-repeat",
+                                    WebkitMaskSize: "cover",
+                                    maskSize: "cover"
+                                }} src="/images/vet-doc-4.jpg" data-aos="fade-up" />
+                            </div>
+                        </div>
+                        <p className="hero2-team">
+                            Lizay Arianya
+                        </p>
+                        <p className="hero2-name">
+                            Veterinary Technician
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default Apphomepage;
