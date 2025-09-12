@@ -149,7 +149,7 @@ Aside left, right and content */
 }
 
 .selected-sub-image {
-    border: 2px solid rgba(139, 69, 19, 1);
+    border: 2px solid #640D5F;
 }
 
 /* Product badge */
@@ -165,7 +165,7 @@ Aside left, right and content */
     height: 20px;
     font-size: 12px;
     color: white;
-    background-color: rgba(139, 69, 19, 1);
+    background-color: #640D5F;
     border-radius: 7px;
 }
 
@@ -224,7 +224,7 @@ Aside left, right and content */
 }
 
 .product-final-price h2 {
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
     font-weight: bold;
 }
 
@@ -263,7 +263,7 @@ Aside left, right and content */
 }
 
 .specifications-list li::marker {
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
     font-size: 1.5rem;
 }
 
@@ -332,7 +332,7 @@ Aside left, right and content */
 .add-to-cart-button {
   flex: 1;
   min-width: 160px;
-  background: #8b4513;
+  background: #640D5F;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -343,7 +343,7 @@ Aside left, right and content */
 }
 
 .add-to-cart-button:hover {
-  background: #6f3610;
+  background: #0D1164;
 }
 
 .action-buttons-container {
@@ -373,7 +373,7 @@ Aside left, right and content */
 /* Buy button */
 .buy-button {
   width: 100%;
-  background: #d4c4a0;
+  background: #640D5F;
   border: none;
   border-radius: 6px;
   font-weight: 600;
@@ -381,14 +381,15 @@ Aside left, right and content */
   padding: 12px;
   cursor: pointer;
   transition: background 0.2s;
+  color: #fff;
 }
 
 .buy-button:hover {
-  background: #c2b18d;
+  background: #640D5F;
 }
 
 .buy-button:active {
-  background: #8b4513;
+  background: #640D5F;
   color: #fff;
 }
 
@@ -583,7 +584,7 @@ Aside left, right and content */
 
 .total-review-numbering h1 {
     font-weight: bold;
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
     margin: 0px 0px 10px 0px;   /* Margin of bottom 10px */
 }
 
@@ -621,7 +622,7 @@ Aside left, right and content */
 .statistic-bar {
     height: 100%;
     border-radius: 5px;
-    background-color: rgba(139, 69, 19, 1);
+    background-color: #640D5F;
     padding-right: 30px;
 }
 
@@ -806,7 +807,7 @@ Aside left, right and content */
 }
 
 .related-product-price-container h2 {
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
     font-weight: bold;
 }
 
@@ -817,7 +818,7 @@ Aside left, right and content */
     align-items: center;
     text-align: center;
     border-radius: 6px;
-    background-color: rgba(139, 69, 19, 1);
+    background-color: #640D5F;
     padding: 0px 6px 0px 12px; /* Padding left and right of 12px and 6px */
 }
 

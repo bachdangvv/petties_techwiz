@@ -168,9 +168,6 @@ function Apphomepage() {
                         <p className="hero1-description" data-aos="fade-right">
                             Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
                         </p>
-                        {/* <button className="hero1-read-more-button">
-          Read More →
-        </button> */}
 
                         {/* Navigating button */}
                         <button className="hero1-read-more-button">
@@ -223,7 +220,7 @@ function Apphomepage() {
                                 <span className="icon">✔</span>
                                 <div>
                                     <h3>Pet Shop & Supplies</h3>
-                                    <p>Quality products to meet all your pet’s daily needs.</p>
+                                    <p>Quality products to meet all your pet's daily needs.</p>
                                 </div>
                             </div>
 

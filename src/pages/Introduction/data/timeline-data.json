@@ -1,38 +1,38 @@
 [
   {
     "id": 1,
-    "year": "2009",
-    "title": "Thành lập Coffee Premium",
-    "description": "Khởi đầu với một cửa hàng nhỏ tại TP.HCM"
+    "year": "2014",
+    "title": "FurEver Care founded",
+    "description": "First veterinary clinic opened"
   },
   {
     "id": 2,
-    "year": "2012",
-    "title": "Mở rộng sản xuất",
-    "description": "Xây dựng nhà máy rang xay hiện đại đầu tiên"
+    "year": "2016",
+    "title": "Spa & Grooming services",
+    "description": "Launched pet care and grooming center"
   },
   {
     "id": 3,
-    "year": "2015",
-    "title": "Phát triển thương hiệu",
-    "description": "Mở rộng ra 20 tỉnh thành trên cả nước"
+    "year": "2018",
+    "title": "Standardized vaccination program",
+    "description": "Standardized vaccination and deworming schedules"
   },
   {
     "id": 4,
-    "year": "2018",
-    "title": "Chứng nhận quốc tế",
-    "description": "Đạt chứng nhận ISO 22000 và Organic"
+    "year": "2020",
+    "title": "Online nutrition counseling",
+    "description": "Diet support tailored by breed and age"
   },
   {
     "id": 5,
-    "year": "2020",
-    "title": "Số hóa kinh doanh",
-    "description": "Ra mắt nền tảng bán hàng online"
+    "year": "2022",
+    "title": "Basic training classes",
+    "description": "Introduced foundational behavior classes for dogs and cats"
   },
   {
     "id": 6,
     "year": "2024",
-    "title": "Mở rộng quốc tế",
-    "description": "Xuất khẩu sang thị trường Đông Nam Á"
+    "title": "Care hub network",
+    "description": "Operating 30+ care hubs across key districts"
   }
 ]
