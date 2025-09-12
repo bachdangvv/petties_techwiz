@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5 {
     max-width: 100%;
     width: 100%;
     height: 400px;
+    filter: blur(3px);
 }
 
 /* Home welcome message container */
@@ -63,13 +64,13 @@ h1, h2, h3, h4, h5 {
 .home-welcome-message-container h1 {
     font-size: 4rem;
     font-weight: bold;
-    color: rgba(234, 34, 100, 1);
+    color: #640D5F;
     margin-top: 50px;
 }
 
 .home-welcome-message-container p {
     font-size: 20px;
-    color: rgba(234, 34, 100, 1);
+    color: #640D5F;
     padding: 0;
     margin: 10px;
 }
@@ -102,11 +103,11 @@ h1, h2, h3, h4, h5 {
 /* Accomplishment icon */
 .accomplishment-icon {
     font-size: 20px;
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
 }
 
 .store-accomplishment h1 {
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
 }
 
 .store-accomplishment p {
@@ -143,7 +144,7 @@ h1, h2, h3, h4, h5 {
     border: none;
     outline: none;
     background: transparent;
-    background-color: rgba(139, 69, 19, 1);
+    background-color: #640D5F;
     font-size: 12px;
     color: white;
     cursor: pointer;
@@ -263,7 +264,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .value-card i {
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
     font-size: 30px;
 }
 
@@ -342,9 +343,10 @@ h1, h2, h3, h4, h5 {
 
 /* Leader role badge */
 .role-badge {
+    color: #fff;
     font-size: 10px;
     border-radius: 6px;
-    background-color: rgba(212, 196, 160, 1);
+    background-color: #92558f;
     padding: 3px 10px;
 }
 
@@ -422,7 +424,7 @@ h1, h2, h3, h4, h5 {
     transform: translateX(-50%);
     width: 12px;
     height: 12px;
-    background-color: rgba(139, 69, 19, 1);
+    background-color: #640D5F;
     border: 2px solid #f8f5f1;
     border-radius: 50%;
     z-index: 2;
@@ -455,7 +457,7 @@ h1, h2, h3, h4, h5 {
 .timeline-year {
     display: inline-block;
     padding: 2px 8px;
-    background-color: rgba(139, 69, 19, 1);
+    background-color: #640D5F;
     color: white;
     font-size: 10px;
     border-radius: 4px;
@@ -494,7 +496,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     width: 100%;
     height: 250px;
-    background-color: rgba(139, 69, 19, 1);
+    background-color: #640D5F;
 }
 
 .introduction-footer-component {
@@ -529,7 +531,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     width: auto;
     height: 40px;
-    color: rgba(139, 69, 19, 1);
+    color: #640D5F;
     background-color: white;
     padding: 5px 20px;
     cursor: pointer;
