@@ -144,7 +144,7 @@ export default function Navbar() {
 
             <ul className="nav-links" role="menubar" aria-label="Liên kết chính">
                 <li>
-                  <Link to={"/"} role="menuitem" ariaCurrent="page">Homepage</Link>
+                  <Link to={"/"} role="menuitem" ariaCurrent="page">Home</Link>
                 </li>
                 <li>
                   <Link to="/about" role="menuitem">About</Link>
@@ -153,7 +153,7 @@ export default function Navbar() {
                   <Link to="/product" role="menuitem">Product</Link>
                 </li>
                 <li>
-                  <Link to="/blog" role="menuitem">News</Link>
+                  <Link to="/blog" role="menuitem">Pet Care</Link>
                 </li>
                 <li>
                   <Link to="/contact" role="menuitem">Contact</Link>
