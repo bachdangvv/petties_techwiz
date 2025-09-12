@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { MdPets } from "react-icons/md";
 
 export default function Navbar() {
   const { totals } = useCart();
@@ -136,26 +137,26 @@ export default function Navbar() {
           <nav className="navbar" aria-label="Thanh điều hướng">
             <div className="logo">
             <a href="/" aria-label="Trang chủ">
-                <i className="fa-solid fa-mug-saucer"></i>
-                <span>Coffee Premium</span>
+                <MdPets />
+                <p>FurEver Care</p>
             </a>
             </div>
 
             <ul className="nav-links" role="menubar" aria-label="Liên kết chính">
                 <li>
-                  <Link to={"/"} role="menuitem" ariaCurrent="page">Trang chủ</Link>
+                  <Link to={"/"} role="menuitem" ariaCurrent="page">Homepage</Link>
                 </li>
                 <li>
-                  <Link to="/about" role="menuitem">Giới thiệu</Link>
+                  <Link to="/about" role="menuitem">About</Link>
                 </li>
                 <li>
-                  <Link to="/product" role="menuitem">Sản phẩm</Link>
+                  <Link to="/product" role="menuitem">Product</Link>
                 </li>
                 <li>
-                  <Link to="/blog" role="menuitem">Tin tức</Link>
+                  <Link to="/blog" role="menuitem">News</Link>
                 </li>
                 <li>
-                  <Link to="/contact" role="menuitem">Liên hệ</Link>
+                  <Link to="/contact" role="menuitem">Contact</Link>
                 </li>
             </ul>
 
@@ -168,7 +169,7 @@ export default function Navbar() {
                 
                 <button id="accountBtn" className="btn" type="button">
                     <i className="fa-regular fa-user"></i>
-                    <span>Tài khoản</span>
+                    <span>Sign in</span>
                 </button>
 
                 <div id="accountPopup" className="popup">
@@ -176,20 +177,21 @@ export default function Navbar() {
                       <span id="closePopup" className="close">&times;</span>
 
                       <form className="form login-form active">
-                          <h2>Đăng nhập</h2>
-                          <input type="text" placeholder="Tên đăng nhập"/>
-                          <input type="password" placeholder="Mật khẩu"/>
-                          <button type="submit">Đăng nhập</button>
-                          <p>Chưa có tài khoản? <a href="#" id="showRegister">Đăng ký</a></p>
+                          <h2>Login</h2>
+                          <input type="text" placeholder="Usename"/>
+                          <input type="password" placeholder="Password"/>
+                          <button type="submit">Login</button>
+                          <p>Don't have an FurEver Care account ?<a href="#" id="showRegister">Register</a></p>
                       </form>
 
                       <form className="form register-form">
-                          <h2>Đăng ký</h2>
-                          <input type="text" placeholder="Tên đầy đủ"/>
+                          <h2>Register</h2>
+                          <input type="text" placeholder="Usename"/>
                           <input type="email" placeholder="Email"/>
-                          <input type="password" placeholder="Mật khẩu"/>
-                          <button type="submit">Đăng ký</button>
-                          <p>Đã có tài khoản? <a href="#" id="showLogin">Đăng nhập</a></p>
+                          <input type="password" placeholder="Password"/>
+                          <input type="password" placeholder="Re-enter password"/>
+                          <button type="submit">Continue</button>
+                          <p>Have an FurEver Care account ? <a href="#" id="showLogin">Sign in</a></p>
                       </form>
                     </div>
                 </div>
@@ -224,24 +226,24 @@ export default function Navbar() {
           <div id="mobilePanel" className="mobile-panel" aria-label="Menu di động">
               <ul className="mobile-links">
                 <li>
-                  <Link to={"/"} role="menuitem" ariaCurrent="page">Trang chủ</Link>
+                  <Link to={"/"} role="menuitem" ariaCurrent="page">Homepage</Link>
                 </li>
                 <li>
-                  <Link to="/about" role="menuitem">Giới thiệu</Link>
+                  <Link to="/about" role="menuitem">About</Link>
                 </li>
                 <li>
-                  <Link to="/product" role="menuitem">Sản phẩm</Link>
+                  <Link to="/product" role="menuitem">Product</Link>
                 </li>
                 <li>
-                  <Link to="/blog" role="menuitem">Tin tức</Link>
+                  <Link to="/blog" role="menuitem">News</Link>
                 </li>
                 <li>
-                  <Link to="/contact" role="menuitem">Liên hệ</Link>
+                  <Link to="/contact" role="menuitem">Contact</Link>
                 </li>
               </ul>
               <div className="mobile-cta">
-                  <button className="btn" type="button">Đăng nhập</button>
-                  <button className="btn" type="button" style={{ background: "#fff8f0" }}>Đăng ký</button>
+                  <button className="btn" type="button">Sign in</button>
+                  <button className="btn" type="button" style={{ background: "#fff8f0" }}>Register</button>
               </div>
           </div>
         </header>
