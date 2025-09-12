@@ -1,8 +1,13 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
-import cx from 'classnames';
+// import cx from 'classnames';
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import welcomeBadge from '../assets/homepage/hero1-circle.png';
+import badgeLogo from '../assets/homepage/hero1-logo.png';
 
 function Apphomepage() {
     useEffect(() => {
@@ -163,15 +168,88 @@ function Apphomepage() {
         <p className="hero1-description" data-aos="fade-right">
           Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
         </p>
-        <button className="hero1-read-more-button">
+        {/* <button className="hero1-read-more-button">
           Read More →
+        </button> */}
+
+        {/* Navigating button */}
+        <button className="hero1-read-more-button">
+            <div>Read More</div>
+
+            <i id='nav-arrow-icon' className="bi bi-arrow-right"></i>
         </button>
         </div>
       </div>
-      <div className="hero1-row">
-        <img className="hero1-right-img" src="/images/hero-1.png" />
+      {/* Right side */}
+      <div className="hero1-row hero1-right-row">
+        <img className="hero1-right-img" src="/images/hero-1.png" data-aos="fade-left" alt="Welcome thumbnail"/>
+        
+        {/* Welcome circle badge */}
+        <div className="welcome-message-badge-container">
+          <img className="welcome-message-badge" src={welcomeBadge} alt="Welcome badge" />
+        </div>
       </div>
     </div>
+
+            <div className="emergency-section">
+  <div className="emergency-row">
+    {/* Cột trái: Ảnh */}
+    <div className="emergency-image">
+      <img src="/images/dog.png" alt="Dog" />
+      {/* Shape trang trí */}
+      <img src="/images/shape-crown.png" alt="crown" className="shape crown" />
+      <img src="/images/shape-bone.png" alt="bone" className="shape bone" />
+      <img src="/images/shape-bowl.png" alt="bowl" className="shape bowl" />
+    </div>
+
+    {/* Cột phải: Nội dung */}
+    <div className="emergency-content">
+      <h4 className="emergency-subtitle">WHY WE ARE THE BEST 🐾</h4>
+      <h2 className="emergency-title">Pet Emergencies <br />What You Need To Know.</h2>
+      <p className="emergency-desc">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse. We
+        understand that your furry friend is a treasured member of your family
+        and deserves pets are the best care and attention possible.
+      </p>
+
+      <div className="emergency-features">
+        <div className="feature">
+          <span className="icon">✔</span>
+          <div>
+            <h3>More Experience</h3>
+            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
+          </div>
+        </div>
+
+        <div className="feature">
+          <span className="icon">✔</span>
+          <div>
+            <h3>Affordable Pricing</h3>
+            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
+          </div>
+        </div>
+
+        <div className="feature">
+          <span className="icon">✔</span>
+          <div>
+            <h3>Modern Pet Training</h3>
+            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
+          </div>
+        </div>
+
+        <div className="feature">
+          <span className="icon">✔</span>
+          <div>
+            <h3>Maintain A Daily Routine</h3>
+            <p>Be confident in the treatment plan and your doctor’s abilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <div className="hero2-row">
             <h2 className="hero2-title" data-aos="fade-up">WE CHANGE YOUR LIFE & WORLD</h2>
             <p className="hero2-des" data-aos="fade-up">Meet Our Expertise Pet Doctors</p>
