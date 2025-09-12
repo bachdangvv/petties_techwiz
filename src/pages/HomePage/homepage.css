@@ -100,7 +100,18 @@
   font-weight: 800;
   color: #640D5F;
   margin-bottom: 20px;
-  line-height: 1.1;
+  line-height: 1.1;        
+  opacity: 0;                 /* ban đầu ẩn */
+  transform: translateX(-100px); /* đẩy lệch sang trái */
+  animation: slideIn 1.5s ease forwards;
+}
+
+/* Keyframes cho animation */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* về đúng vị trí */
+  }
 }
 
 .hero1-subtitle {
@@ -109,6 +120,9 @@
   color: #0D1164;
   margin-bottom: 30px;
   line-height: 1.3;
+  opacity: 0;                 /* ban đầu ẩn */
+  transform: translateX(-100px); /* đẩy lệch sang trái */
+  animation: slideIn 1.5s ease forwards;
 }
 
 .hero1-description {
@@ -119,6 +133,9 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0;                 /* ban đầu ẩn */
+  transform: translateX(-100px); /* đẩy lệch sang trái */
+  animation: slideIn 1.5s ease forwards;
 }
 
 .hero1-read-more-button {
@@ -133,6 +150,9 @@
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  opacity: 0;                 /* ban đầu ẩn */
+  transform: translateX(-100px); /* đẩy lệch sang trái */
+  animation: slideIn 1s ease forwards;
 }
 
 .hero1-read-more-button:hover {
@@ -169,6 +189,9 @@
   line-height: 1.3;
   max-width: 370px;
   text-align: center;
+  opacity: 0;                    /* ẩn ban đầu */
+  transform: translateY(50px);   /* đẩy xuống 50px */
+  animation: slideInUp 1s ease forwards;
 }
 
 .hero2-des {
@@ -176,6 +199,16 @@
   font-weight: 500;
   color: #0D1164;
   line-height: 1.3;
+  opacity: 0;                    /* ẩn ban đầu */
+  transform: translateY(50px);   /* đẩy xuống 50px */
+  animation: slideInUp 2s ease forwards;
+}
+
+@keyframes slideInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* trở về đúng vị trí */
+  }
 }
 
 .hero2-col {

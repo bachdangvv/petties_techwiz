@@ -154,8 +154,8 @@ function Apphomepage() {
   <img src="/images/shape/ball-shape.png" alt="yarn" className="shape shape-yarn" />
         <div className="hero1-row">
       <div className="hero1-content">
-        <h1 className="hero1-title">Trusted Pet</h1>
-        <h2 className="hero1-subtitle">Care & Veterinary Center ● Point</h2>
+        <h1 className="hero1-title">Trusted Pet Center</h1>
+        <h2 className="hero1-subtitle">For Caring & Veterinary Service</h2>
         <p className="hero1-description">
           Template Kit uses demo images from Envato Elements Follower will need to license these images from Envato.
         </p>
