@@ -1,9 +1,8 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
+import cx from 'classnames';
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Apphomepage() {
     useEffect(() => {
@@ -164,13 +163,13 @@ function Apphomepage() {
         <p className="hero1-description" data-aos="fade-right">
           Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
         </p>
-        <button className="hero1-read-more-button" data-aos="fade-right">
+        <button className="hero1-read-more-button">
           Read More →
         </button>
         </div>
       </div>
       <div className="hero1-row">
-        <img className="hero1-right-img" src="/images/hero-1.png" data-aos="fade-left" />
+        <img className="hero1-right-img" src="/images/hero-1.png" />
       </div>
     </div>
     <div className="hero2-row">
