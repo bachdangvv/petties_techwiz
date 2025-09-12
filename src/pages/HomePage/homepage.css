@@ -138,7 +138,7 @@
   animation: slideIn 1.5s ease forwards;
 }
 
-.hero1-read-more-button {
+/* .hero1-read-more-button {
   background: linear-gradient(90deg, #640D5F, #EA2264);
   color: white;
   padding: 15px 35px;
@@ -150,15 +150,49 @@
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
-  opacity: 0;                 /* ban đầu ẩn */
-  transform: translateX(-100px); /* đẩy lệch sang trái */
+  opacity: 0;
+  transform: translateX(-100px);
   animation: slideIn 1s ease forwards;
+} */
+
+.hero1-read-more-button {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(101, 30, 97);
+    cursor: pointer;
+    padding: 0px 10px;
+    margin-top: 20px;
 }
 
-.hero1-read-more-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(100, 13, 95, 0.3);
-  opacity: 0.9;
+.hero1-read-more-button::before {
+    transition: 500ms all ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgba(13, 17, 100, 1);
+    width: 100%;
+    height: 0%;
+}
+
+.hero1-read-more-button:hover::before {
+    height: 100%;
 }
 
 .hero1-right-img {
@@ -174,6 +208,14 @@
     opacity: 1;
     transform: translateX(0); /* về đúng vị trí */
   }
+}
+
+.hero1-right-row {
+  position: relative;
+}
+
+.welcome-message-badge-container {
+  position: absolute;
 }
 
 .hero2-section {

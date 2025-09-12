@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import React, { useState } from "react";
+import cx from 'classnames';
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
+
+import welcomeBadge from '../assets/homepage/hero1-circle.png';
+import badgeLogo from '../assets/homepage/hero1-logo.png';
 
 function Apphomepage() {
     
@@ -159,13 +163,26 @@ function Apphomepage() {
         <p className="hero1-description">
           Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
         </p>
-        <button className="hero1-read-more-button">
+        {/* <button className="hero1-read-more-button">
           Read More →
+        </button> */}
+
+        {/* Navigating button */}
+        <button className="hero1-read-more-button">
+            <div>Read More</div>
+
+            <i id='nav-arrow-icon' className="bi bi-arrow-right"></i>
         </button>
         </div>
       </div>
-      <div className="hero1-row">
-        <img className="hero1-right-img" src="/images/hero-1.png" />
+      {/* Right side */}
+      <div className="hero1-row hero1-right-row">
+        <img className="hero1-right-img" src="/images/hero-1.png" alt="Welcome thumbnail"/>
+        
+        {/* Welcome circle badge */}
+        <div className="welcome-message-badge-container">
+          <img src={welcomeBadge} alt="Welcome badge" />
+        </div>
       </div>
     </div>
     <div className="hero2-row">
