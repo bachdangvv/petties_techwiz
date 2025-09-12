@@ -157,7 +157,7 @@ function Apphomepage() {
         <h1 className="hero1-title">Trusted Pet Center</h1>
         <h2 className="hero1-subtitle">For Caring & Veterinary Service</h2>
         <p className="hero1-description">
-          Template Kit uses demo images from Envato Elements Follower will need to license these images from Envato.
+          Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
         </p>
         <button className="hero1-read-more-button">
           Read More →

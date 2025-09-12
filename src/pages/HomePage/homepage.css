@@ -297,7 +297,7 @@
 }
 
 .contact-booking h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   height: auto !important;
   font-size: 40px;
   font-weight: 700;
@@ -342,6 +342,7 @@
 
 .contact-btn {
   align-items: center;
+  margin-top: 20px;
 }
 
 .submit-btn {
