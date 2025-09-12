@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/petties_techwiz/static/css/main.2d24a0b5.css",
+    "main.css": "/petties_techwiz/static/css/main.e9a1939c.css",
     "main.js": "/petties_techwiz/static/js/main.1bd707f2.js",
     "static/js/453.adcabb10.chunk.js": "/petties_techwiz/static/js/453.adcabb10.chunk.js",
     "static/media/doctor3.png": "/petties_techwiz/static/media/doctor3.5bd1e155fe7e82e85672.png",
@@ -19,12 +19,12 @@
     "static/media/hero1-circle.png": "/petties_techwiz/static/media/hero1-circle.53eaac9a676406b6b4a1.png",
     "static/media/first-product.avif": "/petties_techwiz/static/media/first-product.c73c7468f17a7545b22c.avif",
     "index.html": "/petties_techwiz/index.html",
-    "main.2d24a0b5.css.map": "/petties_techwiz/static/css/main.2d24a0b5.css.map",
+    "main.e9a1939c.css.map": "/petties_techwiz/static/css/main.e9a1939c.css.map",
     "main.1bd707f2.js.map": "/petties_techwiz/static/js/main.1bd707f2.js.map",
     "453.adcabb10.chunk.js.map": "/petties_techwiz/static/js/453.adcabb10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d24a0b5.css",
+    "static/css/main.e9a1939c.css",
     "static/js/main.1bd707f2.js"
   ]
 }
