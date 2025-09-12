@@ -31,7 +31,7 @@ function Contact() {
     <div className={styles.contactWrapper}>
       {/* Header */}
       <div className={styles.contactHeader}>
-        <h2 className={styles.contactPageTitle}>Booking Appointment</h2>
+        <h2 className={styles.contactPageTitle}>Contact & Booking Appointment</h2>
       </div>
 
       {/* Main Content */}
@@ -39,7 +39,7 @@ function Contact() {
         {/* Left Info */}
         <div className={styles.contactLeft}>
           <div className={styles.contactLeftTitle}>
-          <h2>We Are Always Available For You &amp; Your Pets</h2>
+            <h2>We Are Always Available <br />For You &amp; Your Pets</h2>
           </div>
           <ul className={styles.contactInfo}>
             <li><FontAwesomeIcon icon={faPhone} /> +123 8989 444</li>
@@ -132,10 +132,11 @@ function Contact() {
                 />
               </div>
             </div>
-
+              <div className={styles.contactBtn}>
             <button type="submit" className={styles.submitBtn}>
               Start A Reservation →
             </button>
+            </div>
           </form>
         </div>
       </div>

@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  font-family: 'Baloo Bhaina 2';
 }
 
 .container {
@@ -17,9 +18,9 @@
 .contactHeader {
   text-align: center;
   background-color: #f6f5f7;
-  padding: 50px 60px;
   border-radius: 12px;
   position: relative;
+  padding: 80px 60px;
 }
 
 .contactPageTitle {
@@ -49,9 +50,10 @@
 
 .contactContainer {
   display: flex;
-  padding: 50px 60px;
+  padding: 80px 60px;
   gap: 40px;
   flex-wrap: wrap;
+
 }
 
 .contactLeft {
@@ -66,7 +68,8 @@
 .contactLeftTitle h2 {
   font-size: 40px;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 1.3;
+  margin-bottom: 50px;
   color:#640D5F;
 }
 
@@ -137,8 +140,13 @@
   font-size: 14px;
 }
 
+.contactBtn {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .submitBtn {
-  background: linear-gradient(90deg, #640D5F, #EA2264);
+  background-color: #EA2264;
   color: white;
   padding: 15px 30px;
   border-radius: 30px;
@@ -146,12 +154,26 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  overflow: hidden;
   align-self: flex-start;
-  transition: 0.3s;
+  position: relative;
+  z-index: 1;
 }
 
-.submitBtn:hover {
-  opacity: 0.85;
+.submitBtn::before {
+  transition: 500ms all ease;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #640D5F;
+  width: 100%;
+  height: 0%;
+}
+
+.submitBtn:hover::before {
+  height: 100%;
 }
 
 .contactMap iframe {

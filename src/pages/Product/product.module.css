@@ -107,11 +107,11 @@
 }
 
 .searchInput:focus {
-  border-color: #6f42c1
+  border-color: #6f42c1;
 }
 
 .searchInput::placeholder {
-  color: #6c757d
+  color: #6c757d;
 }
 
 .filterCheckbox {
@@ -147,7 +147,7 @@
 .filterRadio input[type="radio"] {
   width: 16px;
   height: 16px;
-  accent-color: #6f42c1
+  accent-color: #6f42c1;
 }
 
 .applyFiltersBtn {
@@ -164,7 +164,7 @@
 }
 
 .applyFiltersBtn:hover {
-  background: #5a32a3
+  background: #5a32a3;
 }
 
 .productMain {
