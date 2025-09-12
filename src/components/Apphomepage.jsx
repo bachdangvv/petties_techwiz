@@ -269,6 +269,22 @@ function Apphomepage() {
         </div>
       </div>
     </div>
+    <div class="marquee__area">
+            <div class="marquee__wrap">
+                <div class="marquee__box">
+                	                    <a href="https://shthemes.net/demosd/petpal/?page_id=471">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                        <a href="https://shthemes.net/demosd/petpal/?page_id=448">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                        <a href="https://shthemes.net/demosd/petpal/?page_id=379">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                        <a href="https://shthemes.net/demosd/petpal/?page_id=33">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                    </div>
+                <div class="marquee__box">
+                                        <a href="https://shthemes.net/demosd/petpal/?page_id=471">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                        <a href="https://shthemes.net/demosd/petpal/?page_id=448">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                        <a href="https://shthemes.net/demosd/petpal/?page_id=379">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                        <a href="https://shthemes.net/demosd/petpal/?page_id=33">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                    </div>
+            </div>
+        </div>
     <div className="hero3-section">
         <img src="/images/shape/hand_shape03.png" alt="hand" className="shape-hand" />
         <div class="contact-booking">
