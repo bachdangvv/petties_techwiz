@@ -164,6 +164,16 @@
 .hero1-right-img {
   width: 100% !important;
   height: auto;
+  opacity: 0;                 /* ban đầu ẩn */
+  transform: translateX(100px); /* đẩy lệch sang trái */
+  animation: slideInRight 1.5s ease forwards;
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0); /* về đúng vị trí */
+  }
 }
 
 .hero2-section {
@@ -258,7 +268,7 @@
 }
 
 .hero2-team {
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 700;
   color: #0D1164;
   margin-top: 15px;
@@ -270,7 +280,7 @@
 }
 
 .hero2-name {
-  font-size: 1rem;
+  font-size: 16px;
   color: #666;
   cursor: pointer;
 }
@@ -283,6 +293,26 @@
   justify-content: center;
   align-items: center;
   background-color: #0D1164;
+  overflow: hidden;
+  position: relative;
+}
+
+.shape-hand {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  max-width: 80px;
+  width: 100%;
+  animation: pawBounce 2s ease-in-out infinite;
+}
+
+@keyframes pawBounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(10deg); /* nhảy nhẹ + nghiêng */
+  }
 }
 
 .contact-booking {

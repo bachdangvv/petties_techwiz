@@ -270,6 +270,7 @@ function Apphomepage() {
       </div>
     </div>
     <div className="hero3-section">
+        <img src="/images/shape/hand_shape03.png" alt="hand" className="shape-hand" />
         <div class="contact-booking">
   <h2 class="contact-booking-title">Schedule A Visit Today!</h2>
   <form onSubmit={handleSubmit} class="booking-form">
