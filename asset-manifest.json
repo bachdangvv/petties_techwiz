@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/petties_techwiz/static/css/main.110819b8.css",
+    "main.js": "/petties_techwiz/static/js/main.ed4a1156.js",
+    "static/js/453.adcabb10.chunk.js": "/petties_techwiz/static/js/453.adcabb10.chunk.js",
+    "static/media/doctor3.png": "/petties_techwiz/static/media/doctor3.5bd1e155fe7e82e85672.png",
+    "static/media/str1.png": "/petties_techwiz/static/media/str1.0da1f4253bbb2a0733dd.png",
+    "static/media/elon-musk.jpg": "/petties_techwiz/static/media/elon-musk.50218fa1d33b4e68cb49.jpg",
+    "static/media/doctor1.png": "/petties_techwiz/static/media/doctor1.764b64ba1cac753402dc.png",
+    "static/media/str4.png": "/petties_techwiz/static/media/str4.1fa60e04b85b448007ba.png",
+    "static/media/str3.png": "/petties_techwiz/static/media/str3.d24b837160c64a719074.png",
+    "static/media/doctor2.png": "/petties_techwiz/static/media/doctor2.058fe1e3f9e28cb45220.png",
+    "static/media/str2.png": "/petties_techwiz/static/media/str2.45254b8d4eaee7d87a7a.png",
+    "static/media/donald-trump.jpg": "/petties_techwiz/static/media/donald-trump.f996f08b31ae49d14626.jpg",
+    "static/media/bg1.png": "/petties_techwiz/static/media/bg1.7a9379889dbd479e22e7.png",
+    "static/media/third-product.avif": "/petties_techwiz/static/media/third-product.c5504f3ffdf7735ecb70.avif",
+    "static/media/rosie.jpg": "/petties_techwiz/static/media/rosie.6dd16e245909f13f8618.jpg",
+    "static/media/second-product.avif": "/petties_techwiz/static/media/second-product.79b097133008f459cb49.avif",
+    "static/media/hero1-circle.png": "/petties_techwiz/static/media/hero1-circle.53eaac9a676406b6b4a1.png",
+    "static/media/first-product.avif": "/petties_techwiz/static/media/first-product.c73c7468f17a7545b22c.avif",
+    "index.html": "/petties_techwiz/index.html",
+    "main.110819b8.css.map": "/petties_techwiz/static/css/main.110819b8.css.map",
+    "main.ed4a1156.js.map": "/petties_techwiz/static/js/main.ed4a1156.js.map",
+    "453.adcabb10.chunk.js.map": "/petties_techwiz/static/js/453.adcabb10.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.110819b8.css",
+    "static/js/main.ed4a1156.js"
+  ]
+}
