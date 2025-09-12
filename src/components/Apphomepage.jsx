@@ -355,7 +355,7 @@ function Apphomepage() {
                     </form>
                 </div>
             </div>
-
+<div className="hero2-wrapper">
             <div className="hero2-row">
                 <h2 className="hero2-title" data-aos="fade-up">WE CHANGE YOUR LIFE & WORLD</h2>
                 <p className="hero2-des" data-aos="fade-up">Meet Our Expertise Pet Doctors</p>
@@ -456,6 +456,7 @@ function Apphomepage() {
                         </p>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     );
