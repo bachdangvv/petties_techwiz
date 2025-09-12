@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./contact.css";
+import styles from "./contact.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
@@ -28,20 +28,20 @@ function Contact() {
   };
 
   return (
-    <div className="contact-wrapper">
+    <div className={styles.contactWrapper}>
       {/* Header */}
-      <div className="contact-header">
-        <h2 className="contact-page-title">Booking Appointment</h2>
+      <div className={styles.contactHeader}>
+        <h2 className={styles.contactPageTitle}>Booking Appointment</h2>
       </div>
 
       {/* Main Content */}
-      <div className="contact-container">
+      <div className={styles.contactContainer}>
         {/* Left Info */}
-        <div className="contact-left">
-          <div className="contact-left-title">
+        <div className={styles.contactLeft}>
+          <div className={styles.contactLeftTitle}>
           <h2>We Are Always Available For You &amp; Your Pets</h2>
           </div>
-          <ul className="contact-info">
+          <ul className={styles.contactInfo}>
             <li><FontAwesomeIcon icon={faPhone} /> +123 8989 444</li>
             <li><FontAwesomeIcon icon={faLocationDot} /> 256 Avenue, New York City</li>
             <li><FontAwesomeIcon icon={faEnvelope} /> info@gmail.com</li>
@@ -50,11 +50,11 @@ function Contact() {
         </div>
 
         {/* Right Booking Form */}
-        <div className="contact-booking">
-          <h2 className="contact-booking-title">Schedule A Visit Today!</h2>
-          <form onSubmit={handleSubmit} className="booking-form">
-            <div className="form-row">
-              <div className="form-group">
+        <div className={styles.contactBooking}>
+          <h2 className={styles.contactBookingTitle}>Schedule A Visit Today!</h2>
+          <form onSubmit={handleSubmit} className={styles.bookingForm}>
+            <div className={styles.formRow}>
+              <div className={styles.formGroup}>
                 <label>Name</label>
                 <input
                   type="text"
@@ -66,7 +66,7 @@ function Contact() {
                 />
               </div>
 
-              <div className="form-group">
+              <div className={styles.formGroup}>
                 <label>Pet Type</label>
                 <select
                   name="petType"
@@ -81,7 +81,7 @@ function Contact() {
                 </select>
               </div>
 
-              <div className="form-group">
+              <div className={styles.formGroup}>
                 <label>Interest In</label>
                 <select
                   name="service"
@@ -97,8 +97,8 @@ function Contact() {
               </div>
             </div>
 
-            <div className="form-row">
-              <div className="form-group">
+            <div className={styles.formRow}>
+              <div className={styles.formGroup}>
                 <label>Date</label>
                 <input
                   type="date"
@@ -109,7 +109,7 @@ function Contact() {
                 />
               </div>
 
-              <div className="form-group">
+              <div className={styles.formGroup}>
                 <label>Time</label>
                 <input
                   type="time"
@@ -120,7 +120,7 @@ function Contact() {
                 />
               </div>
 
-              <div className="form-group">
+              <div className={styles.formGroup}>
                 <label>Phone</label>
                 <input
                   type="tel"
@@ -133,7 +133,7 @@ function Contact() {
               </div>
             </div>
 
-            <button type="submit" className="submit-btn">
+            <button type="submit" className={styles.submitBtn}>
               Start A Reservation →
             </button>
           </form>
@@ -141,7 +141,7 @@ function Contact() {
       </div>
 
       {/* Map */}
-      <div className="contact-map">
+      <div className={styles.contactMap}>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48409.69813174607!2d-74.05163325136718!3d40.68264649999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25bae694479a3%3A0xb9949385da52e69e!2sBarclays%20Center!5e0!3m2!1sen!2sbd!4v1684309529719!5m2!1sen!2sbd"
           style={{ border: 0 }}

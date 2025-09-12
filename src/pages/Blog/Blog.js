@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Blog.css";
+import styles from "./blog.module.css";
 
 function Blog() {
   const [posts, setPosts] = useState([]);
@@ -59,25 +59,23 @@ function Blog() {
   });
 
   return (
-    <div className="blog-wrapper">
-      <div className="blog-content">
+    <div className={styles.blogWrapper}>
+      <div className={styles.blogContent}>
         {/* Main */}
-        <div className="blog-main">
+        <div className={styles.blogMain}>
           {!selectedPost && (
             <>
-              <h2 className="blog-title">
+              <h2 className={styles.blogTitle}>
                 {selectedCategory
                   ? `Category: ${selectedCategory}`
                   : "All Post"}
               </h2>
               {loading && <p>Đang tải...</p>}
 
-
-
-              <div id="blog-container" className="blog-grid">
+              <div id="blog-container" className={styles.blogGrid}>
                 {filteredPosts.map((post, idx) => (
-                  <div className="blog-card" key={idx}>
-                    <div className="blog-image-wrapper">
+                  <div className={styles.blogCard} key={idx}>
+                    <div className={styles.blogImageWrapper}>
                       <img style={{
                         WebkitMaskImage: "url(/images/shape/blog_post_mask.svg)",
                         maskImage: "url(/images/shape/blog_post_mask.svg)",
@@ -86,14 +84,14 @@ function Blog() {
                         WebkitMaskSize: "cover",
                         maskSize: "cover"
                       }} onClick={() => setSelectedPost(post)} src={post.image} alt={post.title} />
-                      <div className="blog-tags">
-                        <span className="blog-tag">{post.category}</span>
+                      <div className={styles.blogTags}>
+                        <span className={styles.blogTag}>{post.category}</span>
                       </div>
                     </div>
-                    <div className="blog-body">
-                      <p className="meta">
-                        <span className="author">{post.reading_time}</span>
-                        <span className="date">{post.date}</span>
+                    <div className={styles.blogBody}>
+                      <p className={styles.meta}>
+                        <span className={styles.author}>{post.reading_time}</span>
+                        <span className={styles.date}>{post.date}</span>
                       </p>
                       <h5 onClick={() => setSelectedPost(post)}>{post.title}</h5>
                     </div>
@@ -102,13 +100,13 @@ function Blog() {
               </div>
 
               {!selectedCategory && (
-                <nav className="pagination-wrapper">
-                  <ul className="pagination">
+                <nav className={styles.paginationWrapper}>
+                  <ul className={styles.pagination}>
                     {Array.from({ length: totalPages }, (_, i) => i + 1).map(
                       (p) => (
                         <li key={p}>
                           <button
-                            className={p === currentPage ? "active" : ""}
+                            className={p === currentPage ? styles.active : ""}
                             onClick={() => {
                               loadPosts(p);
                               setCurrentPage(p);
@@ -127,17 +125,17 @@ function Blog() {
 
           {/* Post detail */}
           {selectedPost && (
-            <div className="post-detail">
+            <div className={styles.postDetail}>
               {loadingContent ? (
                 <p>Loading content...</p>
               ) : (
                 <>
                   <h2>{selectedPost.title}</h2>
-                  <p className="meta">
+                  <p className={styles.meta}>
                     {selectedPost.category} • {selectedPost.date}
                   </p>
                   <button
-                    className="back-btn"
+                    className={styles.backBtn}
                     onClick={() => setSelectedPost(null)}
                   >
                     ← Back to post list
@@ -148,11 +146,11 @@ function Blog() {
                     style={{ width: "100%", marginBottom: "20px" }}
                   />
                   <div
-                    className="post-content"
+                    className={styles.postContent}
                     dangerouslySetInnerHTML={{ __html: selectedPost.content }}
                   />
                   <button
-                    className="back-btn"
+                    className={styles.backBtn}
                     onClick={() => setSelectedPost(null)}
                   >
                     ← Back to post list
@@ -164,28 +162,28 @@ function Blog() {
         </div>
 
         {/* Sidebar */}
-        <div className="sidebar">
+        <div className={styles.sidebar}>
           {categories.length > 0 && (
-            <div className="sidebar-block">
+            <div className={styles.sidebarBlock}>
               <h5>Category</h5>
-              <ul className="list">
+              <ul className={styles.list}>
                 {/* Tất cả danh mục */}
                 <li
-                  className={`list-item ${selectedCategory === null ? "active" : ""}`}
+                  className={`${styles.listItem} ${selectedCategory === null ? styles.active : ""}`}
                   onClick={() => {
                     setSelectedCategory(null);
                     setSelectedPost(null);
                   }}
                 >
                   All categories
-                  <span className="badge">{posts.length}</span>
+                  <span className={styles.badge}>{posts.length}</span>
                 </li>
 
                 {/* Danh mục riêng */}
                 {categories.map((c, i) => (
                   <li
                     key={i}
-                    className={`list-item ${c.name === selectedCategory ? "active" : ""
+                    className={`${styles.listItem} ${c.name === selectedCategory ? styles.active : ""
                       }`}
                     onClick={() => {
                       setSelectedCategory(c.name);
@@ -193,23 +191,21 @@ function Blog() {
                     }}
                   >
                     {c.name}
-                    <span className="badge">{c.count}</span>
+                    <span className={styles.badge}>{c.count}</span>
                   </li>
                 ))}
               </ul>
             </div>
           )}
 
-
-
           {latestPosts.length > 0 && (
-            <div className="sidebar-block">
+            <div className={styles.sidebarBlock}>
               <h5>Latest posts</h5>
-              <ul className="list">
+              <ul className={styles.list}>
                 {latestPosts.map((post, i) => (
                   <li
                     key={i}
-                    className="list-item"
+                    className={styles.listItem}
                     onClick={() => setSelectedPost(post)}
                   >
                     {post.title}
@@ -220,12 +216,12 @@ function Blog() {
           )}
 
           {tags.length > 0 && (
-            <div className="sidebar-block">
+            <div className={styles.sidebarBlock}>
               <h5>Popular Tags</h5>
-              <ul className="list">
+              <ul className={styles.list}>
                 {/* Tất cả tags */}
                 <li
-                  className={`list-item ${selectedTag === null ? "active" : ""}`}
+                  className={`${styles.listItem} ${selectedTag === null ? styles.active : ""}`}
                   onClick={() => {
                     setSelectedTag(null);
                     setSelectedPost(null);
@@ -238,7 +234,7 @@ function Blog() {
                 {tags.map((tag, i) => (
                   <li
                     key={i}
-                    className={`list-item ${tag === selectedTag ? "active" : ""}`}
+                    className={`${styles.listItem} ${tag === selectedTag ? styles.active : ""}`}
                     onClick={() => {
                       setSelectedTag(tag);
                       setSelectedPost(null);
