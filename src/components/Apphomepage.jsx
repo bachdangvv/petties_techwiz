@@ -2,9 +2,14 @@ import { useEffect } from "react";
 import React, { useState } from "react";
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Apphomepage() {
-    
+    useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   useEffect(() => {
     // 1) ABOUT CAROUSEL
     const el = document.querySelector(".about-media.swiper");
@@ -154,23 +159,23 @@ function Apphomepage() {
   <img src="/images/shape/ball-shape.png" alt="yarn" className="shape shape-yarn" />
         <div className="hero1-row">
       <div className="hero1-content">
-        <h1 className="hero1-title">Trusted Pet Center</h1>
-        <h2 className="hero1-subtitle">For Caring & Veterinary Service</h2>
-        <p className="hero1-description">
+        <h1 className="hero1-title" data-aos="fade-right">Trusted Pet Center</h1>
+        <h2 className="hero1-subtitle" data-aos="fade-right">For Caring & Veterinary Service</h2>
+        <p className="hero1-description" data-aos="fade-right">
           Dedicated to providing compassionate care and trusted veterinary services to ensure the health and happiness of your beloved pets.
         </p>
-        <button className="hero1-read-more-button">
+        <button className="hero1-read-more-button" data-aos="fade-right">
           Read More →
         </button>
         </div>
       </div>
       <div className="hero1-row">
-        <img className="hero1-right-img" src="/images/hero-1.png" />
+        <img className="hero1-right-img" src="/images/hero-1.png" data-aos="fade-left" />
       </div>
     </div>
     <div className="hero2-row">
-            <h2 className="hero2-title">WE CHANGE YOUR LIFE & WORLD</h2>
-            <p className="hero2-des">Meet Our Expertise Pet Doctors</p>
+            <h2 className="hero2-title" data-aos="fade-up">WE CHANGE YOUR LIFE & WORLD</h2>
+            <p className="hero2-des" data-aos="fade-up">Meet Our Expertise Pet Doctors</p>
         </div>
     <div className="hero2-section">
         
@@ -187,7 +192,7 @@ function Apphomepage() {
                         maskRepeat: "no-repeat",
                         WebkitMaskSize: "cover",
                         maskSize: "cover"
-                      }} src="/images/vet-doc-1.jpg" />
+                      }} src="/images/vet-doc-1.jpg" data-aos="fade-up"/>
                       </div>
                       </div>
         <p className="hero2-team">
@@ -210,7 +215,7 @@ function Apphomepage() {
                         maskRepeat: "no-repeat",
                         WebkitMaskSize: "cover",
                         maskSize: "cover"
-                      }} src="/images/vet-doc-2.jpg" />
+                      }} src="/images/vet-doc-2.jpg"  data-aos="fade-up"/>
                       </div>
                       </div>
         <p className="hero2-team">
@@ -233,7 +238,7 @@ function Apphomepage() {
                         maskRepeat: "no-repeat",
                         WebkitMaskSize: "cover",
                         maskSize: "cover"
-                      }} src="/images/vet-doc-3.jpg" />
+                      }} src="/images/vet-doc-3.jpg"  data-aos="fade-up"/>
                       </div>
                       </div>
         <p className="hero2-team">
@@ -257,7 +262,7 @@ function Apphomepage() {
                         maskRepeat: "no-repeat",
                         WebkitMaskSize: "cover",
                         maskSize: "cover"
-                      }} src="/images/vet-doc-4.jpg" />
+                      }} src="/images/vet-doc-4.jpg"  data-aos="fade-up"/>
                       </div>
                       </div>
         <p className="hero2-team">
@@ -272,23 +277,23 @@ function Apphomepage() {
     <div class="marquee__area">
             <div class="marquee__wrap">
                 <div class="marquee__box">
-                	                    <a href="https://shthemes.net/demosd/petpal/?page_id=471">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
-                                        <a href="https://shthemes.net/demosd/petpal/?page_id=448">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
-                                        <a href="https://shthemes.net/demosd/petpal/?page_id=379">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
-                                        <a href="https://shthemes.net/demosd/petpal/?page_id=33">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                	                    <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
                                     </div>
                 <div class="marquee__box">
-                                        <a href="https://shthemes.net/demosd/petpal/?page_id=471">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
-                                        <a href="https://shthemes.net/demosd/petpal/?page_id=448">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
-                                        <a href="https://shthemes.net/demosd/petpal/?page_id=379">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
-                                        <a href="https://shthemes.net/demosd/petpal/?page_id=33">Book For Online Appointment <img decoding="async" src="https://shthemes.net/demosd/petpal/wp-content/uploads/2025/03/marquee_icon.svg" alt="" /></a>
+                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
+                                        <span>Book For Online Appointment <img decoding="async" src="/images/shape/marquee_icon.svg" alt="" /></span>
                                     </div>
             </div>
         </div>
     <div className="hero3-section">
         <img src="/images/shape/hand_shape03.png" alt="hand" className="shape-hand" />
         <div class="contact-booking">
-  <h2 class="contact-booking-title">Schedule A Visit Today!</h2>
+  <h2 class="contact-booking-title"  data-aos="fade-right">Schedule A Visit Today!</h2>
   <form onSubmit={handleSubmit} class="booking-form">
     <div class="form-row">
       <div class="form-group">
@@ -370,7 +375,7 @@ function Apphomepage() {
       </div>
     </div>
     <div className="contact-btn">
-    <button type="submit" class="submit-btn">
+    <button type="submit" class="submit-btn"  data-aos="fade-left">
       Start A Reservation →
     </button>
     </div>
