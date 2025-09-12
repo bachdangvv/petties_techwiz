@@ -1,0 +1,141 @@
+.mainFooter {
+  background-color: rgba(139, 69, 19, 1);
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footerCol {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.footerCol h4 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footerCol p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.socialIcons a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 35px;
+  transition: color 0.3s ease-in-out;
+}
+
+.socialIcons a:hover {
+  color: #d4edda;
+}
+
+.footerCol ul {
+  font-size: 12px;
+  color: #ffffff94;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerCol ul li {
+  margin-bottom: 10px;
+}
+
+.footerCol ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footerCol ul li a:hover {
+  color: #fff;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.newsletterForm input[type="email"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.344);
+  border-radius: 8px;
+  color: #eeebe8;
+  font-size: 12px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  background: transparent;
+  outline: none;
+  transition: border .1s ease-in-out;
+}
+
+.newsletterForm input[type="email"]::placeholder {
+  color: rgba(245, 244, 242, 0.663);
+}
+
+.subscribeButton {
+  background-color: #e2d687;
+  color: #8B4513;
+  margin-top: -15px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribeButton:hover {
+  background-color: #c0d7c2;
+  color: #6C350D;
+}
+
+.contactInfo p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #ffffff95;
+}
+
+.contactInfo i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footerBottom {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.footerBottom p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}

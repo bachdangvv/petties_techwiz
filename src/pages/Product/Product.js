@@ -116,7 +116,7 @@ function Product() {
         <div className={styles.headerContent}>
           <h1 className={styles.pageTitle}>All Products</h1>
           <nav className={styles.breadcrumb}>
-            <span>Trang chủ</span>
+            <span>Homepage</span>
             <span className={styles.breadcrumbSeparator}>&gt;</span>
             <span className={styles.breadcrumbCurrent}>All Products</span>
           </nav>
@@ -130,13 +130,13 @@ function Product() {
         {/* Left Sidebar Filters */}
         <aside className={styles.productAside}>
           <div className={styles.asideCard}>
-            <h3 className={styles.asideTitle}>Bộ lọc</h3>
+            <h3 className={styles.asideTitle}>Category Filters</h3>
             
             {/* Search */}
             <div className={styles.filterGroup}>
               <input
                 className={styles.searchInput}
-                placeholder="Nhập từ khóa..."
+                placeholder="Enter keyword..."
                 value={query}
                 onChange={(e) => {
                   setQuery(e.target.value);
@@ -147,7 +147,7 @@ function Product() {
 
             {/* Categories */}
             <div className={styles.filterGroup}>
-              <h4 className={styles.filterSectionTitle}>Danh mục</h4>
+              <h4 className={styles.filterSectionTitle}>Catalog</h4>
               {categories.map(category => (
                 <label key={category} className={styles.filterCheckbox}>
                   <input
@@ -164,7 +164,7 @@ function Product() {
 
             {/* Pet Type */}
             <div className={styles.filterGroup}>
-              <h4 className={styles.filterSectionTitle}>Loại thú cưng</h4>
+              <h4 className={styles.filterSectionTitle}>Type of pet</h4>
               {petTypes.map(pt => (
                 <label key={pt} className={styles.filterCheckbox}>
                   <input type="checkbox" checked={selectedPetTypes.includes(pt)} onChange={() => togglePetType(pt)} />
@@ -175,7 +175,7 @@ function Product() {
 
             {/* Price Range */}
             <div className={styles.filterGroup}>
-              <h4 className={styles.filterSectionTitle}>Khoảng giá (USD)</h4>
+              <h4 className={styles.filterSectionTitle}>Price (USD)</h4>
               <label className={styles.filterRadio}>
                 <input
                   type="radio"
@@ -220,7 +220,7 @@ function Product() {
 
             {/* Apply Button */}
             <button className={styles.applyFiltersBtn} onClick={clearFilters}>
-              Xóa bộ lọc
+              Clear Filters
             </button>
           </div>
         </aside>
@@ -228,14 +228,14 @@ function Product() {
         {/* Main Content */}
         <main className={styles.productMain}>
           <div className={styles.toolbar}>
-            <div className={styles.results}>Hiển thị {filtered.length} kết quả</div>
+            <div className={styles.results}>Show {filtered.length} results</div>
             <div className={styles.sort}>
-              <label>Sắp xếp</label>
+              <label>Soft</label>
               <select value={sort} onChange={(e) => { setSort(e.target.value); setPage(1); }}>
-                <option value="new">Mới nhất</option>
-                <option value="priceAsc">Giá: Thấp → Cao</option>
-                <option value="priceDesc">Giá: Cao → Thấp</option>
-                <option value="rating">Đánh giá cao nhất</option>
+                <option value="new">New</option>
+                <option value="priceAsc">Price: Low → High</option>
+                <option value="priceDesc">Price: High → Low</option>
+                <option value="rating">Highest rating</option>
               </select>
             </div>
           </div>
@@ -257,13 +257,13 @@ function Product() {
                   <div className={styles.productDetails}>
                     <div className={styles.detailItem}>
                       <span className={`${styles.detailDot} ${styles.detailDotPink}`}></span>
-                      <span className={styles.detailLabel}>Danh mục:</span>
+                      <span className={styles.detailLabel}>Catalog:</span>
                       <span className={styles.detailValue}>{p.category}</span>
                     </div>
                     
                     <div className={styles.detailItem}>
                       <span className={`${styles.detailDot} ${styles.detailDotPurple}`}></span>
-                      <span className={styles.detailLabel}>Thú cưng:</span>
+                      <span className={styles.detailLabel}>Pet:</span>
                       <span className={styles.detailValue}>{p.petType}</span>
                     </div>
                   </div>
@@ -283,10 +283,10 @@ function Product() {
                   <div className={styles.productActions}>
                     <button className={styles.addToCartBtn} onClick={() => addItem(p, 1)}>
                       <i className="bi bi-cart"></i>
-                      <span>Thêm vào giỏ</span>
+                      <span>Add to cart</span>
                     </button>
                     <button className={styles.viewDetailsBtn} onClick={() => navigate(`/productdetail/${p.id}`)}>
-                      Chi tiết
+                      Detail
                     </button>
                   </div>
                 </div>

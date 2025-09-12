@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import { CartProvider } from "./context/CartContext";
 import TestProductPage from "./test/productpage";
 import TestProductDetail from "./test/productdetailtest";
+import EmergencyButton from "./components/EmergencyandVet/EmergencyButton";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
               <Route path="/testpage" element={<TestProductPage />} />
               <Route path="/testpage/:id" element={<TestProductDetail />} />
             </Routes>
+            <EmergencyButton />
           </div>
         </main>
         <Footer />
